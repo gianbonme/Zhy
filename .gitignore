@@ -1,0 +1,49 @@
+# === Windows ===
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# === MacOS (se usar outro computador) ===
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# === VS Code ===
+.vscode/extensions.json
+.vscode/*.log
+
+# === Node / npm (se vier a usar) ===
+node_modules/
+npm-debug.log*
+.env
+.env.local
+
+# === Python (se usar scripts) ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# === Temporários / Logs ===
+*.log
+*.tmp
+*.temp
+*.swp
+*.bak
+
+# === Arquivos grandes (PDFs, imagens brutas) ===
+# Descomente se não quiser versionar esses arquivos:
+# *.pdf
+# *.xlsx
+# *.docx
+
+# === Antigravity / AI brain (não precisa ir pro GitHub) ===
+.gemini/
+
+# === Secrets ===
+*.key
+*.pem
+secrets.json
