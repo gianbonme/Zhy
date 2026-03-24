@@ -32,6 +32,7 @@
 | 4 | **Maquinário** (Rotuladora do Alvaro + Freezers) | Gianluca | **10/04** | 🔴 Investigar |
 | 5 | **Criar rótulos dos sucos** | Marketing (Caco/Carol) | **10/04** | 🔴 Iniciar |
 | 6 | **Finalizar site c/ checkout** | Web/Programação | **20/04** | 🟡 Em Andamento |
+| 7 | **Constituir Conselho Científico Zhy** (médico funcional + nutricionista sênior + especialista cogumelos) — necessário para validar formulações antes da submissão ao MAPA | Gianluca | **URGENTE** | 🔴 A Iniciar |
 
 ---
 
@@ -122,6 +123,7 @@
 | **Adriana** | Dossiês ANVISA suplementos (roda paralelo) |
 | **Web/Dev** | Finalizar e-commerce com checkout funcional |
 | **[A CONTRATAR]** | Vendedor B2B + Braço Direito gestão |
+| **[A CONSTITUIR]** | **Conselho Científico Zhy** — médico funcional, nutricionista sênior, especialista em cogumelos/fitoterapia. Validação das formulações pré-MAPA. Urgente. |
 
 ---
 

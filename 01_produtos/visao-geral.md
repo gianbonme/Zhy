@@ -65,11 +65,10 @@ Para momentos de reset, purificação e integração.
 Criados como rituais de pausa, nutrição e presença.
 
 | Produto | Base | Cogumelos | Status |
-|---|---|---|---|
-| Zhy Focus / Matcha | Matcha Premium | Juba de Leão, Cordyceps, Tremella | 🔵 Em desenvolvimento |
-| Zhy Glow / Cacau | Cacau 100% | Tremella, Reishi, Juba de Leão | 🔵 Em desenvolvimento |
-| Zhy Defense / Golden Latte | Cúrcuma + Gengibre | Cauda de Peru, Reishi, Shiitake | 🔵 Em desenvolvimento |
-
+| :--- | :--- | :--- | :--- |
+| Zhy Golden Latte | Cúrcuma + Gengibre | Cauda de Peru, Reishi, Shiitake | 🔵 Em desenvolvimento |
+| Zhy Cacau | Cacau 100% | Juba de Leão, Reishi, Tremella | 🔵 Em desenvolvimento |
+| Zhy Matcha | Matcha Premium | Juba de Leão, Cordyceps, Tremella | 🔵 Em desenvolvimento |
 
 → [Detalhes completos](soluveis.md)
 

@@ -54,6 +54,8 @@ Identificação das restrições para resolução imediata visando alavancar a e
   - **Café Moído:** Resolver a embalagem do zero (definir material do pacote, orçar fábricas, criar desenho com a Rebu e testar).
 - **🏭 Fornecedores de Solúveis/RTD**: 
   - Falta originar contato com parceiros e fábricas terceirizadas para produzir as linhas 2 e 3 (3 Solúveis e 6 Enlatados RTD).
+- **🧬 Conselho Científico Zhy (URGENTE)**:
+  - Não há ainda um corpo técnico formal (médico funcional, nutricionista sênior, especialista em cogumelos/fitoterapia) para validar as formulações antes da submissão ao MAPA. A ausência desse conselho é um risco direto para a linha de Solúveis e Shots. **Constituir o quanto antes.**
 
 ---
 

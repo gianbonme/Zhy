@@ -1,0 +1,460 @@
+1<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZHY · Formulação Lab</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #141210;
+    --bg2: #1C1916;
+    --bg3: #232018;
+    --border: rgba(232,220,200,0.08);
+    --border2: rgba(232,220,200,0.14);
+    --gold: #C17F24;
+    --gold-dim: rgba(193,127,36,0.15);
+    --gold-border: rgba(193,127,36,0.3);
+    --text: #E8DCC8;
+    --text-mid: #C8B896;
+    --text-dim: #8B7355;
+    --text-faint: #5A4E3A;
+    --green: #4A7C59;
+    --green-dim: rgba(74,124,89,0.15);
+    --orange: #C17F24;
+    --orange-dim: rgba(193,127,36,0.12);
+    --red: #8B4513;
+    --red-dim: rgba(139,69,19,0.15);
+  }
+
+  html, body { height: 100%; background: var(--bg); color: var(--text); font-family: 'Jost', sans-serif; overflow: hidden; }
+
+  /* LAYOUT */
+  #app { display: flex; flex-direction: column; height: 100vh; }
+
+  /* HEADER */
+  #header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 16px 28px; border-bottom: 1px solid var(--border);
+    background: rgba(0,0,0,0.25); flex-shrink: 0;
+  }
+  .logo { font-family: 'Cormorant Garamond', serif; font-size: 26px; font-style: italic; color: var(--gold); letter-spacing: 2px; }
+  .logo-sub { font-size: 10px; letter-spacing: 3px; color: var(--text-dim); text-transform: uppercase; margin-top: 1px; }
+  .stats { display: flex; gap: 24px; }
+  .stat { text-align: center; }
+  .stat-num { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--gold); }
+  .stat-label { font-size: 9px; letter-spacing: 1.5px; color: var(--text-dim); text-transform: uppercase; }
+
+  /* BODY */
+  #body { display: flex; flex: 1; overflow: hidden; }
+
+  /* SIDEBAR */
+  #sidebar {
+    width: 270px; min-width: 270px; border-right: 1px solid var(--border);
+    overflow-y: auto; padding: 8px 0;
+    scrollbar-width: thin; scrollbar-color: var(--text-faint) transparent;
+  }
+  .line-label {
+    padding: 10px 20px 4px; font-size: 8.5px; letter-spacing: 2.5px;
+    color: var(--text-dim); text-transform: uppercase; margin-top: 6px;
+  }
+  .product-item {
+    display: flex; align-items: center; gap: 10px;
+    padding: 9px 20px; cursor: pointer;
+    border-left: 2px solid transparent;
+    transition: all 0.15s;
+  }
+  .product-item:hover { background: rgba(232,220,200,0.03); }
+  .product-item.active { background: var(--orange-dim); border-left-color: var(--gold); }
+  .product-icon { font-size: 18px; flex-shrink: 0; }
+  .product-info { flex: 1; min-width: 0; }
+  .product-name { font-size: 13px; color: var(--text-mid); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; transition: color 0.15s; }
+  .product-item.active .product-name { color: var(--text); font-weight: 500; }
+  .product-sub { font-size: 10px; color: var(--text-dim); margin-top: 1px; }
+  .status-badge {
+    font-size: 8px; padding: 2px 7px; border-radius: 3px;
+    white-space: nowrap; letter-spacing: 0.5px; flex-shrink: 0;
+  }
+
+  /* MAIN */
+  #main { flex: 1; overflow-y: auto; padding: 32px 40px; scrollbar-width: thin; scrollbar-color: var(--text-faint) transparent; }
+
+  #empty {
+    flex: 1; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 10px; color: var(--text-dim);
+  }
+  .empty-z { font-family: 'Cormorant Garamond', serif; font-size: 64px; opacity: 0.15; line-height: 1; }
+
+  /* PRODUCT HEADER */
+  .prod-header { display: flex; align-items: flex-start; justify-content: space-between; margin-bottom: 28px; gap: 16px; }
+  .prod-icon-wrap {
+    width: 52px; height: 52px; background: var(--gold-dim);
+    border: 1px solid var(--gold-border); border-radius: 10px;
+    display: flex; align-items: center; justify-content: center; font-size: 26px; flex-shrink: 0;
+  }
+  .prod-title { font-family: 'Cormorant Garamond', serif; font-size: 24px; color: var(--text); }
+  .prod-line { font-size: 12px; color: var(--text-dim); margin-top: 3px; }
+  .status-btns { display: flex; gap: 6px; flex-wrap: wrap; justify-content: flex-end; }
+  .status-btn {
+    padding: 5px 11px; font-size: 10px; letter-spacing: 0.5px;
+    border-radius: 4px; border: 1px solid var(--border2);
+    background: transparent; color: var(--text-dim);
+    cursor: pointer; transition: all 0.15s; font-family: 'Jost', sans-serif;
+  }
+  .status-btn:hover { border-color: var(--gold); color: var(--gold-dim); }
+  .status-btn.active-status { border-color: var(--gold); background: var(--gold-dim); color: var(--gold); }
+
+  /* TABS */
+  .tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--border); margin-bottom: 28px; }
+  .tab-btn {
+    padding: 8px 18px; font-size: 12px; letter-spacing: 0.5px;
+    background: transparent; border: none; border-bottom: 2px solid transparent;
+    color: var(--text-dim); cursor: pointer; margin-bottom: -1px;
+    transition: all 0.15s; font-family: 'Jost', sans-serif;
+  }
+  .tab-btn:hover { color: var(--text-mid); }
+  .tab-btn.active { color: var(--gold); border-bottom-color: var(--gold); }
+
+  /* FIELDS */
+  .field { margin-bottom: 22px; }
+  .field-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 8px; }
+  .field-label { font-size: 9.5px; letter-spacing: 2px; color: var(--text-dim); text-transform: uppercase; }
+  .edit-btn {
+    font-size: 10px; color: var(--gold); background: transparent;
+    border: none; cursor: pointer; letter-spacing: 1px; font-family: 'Jost', sans-serif;
+    opacity: 0.7; transition: opacity 0.15s;
+  }
+  .edit-btn:hover { opacity: 1; }
+  .field-display {
+    padding: 12px 16px; background: rgba(232,220,200,0.025);
+    border: 1px solid var(--border); border-radius: 6px;
+    font-size: 13px; color: var(--text-mid); line-height: 1.7;
+    min-height: 52px; cursor: text; white-space: pre-wrap;
+    transition: border-color 0.15s;
+  }
+  .field-display:hover { border-color: var(--border2); }
+  .field-display.empty { color: var(--text-faint); font-style: italic; }
+  textarea {
+    width: 100%; background: rgba(232,220,200,0.04);
+    border: 1px solid var(--gold-border); border-radius: 6px;
+    color: var(--text); padding: 12px 16px; font-size: 13px;
+    font-family: 'Jost', sans-serif; line-height: 1.7;
+    resize: vertical; outline: none;
+  }
+  textarea:focus { border-color: var(--gold); }
+  .field-actions { display: flex; gap: 8px; margin-top: 8px; }
+  .btn-save {
+    padding: 6px 18px; background: var(--gold-dim); border: 1px solid var(--gold);
+    border-radius: 4px; color: var(--gold); font-size: 10px; letter-spacing: 1px;
+    cursor: pointer; font-family: 'Jost', sans-serif; transition: all 0.15s;
+  }
+  .btn-save:hover { background: rgba(193,127,36,0.25); }
+  .btn-cancel {
+    padding: 6px 14px; background: transparent; border: 1px solid var(--border2);
+    border-radius: 4px; color: var(--text-dim); font-size: 10px;
+    cursor: pointer; font-family: 'Jost', sans-serif;
+  }
+
+  /* TAGS */
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    padding: 4px 12px; background: var(--gold-dim);
+    border: 1px solid var(--gold-border); border-radius: 20px;
+    font-size: 12px; color: var(--text-mid);
+  }
+  .tag-empty { font-size: 12px; color: var(--text-faint); font-style: italic; }
+
+  /* REG BOX */
+  .reg-box {
+    padding: 14px 18px; background: rgba(193,127,36,0.05);
+    border: 1px solid rgba(193,127,36,0.12); border-radius: 8px;
+    font-size: 12px; color: var(--text-mid); line-height: 1.8; margin-bottom: 20px;
+  }
+  .reg-box strong { color: var(--gold); }
+
+  /* EXPORT */
+  #export-btn {
+    position: fixed; bottom: 24px; right: 28px;
+    padding: 10px 20px; background: var(--bg3);
+    border: 1px solid var(--gold-border); border-radius: 6px;
+    color: var(--gold); font-size: 11px; letter-spacing: 1.5px;
+    cursor: pointer; font-family: 'Jost', sans-serif;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    transition: all 0.2s;
+  }
+  #export-btn:hover { background: var(--gold-dim); }
+
+  /* SAVE INDICATOR */
+  #save-indicator {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+    padding: 7px 18px; background: var(--bg3); border: 1px solid var(--green);
+    border-radius: 20px; color: var(--green); font-size: 11px; letter-spacing: 1px;
+    opacity: 0; transition: opacity 0.3s; pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="header">
+    <div>
+      <div class="logo">ZHY</div>
+      <div class="logo-sub">Formulação Lab · Uso Privado</div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="stat-num" id="stat-total">17</div><div class="stat-label">Produtos</div></div>
+      <div class="stat"><div class="stat-num" id="stat-pronto">0</div><div class="stat-label">Prontos</div></div>
+      <div class="stat"><div class="stat-num" id="stat-form">0</div><div class="stat-label">Em formulação</div></div>
+    </div>
+  </div>
+  <div id="body">
+    <div id="sidebar"></div>
+    <div id="main"><div id="empty"><div class="empty-z">Z</div><div style="font-size:13px;letter-spacing:1px">Selecione um produto</div><div style="font-size:11px;opacity:.6;margin-top:4px">17 produtos · dados salvos localmente</div></div></div>
+  </div>
+</div>
+<button id="export-btn" onclick="exportJSON()">⬇ EXPORTAR JSON</button>
+<div id="save-indicator">✓ salvo</div>
+
+<script>
+const DEFAULT_PRODUCTS = [
+  // SUPLEMENTOS
+  { id:1, line:"Suplementos", name:"ZHY Blend Diário", subtitle:"Mix total adaptogênico", icon:"🍄", status:"rascunho", concept:"Suplemento diário completo com blend de cogumelos funcionais. Uso contínuo, propósito holístico.", ingredients:"", dosages:"", benefits:"", regulatory:"", notes:"" },
+  { id:2, line:"Suplementos", name:"Proteína Micélio", subtitle:"Suplemento muscular", icon:"💪", status:"rascunho", concept:"Proteína de origem fúngica/vegetal para recuperação e performance muscular.", ingredients:"", dosages:"", benefits:"", regulatory:"", notes:"" },
+  { id:3, line:"Suplementos", name:"Cápsulas Individuais", subtitle:"5 cogumelos individuais", icon:"💊", status:"rascunho", concept:"Linha de 5 cápsulas mono-ingrediente: Reishi, Lion's Mane, Cordyceps, Turkey Tail, Chaga.", ingredients:"", dosages:"", benefits:"", regulatory:"", notes:"" },
+  // SHOTS
+  { id:4, line:"Shots Funcionais", name:"Inflammation Shot", subtitle:"Anti-inflamatório natural", icon:"🌶️", status:"rascunho", concept:"Shot concentrado com Cauda de Peru (Schinus terebinthifolia) + outros anti-inflamatórios naturais.", ingredients:"Cauda de Peru", dosages:"", benefits:"", regulatory:"", notes:"" },
+  { id:5, line:"Shots Funcionais", name:"Blind-C Immunity Shot", subtitle:"Imunidade reforçada", icon:"🛡️", status:"rascunho", concept:"Turkey Tail + Vitamina C + Própolis + Limão. Defesa imunológica com base científica.", ingredients:"Turkey Tail\nVitamina C\nPrópolis\nLimão", dosages:"", benefits:"", regulatory:"", notes:"" },
+  { id:6, line:"Shots Funcionais", name:"Calm Shot", subtitle:"Relaxamento e equilíbrio", icon:"🌙", status:"rascunho", concept:"Reishi + Camomila + Maracujá. Calmante natural sem sedação excessiva.", ingredients:"Reishi\nCamomila\nMaracujá", dosages:"", benefits:"", regulatory:"", notes:"" },
+  { id:7, line:"Shots Funcionais", name:"Energy Shot", subtitle:"Energia limpa e duradoura", icon:"⚡", status:"rascunho", concept:"Cordyceps como base. Energia sem crash, performance aeróbica.", ingredients:"Cordyceps", dosages:"", benefits:"", regulatory:"", notes:"" },
+  // RTD
+  { id:8, line:"RTD (Latas)", name:"Ice Coffee", subtitle:"Energia rápida funcional", icon:"☕", status:"rascunho", concept:"Café gelado funcional. Energia rápida com extração vegetal funcional.", ingredients:"", dosages:"", benefits:"", regulatory:"", notes:"" },
+  { id:9, line:"RTD (Latas)", name:"Ice Matcha", subtitle:"Energia estável + foco", icon:"🍵", status:"rascunho", concept:"Matcha + adaptógenos para energia estável sem pico. L-teanina natural.", ingredients:"Matcha", dosages:"", benefits:"", regulatory:"", notes:"" },
+  { id:10, line:"RTD (Latas)", name:"Ice Cacao", subtitle:"Bem-estar + humor", icon:"🍫", status:"rascunho", concept:"Cacau cru + compostos adaptogênicos. Mood booster natural.", ingredients:"Cacau cru", dosages:"", benefits:"", regulatory:"", notes:"" },
+  { id:11, line:"RTD (Latas)", name:"Hibisco Soda", subtitle:"Refrescância + acidez natural", icon:"🌺", status:"rascunho", concept:"Bebida funcional refrescante. Hibisco + botanicals. Alternativa natural ao refrigerante.", ingredients:"Hibisco", dosages:"", benefits:"", regulatory:"", notes:"" },
+  { id:12, line:"RTD (Latas)", name:"Mate Soda", subtitle:"Energia leve + social", icon:"🧉", status:"rascunho", concept:"Erva-mate funcional. Energia leve, contexto social.", ingredients:"Erva-mate", dosages:"", benefits:"", regulatory:"", notes:"" },
+  { id:13, line:"RTD (Latas)", name:"Soda Funcional", subtitle:"Experiência sensorial", icon:"🫧", status:"rascunho", concept:"Adaptógenos + botanicals em formato soda. Prazer funcional.", ingredients:"", dosages:"", benefits:"", regulatory:"", notes:"" },
+  // SOLÚVEIS
+  { id:14, line:"Bebidas Funcionais", name:"Latte Funcional", subtitle:"Solúvel com cogumelos", icon:"🥛", status:"rascunho", concept:"Latte solúvel com cogumelos funcionais. Reconforto + benefício adaptogênico.", ingredients:"", dosages:"", benefits:"", regulatory:"", notes:"" },
+  { id:15, line:"Bebidas Funcionais", name:"Matcha Funcional", subtitle:"Solúvel com cogumelos", icon:"🍵", status:"rascunho", concept:"Matcha solúvel com cogumelos. Foco + energia estável.", ingredients:"Matcha", dosages:"", benefits:"", regulatory:"", notes:"" },
+  { id:16, line:"Bebidas Funcionais", name:"Cacau Funcional", subtitle:"Solúvel com cogumelos", icon:"🍫", status:"rascunho", concept:"Cacau solúvel com cogumelos. Bem-estar + mood.", ingredients:"Cacau cru", dosages:"", benefits:"", regulatory:"", notes:"" },
+  // CAFÉ
+  { id:17, line:"Café (MushSpresso)", name:"Café MushSpresso", subtitle:"Cápsulas + Moído", icon:"☕", status:"rascunho", concept:"Parceria MushSpresso. 2 SKUs: cápsulas e moído. Formulação compartilhada.", ingredients:"", dosages:"", benefits:"", regulatory:"", notes:"" },
+];
+
+const STATUS = {
+  rascunho:      { label:"Rascunho",       color:"#8B7355", bg:"rgba(139,115,85,0.13)" },
+  "em formulação": { label:"Em formulação", color:"#C17F24", bg:"rgba(193,127,36,0.13)" },
+  revisar:       { label:"Revisar",         color:"#8B9E5A", bg:"rgba(139,158,90,0.13)" },
+  pronto:        { label:"Pronto",          color:"#4A7C59", bg:"rgba(74,124,89,0.18)"  },
+};
+
+const TABS = [
+  { id:"conceito",   label:"Conceito"    },
+  { id:"formulacao", label:"Formulação"  },
+  { id:"regulatorio",label:"Regulatório" },
+  { id:"notas",      label:"Notas"       },
+];
+
+// STATE
+let products = loadProducts();
+let selectedId = null;
+let activeTab = "conceito";
+let editingField = null;
+
+function loadProducts() {
+  try {
+    const saved = localStorage.getItem("zhy_lab_v2");
+    if (saved) return JSON.parse(saved);
+  } catch(e) {}
+  return JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+}
+
+function saveProducts() {
+  localStorage.setItem("zhy_lab_v2", JSON.stringify(products));
+  const ind = document.getElementById("save-indicator");
+  ind.style.opacity = "1";
+  setTimeout(() => ind.style.opacity = "0", 1400);
+}
+
+function updateStats() {
+  document.getElementById("stat-total").textContent = products.length;
+  document.getElementById("stat-pronto").textContent = products.filter(p=>p.status==="pronto").length;
+  document.getElementById("stat-form").textContent = products.filter(p=>p.status==="em formulação").length;
+}
+
+// RENDER SIDEBAR
+function renderSidebar() {
+  const sb = document.getElementById("sidebar");
+  const lines = [...new Set(products.map(p=>p.line))];
+  sb.innerHTML = lines.map(line => {
+    const items = products.filter(p=>p.line===line);
+    return `<div class="line-label">${line}</div>` + items.map(p => {
+      const sc = STATUS[p.status];
+      const active = p.id === selectedId ? "active" : "";
+      return `<div class="product-item ${active}" onclick="selectProduct(${p.id})">
+        <span class="product-icon">${p.icon}</span>
+        <div class="product-info">
+          <div class="product-name">${p.name}</div>
+          <div class="product-sub">${p.subtitle}</div>
+        </div>
+        <span class="status-badge" style="background:${sc.bg};color:${sc.color}">${sc.label}</span>
+      </div>`;
+    }).join("");
+  }).join("");
+}
+
+// RENDER MAIN
+function renderMain() {
+  const main = document.getElementById("main");
+  if (!selectedId) {
+    main.innerHTML = `<div id="empty"><div class="empty-z">Z</div><div style="font-size:13px;letter-spacing:1px">Selecione um produto</div></div>`;
+    return;
+  }
+  const p = products.find(x=>x.id===selectedId);
+  if (!p) return;
+  const sc = STATUS[p.status];
+
+  const statusBtns = Object.entries(STATUS).map(([key,val]) =>
+    `<button class="status-btn ${p.status===key?"active-status":""}" onclick="setStatus(${p.id},'${key}')">${val.label}</button>`
+  ).join("");
+
+  const tabs = TABS.map(t =>
+    `<button class="tab-btn ${activeTab===t.id?"active":""}" onclick="setTab('${t.id}')">${t.label}</button>`
+  ).join("");
+
+  let tabContent = "";
+
+  if (activeTab === "conceito") {
+    tabContent = `
+      ${renderField(p, "concept", "Conceito do produto", true)}
+      <div class="field">
+        <div class="field-header"><span class="field-label">Ingredientes base identificados</span></div>
+        <div class="tags">
+          ${p.ingredients
+            ? p.ingredients.split("\n").filter(Boolean).map(i=>`<span class="tag">${i.trim()}</span>`).join("")
+            : `<span class="tag-empty">A definir na sessão de formulação</span>`}
+        </div>
+      </div>`;
+  } else if (activeTab === "formulacao") {
+    tabContent = `
+      ${renderField(p, "ingredients", "Ingredientes + proporções sugeridas", true, "Ex: Reishi (Ganoderma lucidum) — extrato 10:1 — 300mg\nLion's Mane — pó bruto — 500mg...")}
+      ${renderField(p, "dosages", "Dosagens e modo de uso", true, "Ex: 2 cápsulas ao dia, preferencialmente pela manhã com água...")}
+      ${renderField(p, "benefits", "Benefícios / propriedades funcionais", true, "Ex: Imunomodulação, redução de cortisol, suporte cognitivo...")}`;
+  } else if (activeTab === "regulatorio") {
+    tabContent = `
+      <div class="reg-box">
+        <strong>Refs regulatórias relevantes:</strong><br>
+        ANVISA RDC 243/2018 (suplementos) · RDC 429/2020 (rotulagem nutricional) · Instrução Normativa 76/2020 (alegações) · MAPA para produtos de origem animal (própolis, mel) · Registro vs. notificação por categoria de risco
+      </div>
+      ${renderField(p, "regulatory", "Enquadramento + notas para advogada / nutricionista", true, "Ex: Suplemento alimentar — notificação ANVISA. Verificar limite de beta-glucanos na RDC 243/2018. Sem alegação terapêutica...")}`;
+  } else if (activeTab === "notas") {
+    tabContent = `
+      <div style="font-size:12px;color:var(--text-dim);margin-bottom:16px;line-height:1.7">
+        Espaço livre para anotar decisões tomadas, resultados das nossas conversas, feedback da nutricionista, dúvidas em aberto.
+      </div>
+      ${renderField(p, "notes", "Notas e histórico de decisões", true, "Ex: 24/03 — Decidimos usar extrato 10:1 ao invés de pó bruto. Reishi máx 500mg/dose conforme nutricionista...")}`;
+  }
+
+  main.innerHTML = `
+    <div class="prod-header">
+      <div style="display:flex;gap:16px;align-items:center">
+        <div class="prod-icon-wrap">${p.icon}</div>
+        <div>
+          <div class="prod-title">${p.name}</div>
+          <div class="prod-line">${p.line} · ${p.subtitle}</div>
+        </div>
+      </div>
+      <div class="status-btns">${statusBtns}</div>
+    </div>
+    <div class="tabs">${tabs}</div>
+    <div id="tab-content">${tabContent}</div>`;
+}
+
+function renderField(p, field, label, multiline=false, placeholder="Clique para editar...") {
+  if (editingField === field) {
+    return `<div class="field">
+      <div class="field-header"><span class="field-label">${label}</span></div>
+      <textarea id="edit-textarea" rows="${multiline?6:2}" placeholder="${placeholder}">${p[field]||""}</textarea>
+      <div class="field-actions">
+        <button class="btn-save" onclick="saveField(${p.id},'${field}')">SALVAR</button>
+        <button class="btn-cancel" onclick="cancelEdit()">CANCELAR</button>
+      </div>
+    </div>`;
+  }
+  const val = p[field];
+  return `<div class="field">
+    <div class="field-header">
+      <span class="field-label">${label}</span>
+      <button class="edit-btn" onclick="startEdit('${field}')">✏ EDITAR</button>
+    </div>
+    <div class="field-display ${val?"":"empty"}" onclick="startEdit('${field}')">${val || placeholder}</div>
+  </div>`;
+}
+
+// ACTIONS
+function selectProduct(id) {
+  selectedId = id;
+  activeTab = "conceito";
+  editingField = null;
+  renderSidebar();
+  renderMain();
+}
+
+function setStatus(id, status) {
+  const p = products.find(x=>x.id===id);
+  if (p) { p.status = status; saveProducts(); updateStats(); renderSidebar(); renderMain(); }
+}
+
+function setTab(tab) {
+  activeTab = tab;
+  editingField = null;
+  renderMain();
+}
+
+function startEdit(field) {
+  editingField = field;
+  renderMain();
+  setTimeout(() => {
+    const ta = document.getElementById("edit-textarea");
+    if (ta) { ta.focus(); ta.setSelectionRange(ta.value.length, ta.value.length); }
+  }, 50);
+}
+
+function saveField(id, field) {
+  const ta = document.getElementById("edit-textarea");
+  if (!ta) return;
+  const p = products.find(x=>x.id===id);
+  if (p) { p[field] = ta.value; saveProducts(); }
+  editingField = null;
+  renderMain();
+}
+
+function cancelEdit() {
+  editingField = null;
+  renderMain();
+}
+
+function exportJSON() {
+  const blob = new Blob([JSON.stringify(products, null, 2)], {type:"application/json"});
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "zhy-lab-backup.json";
+  a.click();
+}
+
+// KEYBOARD SHORTCUT: Ctrl+Enter to save
+document.addEventListener("keydown", e => {
+  if ((e.ctrlKey || e.metaKey) && e.key === "Enter" && editingField && selectedId) {
+    saveField(selectedId, editingField);
+  }
+  if (e.key === "Escape" && editingField) cancelEdit();
+});
+
+// INIT
+updateStats();
+renderSidebar();
+renderMain();
+</script>
+</body>
+</html>
