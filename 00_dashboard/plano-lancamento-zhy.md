@@ -1,6 +1,6 @@
 # 🚀 PLANO DE LANÇAMENTO ZHY — 30 / 60 / 90 DIAS
 
-> **Data-base:** 24/03/2026 • **Meta D-Day Fase 1:** ~24/04/2026 (30 dias)
+> **Data-base:** 24/03/2026 • **Meta D-Day Fase 1:** ~01/05/2026 (5 semanas)
 > **Produtos Fase 1:** Sucos Cold Press + Cápsulas Nespresso
 > **Produtos Fase 2 (30-90d):** Shots Funcionais + Café Moído
 
@@ -10,7 +10,7 @@
 
 | # | Meta | Prazo | KPI |
 |---|------|-------|-----|
-| 1 | Lançar **Sucos Cold Press** e **Cápsulas Nespresso** no mercado | 30 dias | Produto à venda (D2C + B2B) |
+| 1 | Lançar **Sucos Cold Press** e **Cápsulas Nespresso** no mercado | 37 dias | Produto à venda (D2C + B2B) |
 | 2 | E-commerce D2C operacional (site c/ checkout) | 30 dias | Site live com carrinho |
 | 3 | Ativar **primeiros 10 pontos B2B** premium no RJ | 60 dias | PDVs ativos |
 | 4 | Lançar **Shots Cold Press** e **Café Moído** | 75 dias | Produto à venda |
@@ -27,10 +27,11 @@
 | # | Gargalo | Responsável | Deadline | Status |
 |---|---------|-------------|----------|--------|
 | 1 | **Fechar parceiro HPP no RJ** (sem HPP, suco dura 3 dias) | Guilherme | **27/03** | 🔴 Em Processo |
-| 2 | **Fechar embalagem Cápsulas** (caixa final p/ venda) | Marketing (Caco/Carol) | **31/03** | 🟡 Em Processo |
+| 2 | **Fechar embalagem Cápsulas** (caixa final p/ venda) | Marketing (Caco/Carol) | **28/03** | 🟡 Em Processo |
 | 3 | **Definir & orçar garrafas PET** (sucos + shots) | Gianluca | **03/04** | 🔴 Investigar |
-| 4 | **Finalizar site c/ checkout** | Web/Programação | **15/04** | 🟡 Em Andamento |
-| 5 | **Maquinário** (Rotuladora do Alvaro + Freezers) | Gianluca | **10/04** | 🔴 Investigar |
+| 4 | **Maquinário** (Rotuladora do Alvaro + Freezers) | Gianluca | **10/04** | 🔴 Investigar |
+| 5 | **Criar rótulos dos sucos** | Marketing (Caco/Carol) | **10/04** | 🔴 Iniciar |
+| 6 | **Finalizar site c/ checkout** | Web/Programação | **20/04** | 🟡 Em Andamento |
 
 ---
 
@@ -63,6 +64,7 @@
 - [ ] **Rotuladora** — Fechar compra/aluguel da rotuladora do Alvaro.
 - [ ] **Freezers** — Comprar freezers para acoplar na fábrica.
 - [ ] **Site** — Finalizar estrutura de checkout e testar fluxo de compra completo.
+- [ ] **Marketing** — Criar rótulos dos sucos (ARTE FINAL).
 - [ ] **Marketing** — Preparar fotos de produto e copy para lançamento.
 - [ ] **Formulação** — Criar formulação dos Shots (ALTA PRIORIDADE — Fase 2).
 
@@ -147,11 +149,10 @@ MAR/26                  ABR/26                  MAI/26                  JUN/26
  │   │   └─ Embal.   │    │    │    │    │           │                   │
  │   │     Cápsulas   │    │    │    │    │           │                   │
  │   │                │    │    │    │    │           │                   │
- │   └─ HPP fechado   │    │    │    └─ LANÇAMENTO   │                   │
+ │   └─ HPP fechado   │    ├─ Maquinário └─ LANÇAMENTO   │                   │
  │   └─ Form. Supl.   │    │    │      FASE 1 🚀    │                   │
- │                     │    │    │                    │                   │
+ │                     │    ├─ Rótulos Sucos          │                   │
  │                     │    │    └─ Site Live         │                   │
- │                     │    └─ Maquinário             │                   │
  │                     └─ PET + Embal. Sucos          │                   │
  │                                                    │                   │
  └─ HOJE                                              └─ LANÇAMENTO       └─ Meta 4k un.

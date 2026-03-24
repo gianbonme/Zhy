@@ -15,7 +15,7 @@ Diretrizes e conteúdo aprovado para embalagens dos produtos Zhy.
 
 ## Status de Logística de Embalagens (Fase 1 e Fase 2)
 
-**As ordens táticas de "O que fazer com elas hoje" moram no `plano-de-acao.md` e nos Gargalos Críticos. Esta lista compila a definição delas:**
+**As ordens táticas de "O que fazer com elas hoje" moram no `dashboard-operacional.md` e nos Gargalos Críticos. Esta lista compila a definição delas:**
 
 ### ☕ Cápsulas de Café (Fase 1)
 - **Status da Embalagem**: Caixa de 10 unidades (Cilíndrica ou Retangular).

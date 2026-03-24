@@ -45,4 +45,4 @@
 
 **REGRA OPERACIONAL:** Lançar rápido -> Ajustar depois -> Cortar o que não gira -> Escalar o que vende.
 
-*Arquivos Relacionados: [Plano de Ação](../00_dashboard/plano-de-acao.md) · [Fornecedores](fornecedores.md)*
+*Arquivos Relacionados: [Dashboard Operacional](../00_dashboard/dashboard-operacional.md) · [Fornecedores](fornecedores.md)*
