@@ -30,7 +30,7 @@
 | Nome | Área | Foco |
 | :--- | :--- | :--- |
 | **Gui Sul** | Web / Programação | Desenvolvimento da plataforma, site e ecossistema digital. |
-| **Caco** | Inovação / IA | Aplicação de IA (Vídeo/Foto), Prospecção de Micélio Protein (Subst. Whey). |
+| **Caco** | Inovação / Visão | Prospecção da Proteina de Micélio (Subst. Whey Protein) |
 
 ---
 

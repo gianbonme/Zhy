@@ -32,7 +32,7 @@ Onde a Zhy se comunica com o mundo.
 
 | Canal | Prioridade | Notas |
 |---|---|---|
-| E-commerce próprio | Alta | Via site (Guilherme) |
+| E-commerce próprio | Alta | Via site (Gui Sul) |
 | Pontos de venda físicos | Alta | Shoppings, aeroportos, academias, empórios, cafeterias, lojas de saúde, coworking |
 | Marketplaces | Média | A avaliar |
 | Newsletter | Baixa | Para nutrir comunidade |
@@ -43,8 +43,8 @@ Onde a Zhy se comunica com o mundo.
 
 | Ferramenta | Uso | Status |
 |---|---|---|
-| Google Drive | Documentos e controle | Em uso (desorganizado) |
-| Notion | Coordenação de equipe e processos | Em uso (substituiu Asana) |
+| Google Drive | Documentos e controle | Em uso (organizar) |
+| Notion | Coordenação de equipe e processos | Em desenvolvimento |
 | Repositório Antigravity | Centro de comandos, pensamento e evolução! | ✅ Ativo |
 
 ---

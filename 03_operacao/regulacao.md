@@ -22,7 +22,7 @@ Processo burocrático sistêmico de alto rigor. Cada formulação exige uma subm
 4. **Tremella** *(Próximo na fila a protocolar)*
 5. **Cauda de Peru** *(Próximo na fila a protocolar)*
 6. **Zhy Blend** *(Os 5 em sinergia; planejamento pra quando todos os ativos já tiverem sinal verde isolado)*
-7. **Proteína de Micélio** *(Com outros adaptógenos agregados. Muito inicial, Caco indicou 2 empresas terceirizadas para conversar antes de submeter registro)*
+7. **Proteína de Micélio** *(Com outros adaptógenos agregados. Caco indicou 2 empresas terceirizadas para conversar antes de submeter registro)*
 
 ---
 
@@ -34,8 +34,8 @@ Processo mais fluido para viabilizar entradas de mercado (food & beverage). Engl
 - Atuação Conjunta Oficial: O **contador da fábrica da Vida Líquida** faz o intermédio burocrático do lado prático das máquinas no RJ. A advogada Priscila valida a "nomenclatura inteligente estrutural" para os fungos funcionais serem aceitos pelos auditores MAPA sem que esbarrem e deem "rebote" imediato como ingredientes ilícitos / Novo Alimento. 
 
 ### Portfólio abrangido nessa área
-- **Sucos Cold Press e Shots** *(Em trâmite minucioso)*
-- **Cápsulas de Café Otimizadas** *(Em registro)*
+- **Sucos Cold Press e Shots** *(Em trâmite)*
+- **Café em Cápsulas e Moído** *(Em trâmite)*
 - **Solúveis (Fase 3)** 
 - **Enlatados RTD (Fase 4)**
 
