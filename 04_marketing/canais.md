@@ -21,6 +21,11 @@ Onde a Zhy se comunica com o mundo.
   > 🔗 zhy.com
 - **Conteúdo**: Educacional sobre cogumelos, rituais, MTC, lifestyle
 
+### 🎥 TikTok — @zhy
+- **Status**: Planejado / Início
+- **Foco**: Conteúdo viral, rituais de preparo, "behind the scenes" e parcerias.
+- **Estratégia**: Trabalho massivo com influencers e especialistas (nutricionistas, deportólogos, micólogos, etc.).
+
 ---
 
 ## Canais Planejados
@@ -28,7 +33,7 @@ Onde a Zhy se comunica com o mundo.
 | Canal | Prioridade | Notas |
 |---|---|---|
 | E-commerce próprio | Alta | Via site (Guilherme) |
-| Pontos de venda físicos | Média | Empórios, cafeterias, lojas de saúde |
+| Pontos de venda físicos | Alta | Shoppings, aeroportos, academias, empórios, cafeterias, lojas de saúde, coworking |
 | Marketplaces | Média | A avaliar |
 | Newsletter | Baixa | Para nutrir comunidade |
 
@@ -39,8 +44,8 @@ Onde a Zhy se comunica com o mundo.
 | Ferramenta | Uso | Status |
 |---|---|---|
 | Google Drive | Documentos e controle | Em uso (desorganizado) |
-| Asana (ou similar) | Coordenação de equipe | Planejado |
-| Repositório Markdown | Base de conhecimento | ✅ Este repositório |
+| Notion | Coordenação de equipe e processos | Em uso (substituiu Asana) |
+| Repositório Antigravity | Centro de comandos, pensamento e evolução! | ✅ Ativo |
 
 ---
 

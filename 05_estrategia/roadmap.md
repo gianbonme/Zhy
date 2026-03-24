@@ -13,12 +13,12 @@
 | Produto | Parceiro / Produção | Status Atual |
 | :--- | :--- | :--- |
 | **🧃 Sucos Cold Press (6 sabores)** | Vida Líquida | 9 Fórmulas OK. Foco D2C/B2B |
-| **☕ Cápsulas Nespresso (Caixa)** | MushSpresso | Recebendo máquinas. Testes UX |
+| **☕ Cápsulas Nespresso (Cx 10)** | MushSpresso | Lote 9000 cápsulas definido. Embalagem interim (Caco/Carol). |
 
 🔥 **Prioridades de Ataque (Imediatas)**:
 - Fechar Parceiro HPP no Rio de Janeiro (Gargalo Mestre).
 - Orçar e rodar embalagens PETs definitivas para os sucos.
-- Fechar o comercial de caixas (custo/benefício B2C) com o Adriel/Alternativos.
+- Fechar comercial de caixas (custo/benefício B2C) focando em bater o preço do protótipo.
 - Iniciar fechamento intenso de pontos Varejo Premium.
 
 ---
@@ -35,7 +35,7 @@
 
 🔥 **Prioridades de Ataque**:
 - Definir as mini-garrafas PET.
-- Desenvolver a embalagem "luxo" do café com a Rebu.
+- Desenvolver a embalagem "luxo" do café com a Rebu (previsão de 4 meses).
 - Criar a mecânica de venda conjunta (Sucos + Shots) para alavancagem de Ticket.
 
 ---
@@ -68,6 +68,7 @@
 🔥 **Prioridades de Ataque**:
 - Originar contato com mega-indústrias (bebidas prontas) para terceirizar tudo.
 - Estruturar a distribuição nacional "Grab & Go".
+- Estruturar transição da produção de café para o Rio de Janeiro (Café próprio/Controle total).
 
 ---
 
@@ -103,3 +104,25 @@ Chega de laxeza (anos). Trabalhamos com Sprints semestrais, no limite da agressi
 ```
 
 > **Atenção (Gargalo ANVISA)**: A regulação da Fase 5 e o trabalho nos bastidores rodam paralelos a todas as outras. A fábrica física RJ e as obrigações judiciais ditam o compasso das cápsulas, enquanto todo o caixa para bancar essa espera sai do varejo de MAPA nas Fases 1 a 4.
+
+---
+
+## 🔮 O IMPÉRIO ZHY — MARCOS DE LONGO PRAZO
+
+As 5 fases acima formam o "Tático de Ataque Imediato" da Zhy. Em termos de horizontes temporais maiores:
+
+### Curto prazo (2026–2027)
+- Execução cirúrgica da **Fase 1** (Sucos e Café em Cápsula).
+- Estabelecer os canais inaugurais de receita (B2B Varejo Premium, D2C Assinaturas).
+- Construir autoridade e conteúdo esteticamente impecável educando a massa leiga sobre Adaptógenos e MTC.
+
+### Médio prazo (2027–2028)
+- Implementação avassaladora da **Fase 3** (Solúveis com Produção Própria via P&D laboratorial).
+- Desova maciça da **Fase 4** (Latas RTD de alta aceitação em farmácias, mercados).
+- Conselho Médico Integrativo e Científico formado para blindar a chancela na Mídia.
+
+### Longevo Absoluto (2028+)
+- Liberação burocrática integral pela ANVISA e desova ostensiva da **Fase 5** (Suplementação Clínica Encapsulada Mãe).
+- Desenvolvimento/Patente de tecnologias baseadas em **Proteína de Micélio** (Alimentos funcionais alternativos - Oceano inexplorado no Brasil).
+- Mapeamento Logístico para a primeira remessa de produtos latinos (LatAm) e Euro (Portugal).
+- Oásis Sensorial Flagship: Abertura da primeira megastore ou café conceito Zhy (hub de comunidade).

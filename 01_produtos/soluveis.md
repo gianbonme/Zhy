@@ -1,14 +1,16 @@
 ---
-status: "🔵 Em aberto (Lançamento 2)"
+status: "🔵 Em aberto (Fase 3)"
 gargalo_atual: "Formulação e Prospecção Fábricas"
 responsavel: "Gianluca"
 ---
-# 🍵 Solúveis — O Lançamento 2
+# 🍵 Solúveis — Fase 3
 
 > Criados como rituais práticos e funcionais para expandir o portfólio.
 
 **Status de Execução**: Precipitante. Formulações ainda em aberto.
-**Objetivo de Produção**: Encontrar um parceiro/fábrica terceirizado capacitado para assumir a produção por nós (falta originar ligações/contatos para cerca de ~30 fornecedores mapeados e parceiros).
+**Objetivo de Produção**: 
+1. **Terceirização**: Encontrar parceiro/fábrica terceirizado capacitado (~30 fornecedores mapeados).
+2. **In-house**: Considerar aquisição de maquinário próprio e desenvolvimento de know-how interno para controle total da qualidade.
 
 ---
 
@@ -17,12 +19,12 @@ responsavel: "Gianluca"
 2. **Zhy Cacau**
 3. **Zhy Golden Latte**
 
-*(Diretriz: O foco anterior incluía "Café Solúvel", mas ele foi direcionado estritamente à operação de Cápsulas/Moído com a MushSpresso por enquanto).*
-
 ## Desafios Técnicos e Formulatórios
-- **Mecanismos e Segregação**: Potes rendendo cerca de 30 doses. É preciso chegar em formulações base sem stevia, utilizando blends de sabor agradáveis e que não formem pedra.
-- **Adição dos Adaptógenos**: Casar homogeneamente a base seca de Matcha/Cacau/Cúrcuma com os extratos puros de cogumelos finamente micronizados.
-- **Supply Chain**: Estabelecer quem vai fornecer os compostos (TBC), quem fará a homogeneização em escala industrial (Ribbon Blender) e envase protegido da variação UV, tudo através do Parceiro Terceirizado que o fundador ainda mapeará.
+- **Formulação Ideal**: Equilibrar sabor, homogeneidade e moagem perfeita.
+- **Micro-estratificação**: Evitar que elementos se separem no pote (densidades diferentes).
+- **Diluição e Solubilidade**: Garantir que as partículas não precipitem nem flutuem, dissolvendo-se completamente.
+- **Adição dos Adaptógenos**: Casar extratos puros de cogumelos finamente micronizados com a base seca sem comprometer a estabilidade.
+- **Equipamento**: Necessidade de Ribbon Blender (ou similar) para homogeneização industrial e envase com proteção UV.
 
 ---
 *Vinculado à Dashboard Principal: [Dashboard Operacional](../00_dashboard/dashboard-operacional.md)*

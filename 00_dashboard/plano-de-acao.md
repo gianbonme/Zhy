@@ -22,12 +22,13 @@
 ### BLOCO 1: SETUP & PROTÓTIPOS (SEMANAS 1-4) | Mês 1
 *O objetivo aqui é encomendar e validar os produtos fisicamente com seu círculo de confiança.*
 - [ ] **Semana 1:** Fechar acordos macro (Vida Líquida/MushSpresso), mapear ativamente maquinários parceiros HPP no RJ.
-- [ ] **Semana 2:** Foco Total em Embalagens Físicas Lançamentos 1.A e 1.B (Definir formatos, desenhar com a REBU, orçar atacado e testar).
+- [ ] **Semana 2:** Foco Total em Embalagens Físicas das Fases 1 e 2 (Definir formatos, desenhar com a REBU, orçar atacado e testar).
   - *Sucos & Shots:* Resolver as garrafas PET (garantir formato ideal HPP, orçar custo unitário).
   - *Cápsulas:* Buscar cotação assertiva de caixas vs Adriel (melhorar preço e qualidade).
   - *Café Moído:* Definir o pacote final do pó do total zero (desenho, orçamento e viabilidade).
+  - *Serigrafia:* Iniciar testes de serigrafia nos potes de vidro conforme Brandbook (Imediato).
 - [ ] **Semana 3:** Iniciar produção dos primeiros Lotes de Protótipo e finalizar estrutura de checkout do site.
-- [ ] **Semana 4 (Marco de 30 Dias):** Receber protótipos físicos em mãos. Testar, cheirar e degustar com amigos, familiares, potenciais clientes VIP e parceiros B2B iniciais para coletar feedback direcional.
+- [ ] **Semana 4 (Marco de 30 Dias):** Receber protótipos físicos em mãos. Pilotar com *Friends & Family*: Testar não só o produto, mas a embalagem e o branding (feedback direcional com círculo de confiança).
 
 ### BLOCO 2: AJUSTES & PRÉ-LANÇAMENTO (SEMANAS 5-8) | Mês 2
 *Aparar as arestas baseadas no feedback, produzir o volume real e treinar o comercial para a guerra.*

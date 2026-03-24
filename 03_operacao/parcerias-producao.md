@@ -1,4 +1,4 @@
-﻿# 🤝 Parcerias de Produção
+# 🤝 Parcerias de Produção
 
 A Zhy opera com um modelo híbrido: **produção própria** para cápsulas e solúveis + **white-label/co-packer** para café e sucos.
 
@@ -44,21 +44,63 @@ A MushSpresso produz e acondiciona o café com a formulação Zhy, que é vendid
 
 ---
 
+## Solúveis (Cacau, Matcha, Golden Latte) — Fase 3
+
+| Aspecto | Detalhe |
+|---|---|
+| **Tipo de parceria** | Terceirização (Co-packer) ou Produção Própria |
+| **O que produz** | Blends solúveis de cogumelos adaptógenos |
+| **Equipamento** | Necessidade de Ribbon Blender (Mistura Inox) |
+| **Status** | 🟢 P&D Interno / 🟡 Prospecção de indústrias para Envase e Mistura |
+
+A Zhy estuda um modelo híbrido: manter a inteligência da fórmula (P&D) internamente e utilizar um parceiro industrial para a mistura em larga escala e envase com proteção UV.
+
+---
+
+## RTD Frios (Enlatados) — Fase 4
+
+| Aspecto | Detalhe |
+|---|---|
+| **Tipo de parceria** | Co-packing (Beverage) |
+| **O que produz** | Bebidas gaseificadas, chás e cafés prontos (Lata) |
+| **Status** | ⚪ Planejado (Blueprint futuro) |
+
+Necessário encontrar uma fábrica parceira (*Beverage Co-packer*) com capacidade de absorção de volumes iniciais e envase em lata para as 6 fórmulas planejadas.
+
+---
+
+## Suplementos & Proteína de Micélio — Fase 5
+
+| Aspecto | Detalhe |
+|---|---|
+| **Tipo de parceria** | Produção Própria (Cápsulas) + Terceirização (Proteína) |
+| **O que produz** | Cogumelos isolados e Proteína de Micélio funcional |
+| **Status** | 🔴 Burocracia ANVISA (Cápsulas) / 🟢 Prospecção Proteína |
+
+Para a **Proteína de Micélio**, existem 2 potenciais parceiros indicados pela curadoria do Caco que estão em fase de avaliação de viabilidade técnica e comercial.
+
+---
+
 ## Modelo Estratégico
 
 ```
-Fase 1 (atual):
-├── Café → MushSpresso (white-label)
-├── Sucos → Vida Líquida (terceirizado)
-└── Cápsulas → Produção própria (aguardando ANVISA)
+Fase 1 (Atual):
+├── Sucos Cold Press → Vida Líquida
+├── Cápsulas (Café) → MushSpresso
+└── Shots Funcionais → Vida Líquida (Alta Prioridade)
 
 Fase 2:
-├── Solúveis → Produção própria (precisa equipamentos)
-└── Shots → Vida Líquida
+└── Café Moído → MushSpresso / Transição Futura RJ
 
-Fase 3/4:
-├── Enlatados → Co-packer a definir
-└── Proteína → Produção própria ou co-packer
+Fase 3:
+└── Solúveis (Matcha, Cacau, Golden) → Parceiro a Definir
+
+Fase 4:
+└── Enlatados (RTD) → Co-packer a Definir
+
+Fase 5:
+├── Suplementos (Cápsulas) → Produção Própria (Lab RJ)
+└── Proteína de Micélio → Parceiros Caco (A Avaliar)
 ```
 
 ---

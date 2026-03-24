@@ -27,7 +27,7 @@ Processo burocrático sistêmico de alto rigor. Cada formulação exige uma subm
 ---
 
 ## 🌾 MAPA (Alimentos Diferenciados In Natura ou Modificados)
-Processo mais fluido para viabilizar entradas de mercado (food & beverage). Engloba a totalidade do Lançamento 1, Lançamento 2 e 3 da Zhy.
+Processo mais fluido para viabilizar entradas de mercado (food & beverage). Engloba a totalidade das Fases 1, 2, 3 e 4 da Zhy.
 
 ### Responsáveis
 - Advogada Jurídica/Técnica: **Priscila**
@@ -36,8 +36,8 @@ Processo mais fluido para viabilizar entradas de mercado (food & beverage). Engl
 ### Portfólio abrangido nessa área
 - **Sucos Cold Press e Shots** *(Em trâmite minucioso)*
 - **Cápsulas de Café Otimizadas** *(Em registro)*
-- **Solúveis (Lançamento 2)** 
-- **Enlatados RTD (Lançamento 3)**
+- **Solúveis (Fase 3)** 
+- **Enlatados RTD (Fase 4)**
 
 ---
 *Vinculado à Dashboard Principal: [Dashboard Operacional](../00_dashboard/dashboard-operacional.md)*

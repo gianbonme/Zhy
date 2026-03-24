@@ -15,13 +15,13 @@ Documento central de acompanhamento diário da **Zhy**. Este arquivo consolida o
 
 | Fase | Linha de Produto | Detalhes Produtivos | Status Atual | Gargalo / Próximo Marco | Base de Apoio |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Lanç. 1.A** | **🥤 Sucos Cold Press** | Foco em volume D2C local e B2B premium. | 9 Fórmulas de Suco validadas. | Fechar parceiro HPP + Definir/Orçar PET. | Vida Líquida |
-| **Lanç. 1.A** | **☕ Cápsulas (Nespresso)** | Caixa com 10 uni. para rituais semanais. | 100 embalagens sob teste UX. | Cotar caixas com melhor preço/qualidade vs Adriel. | MushSpresso |
-| **Lanç. 1.B** | **🧴 Shots Funcionais** | Fórmulas: Imunidade, Energia, Foco. | Receitas conceituais rascunhadas. | Definir e orçar mini-garrafas PET. | Vida Líquida |
-| **Lanç. 1.B** | **🫘 Café Moído Premium** | Sub-produto que aproveita insumo das cápsulas. | Rascunho inicial do pacote. | Resolver embalagem (definir, criar e orçar). | MushSpresso |
-| **Fase 2** | **🍵 Solúveis (Blends)** | Cacau, Matcha, Golden Latte (Sem stevia). | Em testes de P&D de receitas. | Achar indústrias para Envase e Mistura Inox. | P&D Zhy |
-| **Fase 3** | **🥫 Enlatados (RTD)** | Bebidas gaseificadas e chás funcionais prontos. | Blueprint futuro. | Encontrar indústrias *Beverage* (Co-packing). | P&D Zhy |
-| **Fase 4** | **💊 Suplementos (Base)** | Cogumelos isolados no talo e em micélio. | Lab RJ montado (Equipamentos OK).| Fila regulatória brutal na ANVISA (1 a 2 anos). | Dir. Regulatório |
+| **Fase 1** | **🥤 Sucos Cold Press** | Foco em volume D2C local e B2B premium. | 9 Fórmulas de Suco validadas. | Fechar parceiro HPP + Definir/Orçar PET. | Vida Líquida |
+| **Fase 1** | **☕ Cápsulas (Nespresso)** | Caixa com 10 uni. para rituais semanais. | 100 embalagens sob teste UX. | Cotar caixas com melhor preço/qualidade vs Adriel. | MushSpresso |
+| **Fase 1** | **💉 Shots Funcionais** | Imunidade, Energia, Foco. | Receitas conceituais rascunhadas. | **ALTA PRIORIDADE**: Finalizar fórmulas + PET. | Vida Líquida |
+| **Fase 2** | **🫘 Café Moído Premium** | Sub-produto que aproveita insumo das cápsulas. | Rascunho inicial do pacote. | Resolver embalagem (definir, criar e orçar). | MushSpresso |
+| **Fase 3** | **🍵 Solúveis (Blends)** | Cacau, Matcha, Golden Latte (Sem stevia). | Em testes de P&D de receitas. | Achar indústrias para Envase e Mistura Inox. | P&D Zhy |
+| **Fase 4** | **🥫 Enlatados (RTD)** | Bebidas gaseificadas e chás funcionais prontos. | Blueprint futuro. | Encontrar indústrias *Beverage* (Co-packing). | P&D Zhy |
+| **Fase 5** | **💊 Suplementos** | Cogumelos isolados no talo e em micélio. | Lab RJ montado (Equipamentos OK).| Fila regulatória brutal na ANVISA (1 a 2 anos). | Dir. Regulatório |
 
 ---
 
@@ -49,7 +49,7 @@ Identificação das restrições para resolução imediata visando alavancar a e
   - **Urgência 1 (Sucos/HPP)**: Alugar máquina HPP no RJ (sem isso os sucos expiram em apenas 3 dias).
   - **Urgência 2 (Fábrica Alvaro)**: Necessidade de comprar *Rotuladora* e *Freezers* para acoplar na fábrica dele.
 - **📦 Logística Física de Embalagens (Fase 1 Lançamento)**:
-  - **Sucos e Shots (PETs):** Definir forma, desenhar rótulo, orçar fornecedores e testar física/vedação.
+  - **Sucos e Shots (PETs):** Definir forma, desenhar rótulo, orçar fornecedores e testar física/vedação. Projetos simultâneos (Prioridade design Sucos).
   - **Cápsulas:** Procurar e orçar fornecedores alternativos de caixas para bater o preço e melhorar a qualidade da atual opção provisória do Adriel.
   - **Café Moído:** Resolver a embalagem do zero (definir material do pacote, orçar fábricas, criar desenho com a Rebu e testar).
 - **🏭 Fornecedores de Solúveis/RTD**: 
@@ -89,9 +89,15 @@ Visão esquemática em formato de texto para rápida consulta e acompanhamento:
 
 ---
 
+## 🤝 Organograma & Equipe
+Veja a estrutura completa de quem faz a Zhy acontecer:
+- 👥 **[Visualizar Organograma da Equipe](../06_equipe/organograma.md)**
+
+---
+
 ## 🧠 Inteligência Estratégica (Concorrentes e Referências)
 Acesse a nossa base viva de estudos de mercado para alimentar a Rebu e as teses de lançamento:
-- 📊 **[Mapeamento de Competidores e Benchmarks Globais](../05_estrategia/competidores-benchmarks.md)**
+- 📊 **[Mapeamento de Competidores e Benchmarks Globais](../05_estrategia/inteligencia-competitiva.md)**
 
 ---
 

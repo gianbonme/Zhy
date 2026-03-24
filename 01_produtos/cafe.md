@@ -12,9 +12,10 @@ responsavel: "Adriel / Carol / Caco"
 ## Produtos
 
 ### Café em Cápsulas Nespresso (Cx 10 un.)
-- **Status**: Teste da caixa de protótipo (100 caixas já pagas com MushSpresso). Em paralelo: Cotar ativamente novos fornecedores/gráficas para tentar bater o preço e melhorar a qualidade dessas caixas do Adriel antes de encomendar o lote das 900 finais.
-- **Parceiro de produção**: MushSpresso (Adriel - Brasília).
-- **Composição Oficial**: 90% Café Arábica Premium | 10% Cogumelos (3,4% Juba de Leão, 3,3% Cauda de Peru).
+- **Status**: Teste da caixa de protótipo (100 caixas pagas). Foco atual em bater o preço e melhorar a qualidade das caixas para os próximos lotes.
+- **Parceiro de produção**: MushSpresso (Adriel - Brasília). Definido lote de 9000 cápsulas com este fornecedor (a menos que ocorra imprevisto crítico).
+- **Estratégia Futura**: Trazer a produção para o Rio de Janeiro com café próprio para maior controle de processo e qualidade.
+- **Composição Oficial (10% Cogumelos)**: 90% Café Arábica | 3,3% Shiitake | 3,3% Juba de Leão | 3,3% Cauda de Peru.
 - **Economia e Preços Alvo Diários**: 
   - **Custo unitário:** ~R$2,2 por cápsula. 
   - **Preços Cx 10:** R$30 (Venda B2B), R$40 (Assinatura D2C), R$50 (Varejo Avulso).
@@ -25,12 +26,16 @@ responsavel: "Adriel / Carol / Caco"
 
 ---
 
-## Conteúdo de Embalagem (A definir pela Rebu)
-- Logo ZHY
-- Subtítulo: "Café Arábica Premium & Cogumelos Funcionais"
-- Lateral 1 — O Ritual Zhy
-- Lateral 2 — Educacional (Foco Cognitivo no Juba de Leão e Imunidade na Cauda de Peru)
-- Fundo — Manifesto
+## Conteúdo de Embalagem (Primeira Leva)
+- **Status**: Conteúdo interim desenvolvido com Caco e Carol para a primeira leva (lançamento imediato). 
+- **Design Final**: A cargo da agência Rebu (previsão de 4 meses).
+- **Conteúdo**: 
+  - Logo ZHY
+  - Subtítulo: "Café Arábica Premium & Cogumelos Funcionais"
+  - Lateral 1 — Rituais diários para se reconectar com o essencial.
+  - Lateral 2 — Educacional e Funcionalidade.
+  - Selos: Vegano, Testado em laboratório.
+  - Composição detalhada e QR Code.
 
 ---
 *Vinculado à Dashboard Principal: [Dashboard Operacional](../00_dashboard/dashboard-operacional.md)*

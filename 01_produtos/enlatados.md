@@ -1,13 +1,13 @@
 ---
-status: "⚪ Planejado (Lançamento 3)"
+status: "⚪ Planejado (Fase 4)"
 gargalo_atual: "Fábrica e Formulação"
 responsavel: "Gianluca"
 ---
-# 🥤 RTD Frios (Enlatados) — O Lançamento 3
+# 🥤 RTD Frios (Enlatados) — Fase 4
 
 > Praticidade e refresco consciente — cogumelos para todos os momentos na versão Ready-to-Drink (RTD).
 
-**Status Oficial**: Planejado pós-solúveis (Lançamento 3).
+**Status Oficial**: Planejado pós-solúveis (Fase 4).
 **Regulação**: MAPA.
 **Produção**: A definir (Necessário encontrar fábrica parceira / co-packer para absorver o projeto).
 

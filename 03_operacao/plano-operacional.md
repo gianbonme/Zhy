@@ -17,8 +17,8 @@
 ### 02 - INFRAESTRUTURA HÍBRIDA
 
 #### Laboratório Zhy (Produção Própria - RJ)
-*   **Foco Atual:** Setup e regulação. Preparado para **Cápsulas Suplemento** (via ANVISA).
-*   **Expansão:** Necessita de investimento em equipamentos para **Solúveis** (Ribbon Blender + Moinho Vieira).
+*   **Foco Atual:** Setup e regulação. Encapsuladora (240 caps) recebida. 
+*   **Objetivo:** Otimizar *know-how* de produção de cápsulas via testes internos imediatos.
 *   **Local:** Rua Esteves Junior, 74 — Rio de Janeiro.
 
 #### Parceiros Estratégicos (White-Label & Terceirizados)

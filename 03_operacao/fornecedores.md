@@ -1,4 +1,4 @@
-﻿# 🏭 Fornecedores
+# 🏭 Fornecedores
 
 Registro dos principais fornecedores de insumos e equipamentos da Zhy.
 
@@ -52,7 +52,8 @@ Insumos importados via Alibaba:
 | Item | Especificação |
 |---|---|
 | Potes para solúveis | PEAD preto/branco, proteção UV, 30 doses |
-| Caixas café cápsulas | Cx 10 un., design Rebu |
+| Caixas café cápsulas | Cx 10 un. | Buscar melhor preço/qualidade (Caco/Carol) |
+| Cápsulas vazias | - | **Gargalo**: Fornecedor atual no Sul (buscar opção mais próxima) |
 | Garrafas sucos | Via Vida Líquida |
 | Latas (futuro) | A definir |
 

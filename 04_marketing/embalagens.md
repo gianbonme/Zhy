@@ -13,23 +13,23 @@ Diretrizes e conteúdo aprovado para embalagens dos produtos Zhy.
 
 📄 [ZHY Brandbook.pdf](../08_recursos/Orçamentos/ZHY%20Brandbook.pdf)
 
-## Status de Logística de Embalagens (1.A e 1.B)
+## Status de Logística de Embalagens (Fase 1 e Fase 2)
 
 **As ordens táticas de "O que fazer com elas hoje" moram no `plano-de-acao.md` e nos Gargalos Críticos. Esta lista compila a definição delas:**
 
-### ☕ Cápsulas de Café (Lançamento 1.A)
+### ☕ Cápsulas de Café (Fase 1)
 - **Status da Embalagem**: Caixa de 10 unidades (Cilíndrica ou Retangular).
 - **Pendência Física**: Buscar fábricas/gráficas alternativas para melhorar o custo-benefício e a qualidade do lote comparado às ofertadas hoje pelo Adriel.
 
-### 🥤 Sucos Cold Press (Lançamento 1.A)
+### 🥤 Sucos Cold Press (Fase 1)
 - **Status da Embalagem**: Garrafas PET transparente (Formato a definir).
 - **Pendência Física**: Ligar para indicações do Alvaro. Definir modelo, fechar desenho com a Rebu, orçar no atacado e testar limite de pressão para a máquina HPP.
 
-### 🧴 Shots Funcionais (Lançamento 1.B)
+### 🧴 Shots Funcionais (Fase 2)
 - **Status da Embalagem**: Mini-garrafa PET.
 - **Pendência Física**: Entra no mesmo fluxo logístico e orçamento consolidado focado junto com a garrafa de Suco acima. Definir e testar vazamento.
 
-### 🫘 Café Moído (Lançamento 1.B)
+### 🫘 Café Moído (Fase 2)
 - **Status da Embalagem**: Pacote com válvula / Kraft stand-up pouch (A definir).
 - **Pendência Física**: Resolver e conceituar do zero. Definir o material exato que retém propriedades aromáticas, desenhar arte com a Rebu, e orçar produtores reais.
 

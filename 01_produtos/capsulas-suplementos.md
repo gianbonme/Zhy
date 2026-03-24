@@ -25,8 +25,10 @@ responsavel: "Adriana"
 - **ANVISA**: Dossiês do *Cordyceps, Juba e Reishi* já protocolados no sistema. Os próximos da fila são *Tremella e Cauda* (o objetivo final é aprovar os 5 juntos).
 - **Proteína de Micélio**: Processo ainda muito "verde". O ideal é buscar parceiros para não encarecer setup (ligar para 2 fornecedores que o Caco indicou para entender a viabilidade de terceirização).
 - **Laboratório / Setup Físico Interno**:
-  - As encapsuladoras encomendadas **já estão a caminho** (em vias de recebimento).
-  - As balanças de precisão **já foram recebidas** e estão operacionais.
+  - Encapsuladora manual (240 cápsulas) **recebida** e operacional.
+  - Cápsulas vazias em vias de recebimento (imediato).
+  - **Objetivo Imediato**: Ganhar experiência e otimizar o *know-how* de produção interna (testes preliminares mesmo sem todas as licenças).
+  - **Gargalo Logístico**: Buscar fornecedor de cápsulas/insumos mais próximo (o atual está no Sul, dificultando a logística).
 
 ---
 *Vinculado à Dashboard Principal: [Dashboard Operacional](../00_dashboard/dashboard-operacional.md)*

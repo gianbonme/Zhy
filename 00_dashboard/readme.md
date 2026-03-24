@@ -43,14 +43,14 @@ Produção, regulação, fornecedores e processos.
 ### 👥 [Equipe](../06_equipe/)
 Quem faz a Zhy acontecer.
 - [Sócios](../06_equipe/socios.md)
-- [Parceiros & Colaboradores](../06_equipe/parceiros.md)
+- [Organograma & Parceiros](../06_equipe/organograma.md)
 - [Conselho Científico](../06_equipe/conselho-cientifico.md)
 
 ### 🎯 [Estratégia](../05_estrategia/)
 Para onde a Zhy vai.
-- [Roadmap de Lançamentos](../05_estrategia/roadmap.md)
-- [Visão de Futuro](../05_estrategia/visao-futuro.md)
-- [Concorrência & Mercado](../05_estrategia/concorrencia.md)
+- [Visão Estratégica & Masterplan](../05_estrategia/visao-estrategica.md)
+- [Roadmap de Execução](../05_estrategia/roadmap.md)
+- [Inteligência Competitiva](../05_estrategia/inteligencia-competitiva.md)
 
 ### 📣 [Marketing](../04_marketing/)
 Comunicação, canais e conteúdo.
@@ -70,8 +70,8 @@ Documentos originais — brandbook, dossiers ANVISA, contratos, orçamentos e pr
 
 | Fase de Lançamento | Linha Ativas | Ref. Produção Principal | Regulação |
 |---|---|---|---|
-| **Lançamento 1.A** | 🧃 Sucos Cold Press + ☕ Cápsulas Café | Alvaro (Sucos) / Adriel (Café) | MAPA |
-| **Lançamento 1.B** | 🧴 Shots Funcionais + ☕ Café Moído | Alvaro (Sucos) / Adriel (Café) | MAPA |
+| **Fase 1** | 🧃 Sucos Cold Press + ☕ Cápsulas Café | Alvaro (Sucos) / Adriel (Café) | MAPA |
+| **Fase 2** | 🧴 Shots Funcionais + ☕ Café Moído | Alvaro (Sucos) / Adriel (Café) | MAPA |
 | **Fase 2** | 🍵 Solúveis (Matcha, Cacau, Golden Latte) | *(A Buscar Fabricação)* | MAPA |
 | **Fase 3** | 🥤 Enlatados RTD (Frios Funcionais) | *(A Buscar Fabricação)* | MAPA |
 | **Fase 4** | 💊 Suplementos & Proteína de Micélio | Produção Interna / Terc. | ANVISA |

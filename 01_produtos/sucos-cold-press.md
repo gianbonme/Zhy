@@ -17,9 +17,9 @@ responsavel: "Alvaro / Priscila"
 ## Gargalos e Infraestrutura Necessária
 - **HPP**: Precisamos alugar urgentemente uma máquina HPP no RJ para estender o *shelf life* de 3 dias para 100 dias a -1ºC.
 - **Fábrica Vida Líquida**: Precisamos comprar uma rotuladora e freezers dedicados.
-- **Embalagem**: Definir a garrafa final com as fábricas indicadas pelo Alvaro. 
+- **Embalagem**: Definir garrafa final (Sucos e Shots). A parte de design terá prioridade nos sucos por serem os primeiros a serem lançados.
 
-## Produtos Principais
+## Sucos
 
 | Suco | Cogumelo | Foco |
 |---|---|---|
@@ -32,12 +32,13 @@ responsavel: "Alvaro / Priscila"
 
 *(Além das 9 prontas, Hibisco e Mate possivelmente irão para versão em lata).*
 
-## Shots (Lançamento 1 ou 2)
+## Shots
 São 3 Shots concentrados que fazem parte da frente das bebidas:
 - **BlindC**
 - **Inflamação**
 - **Foco**
-*Status:* Precisam ter as formulações finalizadas e decidido em qual lançamento entrarão.
+
+*Status:* **ALTA PRIORIDADE**. As formulações precisam ser finalizadas. Serão lançados logo após os sucos.
 
 ---
 *Vinculado à Dashboard Principal: [Dashboard Operacional](../00_dashboard/dashboard-operacional.md)*
