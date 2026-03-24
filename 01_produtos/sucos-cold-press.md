@@ -32,13 +32,5 @@ responsavel: "Alvaro / Priscila"
 
 *(Além das 9 prontas, Hibisco e Mate possivelmente irão para versão em lata).*
 
-## Shots
-São 3 Shots concentrados que fazem parte da frente das bebidas:
-- **BlindC**
-- **Inflamação**
-- **Foco**
-
-*Status:* **ALTA PRIORIDADE**. As formulações precisam ser finalizadas. Serão lançados logo após os sucos.
-
 ---
 *Vinculado à Dashboard Principal: [Dashboard Operacional](../00_dashboard/dashboard-operacional.md)*

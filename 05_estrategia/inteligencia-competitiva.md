@@ -45,6 +45,10 @@ O mercado de cogumelos medicinais no Brasil está em **estágio inicial**. Das m
 | **[Green People](https://www.greenpeople.com.br/)** | 🇧🇷 Brasil | Pioneiros em Sucos Cold Press. Aplicam a tecnologia HPP para 90 dias de validade. | A Zhy pega essa mesma tese física, mas aplica de forma focada nos ativos da **Medicina Oriental Adaptógena**. |
 | **[Detox Market](https://detoxmarket.com.br/)** | 🇧🇷 Brasil | Foco maciço em dieta, sopas e sucos entregues via motoboy. | Zhy foge do rótulo "dieta para emagrecer" e foca em "Estilo de Vida e Foco/Imunidade Eterna". |
 | **[Luma Juice](https://lumajuice.com/)** | 🇺🇸 EUA | Geniais em formatar os "Wellness Shots" (Inflammation, Focus, Elevation). | Nossa inspiração direta e cristalina para arquitetar e engarrafar a Linha de Shots Funcionais da Zhy! |
+| **[Vive Organic](https://viveorganic.com/)** | 🇺🇸 EUA | Shots orgânicos cold-pressed (Immunity, Energy+Immunity). Já usa Lion's Mane e Cordyceps. | Validação direta de cogumelos em shots mainstream. Zhy vai além com cogumelos como pilar central, não aditivo. |
+| **[Suja Organic](https://sujaorganic.com/)** | 🇺🇸 EUA | Shots USDA Organic (Immunity, Digestion, Energy). Usa Reishi e coffeeberry. | Referência de como posicionar shots como orgânico+funcional. Zhy adiciona a camada MTC e Amazônia. |
+| **[Pressed Juicery](https://pressed.com/)** | 🇺🇸 EUA | Immunity Tonics com Zinc, probióticos e foco em biodisponibilidade (black pepper). | Referência de formulação inteligente (piperina + curcumina). Zhy absorveu essa sinergia. |
+| **[So Good So You](https://sogoodsoyou.com/)** | 🇺🇸 EUA | Aposta pesada em probióticos (Bacillus coagulans) em cada shot + superfoods (spirulina, amla). | Inspiração para o eixo gut-immune nos nossos shots. Zhy usa probióticos na versão Elite do BLINDC. |
 
 ---
 
@@ -53,8 +57,13 @@ O mercado de cogumelos medicinais no Brasil está em **estágio inicial**. Das m
 | Concorrente / Benchmark | Origem | Resumo da Atuação | Zhy vs Competidor (Diferencial) |
 |---|---|---|---|
 | **[Mud\Wtr](https://mudwtr.com/)** | 🇺🇸 EUA | O rei absoluto do Cacau/Matcha com Cogumelos (Culto "F*ck Coffee"). | O "Zhy Cacau" e o nosso "Matcha" buscam invocar a tribo moderna do pertencimento que eles patentearam mentalmente. |
+| **[Four Sigmatic](https://foursigmatic.com/)** | 🇺🇸 EUA | Cacau Calm c/ Reishi (10 sachês) R$92 · Focus Coffee c/ Lion's Mane (283g, ~30 doses) R$134-175 no BR. Benchmark de preço/dose: **R$4,50–9,20/dose**. | Zhy entrega dose mais completa (adaptógenos + cogumelos + amazônia) a **R$2,00–3,50/dose** — metade do preço com identidade brasileira. |
+| **[Mush10](https://www.mush10.com.br/)** | 🇧🇷 Brasil | Blend de 10 cogumelos terapêuticos em pó (30 doses). Foco em defesas e foco. Preço: **~R$89–120/pote**. | Concorrente brasileiro mais próximo em formato. Zhy se diferencia por formular blends específicos por benefício (sono, foco, vitalidade) em vez de "blend genérico de tudo". |
+| **[Pure Blends](https://bravocafe.com.br/)** | 🇧🇷 Brasil | Chás e blends funcionais diversos. Ponto de entrada: **R$59+**. Sem cogumelos medicinais. | Faixa de preço referencial para o consumidor brasileiro de funcionais. Zhy posiciona os Clean Label nessa faixa (R$59-79) com entrega funcional muito superior. |
+| **Farovitta** | 🇧🇷 Brasil | Golden Latte em pó 270g (~R$40-65). Formulação básica (cúrcuma + especiarias), sem cogumelos nem adaptógenos. | Referência de preço no e-commerce BR para "golden latte". Zhy entrega cogumelos medicinais + piperina + copaíba a preço competitivo. |
 | **[Spacegoods](https://spacegoods.com/)** | 🇬🇧 R. Unido | Visual cyber-punk e blends hyper-concentrados focados apenas no *hustle* e buz energético. | A Zhy foge da agressividade anfetamínica em pro de uma comunicação mais MTC e harmoniosa. |
 | **[LUCIA](https://bebalucia.com.br/)** | 🇧🇷 Brasil | Bebida lata (Drinks Mocktails) com adaptógenos desenvolvida para emular álcool. | A Zhy invade a lata (Ice Coffee, Matcha, Mate) para rotinas diurnas e produtivas sem o viés restrito da "noitada sem ressaca". |
+| **Ambev for/me** | 🇧🇷 Brasil | Shots funcionais premium 100ml a R$5,99/un. Linha lançada para competir no wellness mainstream. Sem cogumelos. | Zhy entrega shots cold press 60ml com cogumelos medicinais reais a R$9,90 — preço/ml maior, mas concentração e funcionalidade incomparáveis. |
 
 ---
 
