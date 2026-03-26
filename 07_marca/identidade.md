@@ -1,4 +1,4 @@
-﻿# 🎨 Identidade & Valores — Zhy
+# 🎨 Identidade & Valores — Zhy
 
 ## Essência
 
@@ -14,7 +14,7 @@ A Zhy é mais do que uma marca de cogumelos — é uma **filosofia de vida**. Na
 
 - **Categoria**: Bem-estar consciente com cogumelos adaptogênicos/funcionais
 - **Impronta**: Brasileira-Chinesa
-- **Tom**: Premium, sofisticado, científico e espiritual ao mesmo tempo
+- **Tom**: Arquétipo do Sábio — Humano, Transparente, Científico e Profundo.
 - **Público-alvo**: Pessoas que buscam alta performance através do equilíbrio — não da aceleração
 
 ## Valores Fundamentais

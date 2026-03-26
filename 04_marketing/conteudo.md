@@ -1,4 +1,4 @@
-﻿# ✍️ Banco de Conteúdo Aprovado
+# ✍️ Banco de Conteúdo Aprovado
 
 Textos e peças já validados para uso em comunicação, site e redes.
 
@@ -22,7 +22,7 @@ Textos e peças já validados para uso em comunicação, site e redes.
 > A Zhy é uma marca brasileira dedicada ao desenvolvimento de soluções com cogumelos medicinais, inspiradas em tradições milenares e fundamentadas em evidência científica. Com controle de qualidade rigoroso e visão sustentável, desenvolvemos formulações que traduzem o potencial biológico dos fungos em soluções modernas de suplementação.
 
 ## Filosofia (Embalagem/Marketing)
-> "Acreditamos que a verdadeira alta performance nasce do equilíbrio. Em um mundo de aceleração constante, propomos um retorno à sua essência através do poder da natureza. Selecionamos rigorosamente os melhores produtos para criar rituais que nutrem o corpo e expandem a mente. Zhy não é apenas sobre produtividade; é sobre viver com intenção, vitalidade e excelência em cada detalhe do seu dia."
+> "Acreditamos que a verdadeira alta performance nasce do equilíbrio. Em um mundo de aceleração constante, propomos um retorno à sua essência. Formulamos com precisão clínica e embasamento milenar rituais modulares que nutrem o corpo e expandem a mente. Zhy não é apenas sobre produtividade; é sobre viver com intenção, letramento e uma saúde profunda em cada detalhe do seu dia."
 
 ## Texto Café (Embalagem)
 > "Zhy: A evolução do seu café. Grãos arábica e cogumelos medicinais para um ritual de sabor rico, foco absoluto e energia equilibrada."

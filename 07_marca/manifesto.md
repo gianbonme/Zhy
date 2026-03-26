@@ -1,4 +1,4 @@
-﻿# 📜 Manifesto Zhy
+# 📜 Manifesto Zhy
 
 > Em um mundo de respostas rápidas, escolhemos o caminho da profundidade.
 
@@ -26,7 +26,7 @@ Estamos localizados no Rio de Janeiro, Brasil.
 
 ## Manifesto de Produto
 
-> "Acreditamos que a verdadeira alta performance nasce do equilíbrio. Em um mundo de aceleração constante, propomos um retorno à sua essência através do poder da natureza. Selecionamos rigorosamente os melhores produtos para criar rituais que nutrem o corpo e expandem a mente. Zhy não é apenas sobre produtividade; é sobre viver com intenção, vitalidade e excelência em cada detalhe do seu dia."
+> "Acreditamos que a verdadeira alta performance nasce do equilíbrio. Em um mundo de aceleração constante, propomos um retorno à sua essência. Formulamos com precisão clínica e embasamento milenar rituais modulares que nutrem o corpo e expandem a mente. Zhy não é apenas sobre produtividade; é sobre viver com intenção, letramento e uma saúde profunda em cada detalhe do seu dia."
 
 ---
 

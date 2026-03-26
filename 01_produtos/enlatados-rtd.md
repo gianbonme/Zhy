@@ -9,6 +9,7 @@ responsavel: "Gianluca"
 
 **Status Oficial**: Planejado pós-solúveis (Fase 4).
 **Regulação**: MAPA.
+
 **Produção**: A definir (Necessário encontrar fábrica parceira / co-packer para absorver o projeto).
 
 ---
@@ -26,7 +27,8 @@ responsavel: "Gianluca"
 ---
 
 ## Desafios e Próximos Passos
-- Nenhuma das formulações está fechada ainda (são conceituais).
+- Encontrar parceiro comercial para produção
+- As formulações são conceituais, criar propostas para cada uma.
 - A grande vantagem do enlatado é penetrar de forma agressiva em mercados comerciais B2B informais (empórios, geladeiras de caixa de supermercado).
 - Ação principal: Desenvolver o planejamento mercadológico da linha e originar fábrica que queira terceirizar com cogumelos.
 

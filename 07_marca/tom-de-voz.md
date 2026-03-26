@@ -1,4 +1,4 @@
-﻿# 🗣️ Tom de Voz — Zhy
+# 🗣️ Tom de Voz — Zhy
 
 ## Personalidade da Marca
 
@@ -8,12 +8,10 @@ A Zhy fala como quem sabe — mas nunca como quem impõe. É uma voz que convida
 
 | Atributo | Como se expressa | O que NÃO é |
 |---|---|---|
-| **Sofisticado** | Vocabulário rico sem ser rebuscado | Pomposo ou inacessível |
-| **Profundo** | Vai além da superfície, conecta com significado | Raso, genérico, clichê de wellness |
-| **Científico** | Referencia evidência, usa dados com elegância | Acadêmico frio ou técnico demais |
-| **Espiritual** | Conecta com MTC, consciência, rituais | Esotérico, místico, new age |
-| **Confiante** | Sabe o que diz, está embasado | Agressivo, vendedor, hype |
-| **Brasileiro** | Calor, proximidade, positividade | Informal demais, gírias |
+| **Humano** | Próximo, acolhedor e altamente empático | Distante, corporativo ou inatingível |
+| **Transparente** | Direto ao ponto, informativo e pautado na realidade | Vendedor, baseado em "achismos" ou hipérboles |
+| **Científico** | Respaldo em evidências, educa sobre compostos bioativos | Frio, puramente técnico ou médico de jaleco |
+| **Profundo** | Letramento provocativo, convida à quebra da inércia | Raso, clichê de wellness ou motivacional de palco |
 
 ## Diretrizes de Escrita
 
