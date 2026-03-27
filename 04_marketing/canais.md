@@ -11,6 +11,10 @@ Onde a Zhy se comunica com o mundo.
 - **Responsável**: Guilherme (parceiro tech)
 - **Função**: Vitrine institucional + e-commerce
 
+### 📧 Email — zhysuplementos@gmail.com
+- **Status**: Ativo
+- **Função**: Atendimento, comercial e recrutamento
+
 ### 📸 Instagram — @zhy
 - **Status**: Em preparação
 - **Responsável**: Caco + Carol (marketing)
