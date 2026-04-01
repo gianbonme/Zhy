@@ -41,7 +41,9 @@ Uma sinergia de riqueza frutal com os benefícios cognitivos e antioxidantes dos
 | **Cacau, Graviola e Cupuaçu** | Hidratação rica e indulgente | Tremella |
 | **Super Berry** | Antioxidante rico em antocianinas | Tremella |
 | **Maracujá** | Modulação de estresse e suporte à calma | Tremella |
-*(Variações com perfis de infusão como Chá de Hibisco e Mate).*
+
+---
+
 
 **Ação Aguda: Shots Concentrados (60ml)**
 Doses terapêuticas intensivas inspiradas na fitoterapia amazônica e asiática. 
@@ -50,7 +52,7 @@ Doses terapêuticas intensivas inspiradas na fitoterapia amazônica e asiática.
 | **BLINDC** | Imunidade | Cauda de Peru + Reishi + Camu-Camu. Reforço de Vit C e beta-glucanos. |
 | **INFLAMAÇÃO** | Recuperação | Reishi + Shiitake + Copaíba. Redução de vias inflamatórias e recuperação celular. |
 | **FOCO** | Cognição | Juba de Leão + Cordyceps + Guaraná natural. Clareza cristalina e neuroproteção. |
-| **RENDIMENTO** | Performance Física | Cordyceps + Juba de Leão + Beterraba prensada. Vasodilatação e suporte a atividades intensas. |
+| **RENDIMENTO** | Performance | Cordyceps + Juba de Leão + Beterraba prensada. Vasodilatação e suporte a atividades intensas. |
 
 ---
 
