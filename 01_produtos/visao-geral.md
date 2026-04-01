@@ -1,6 +1,12 @@
 # 🧬 Visão Geral — Mapa de Produtos Zhy
 
-Todos os produtos Zhy contêm cogumelos medicinais. A marca se organiza em **linhas rituais**, cada uma com um propósito funcional e emocional específico.
+A Zhy não é apenas uma marca de suplementos. Nascemos da poderosa intersecção entre:
+
+Medicina Tradicional Chinesa (MTC): A sabedoria milenar de equilíbrio corporal, mental e energético.
+Biodiversidade Brasileira: Os mais potentes ingredientes funcionais da Amazônia e biomas locais.
+
+Todas as nossas linhas têm como espinha dorsal os cogumelos medicinais (Juba de Leão, Cordyceps, Reishi, Tremella, Cauda de Peru), trabalhando em sinergia com superalimentos para gerar Rituais de Clareza, saúde e alta performance, sem focar na aceleração vazia.
+
 
 ---
 
@@ -48,16 +54,19 @@ Para momentos de reset, purificação e integração.
 | Maracujá + Tremella | 🟡 Próximo ao lançamento | Vida Líquida |
 | Detox Verde + Juba de Leão | 🟡 Próximo ao lançamento | Vida Líquida |
 
-#### 💉 Shots (Cold Press concentrados)
-*Status:* **ALTA PRIORIDADE** (Formulações). Lançamento logo após os sucos.
+→ [Detalhes completos dos Sucos](sucos-prensados.md)
 
-| Produto | Foco | Status |
+#### 💉 Shots Funcionais (Cold Press concentrados 60ml)
+*Status:* **ALTA PRIORIDADE** (Formulações). Lançamento em parceria (Green People).
+
+| Produto | Foco Funcional (Cogumelos) | Status |
 |---|---|---|
-| BlindC | Imunidade | 🔵 Em desenvolvimento |
-| Inflamação | Anti-inflamatório | 🔵 Em desenvolvimento |
-| Foco | Cognição | 🔵 Em desenvolvimento |
+| BlindC | Imunidade (Cauda de Peru + Reishi) | 🔵 Em desenvolvimento |
+| Inflamação | Recuperação (Reishi + Shiitake) | 🔵 Em desenvolvimento |
+| Foco | Cognição (Juba de Leão + Cordyceps) | 🔵 Em desenvolvimento |
+| Rendimento | Performance Física (Cordyceps + Juba de Leão) | 🔵 Em desenvolvimento |
 
-→ [Detalhes completos](sucos-cold-press.md)
+→ [Detalhes completos dos Shots](shots-funcionais.md)
 
 ---
 
@@ -87,7 +96,7 @@ Para o dia a dia, praticidade e refresco consciente.
 | Soda Funcional | Lata | ⚪ Fase 4 |
 
 
-→ [Detalhes completos](enlatados.md)
+→ [Detalhes completos](enlatados-rtd.md)
 
 ---
 
