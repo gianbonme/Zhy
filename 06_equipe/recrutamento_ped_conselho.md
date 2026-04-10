@@ -1,79 +1,147 @@
-# 🎯 Mapeamento Estratégico: Conselho Zhy e Especialistas P&D
+# 🎯 Recrutamento: Conselho Técnico, P&D e Influenciadores
 
-Este documento organiza o funil de recrutamento da Zhy. Separamos o **desenvolvimento real do produto (P&D)** daqueles que farão a **validação e marketing (Conselho e Influência)**.
-
----
-
-## 1️⃣ O Top 10 Base (Lista GPT Original)
-*Esta é a lista focada na validação clínica, conhecimento filosófico (MTC, Fitoterapia) e dietoterapia. São fundamentais para a orientação técnica inicial e segurança clínica.*
-
-1. **Lúcia Endriukaite:** Nutrição + Fitoterapia + MTC (Membro fundadora Assoc. Paulista de Fitoterapia).
-2. **Suely Iglesias:** Nutrição clínica + MTC (Dietética chinesa no Rio de Janeiro).
-3. **Fernanda Padovani:** Nutrição funcional avançada (Biohacking/longevidade).
-4. **Nathália Mancini:** Nutrição funcional + Fitoterapia chinesa.
-5. **Maurílio Oliveira Brandão:** Médico integrativo (homeopatia, ortomolecular, MTC).
-6. **Ana Paula Carvalho:** Nutricionista + Acupunturista (RJ).
-7. **Solange Torres:** Nutrição integrativa (SP).
-8. **Andrea Maciel Arantes:** Autora de livro sobre dietoterapia chinesa.
-9. **Gisele Centenaro:** Nutrição funcional + Acupuntura.
-10. **(Vaga Aberta - Micologista):** Buscar alguém da academia voltado estritamente à pesquisa com micélio.
+> [!NOTE]
+> Este é o documento consolidado de recrutamento para os **3 papéis estratégicos** da Zhy.
+> Cada papel tem perfil, objetivo, remuneração e template de abordagem distintos.
+> Atualizado em: **10/04/2026**.
 
 ---
 
-## 2️⃣ Nova Lista: Top 10 Estratégicos (Conselho de Influência)
-*Critério de Busca: Profissionais com alto nível clínico, alinhamento com suplementação plant-based/integrativa, e **forte presença nas redes sociais**. O Conselho precisa endossar a Zhy e gerar vendas.*
+## 🧭 Os 3 Papéis (Visão Geral)
 
-1. **Alessandra Luglio (Nutrição Plant-Based):** Uma das maiores vozes do veganismo/sustentabilidade no Brasil. **Fit perfeito** com a proteína de ervilha + micélio e a mensagem da floresta amazônica.
-2. **Luciano Bruno (Nutrição / Fitoterapia):** Extremamente famoso, mestre em compostos bioativos. Ele dita tendências de suplementação natural no Brasil (tem cursos massivos).
-3. **Murilo Pereira (Nutrição / Microbiota):** O "rei do intestino" no Brasil. Essencial se a formulação focar em *Gut Health* e imunidade (usando Beta-glucanas dos cogumelos).
-4. **Dr. Guilherme Renke (Endocrinologia Integrativa):** Médico formador de opinião, público que consome tickets altos, foco em performance e longevidade.
-5. **Livia Hasegawa (Nutrição Esportiva Funcional):** Atende atletas de altíssimo rendimento. Excelente chanceladora para a versão "Sport/Performance" dos shots e da proteína.
-6. **Roberta Carbonari (Nutrição e Business Clínico):** Tem visão comercial afiada e muita influência digital; comunica perfeitamente posicionamento de produtos premium.
-7. **Dra. Denise de Carvalho (Medicina Integrativa/Intestino):** Cirurgiã e comunicadora nata, muito respeitada por formular tratamentos anti-inflamatórios naturais.
-8. **Valentin Lages (Biohacking / Nutrição Funcional):** Perfil jovem, voltado a "hacks", alta performance, nootrópicos e adaptógenos. Ele entende a pegada Lion's Mane.
-9. **Dr. Ícaro Alves Alcântara (Medicina Integrativa):** Referência em homeopatia/ortomolecular, forte defensor de hábitos naturais e desinflamação.
-10. **Aline David (Ciência e Nutrição Esportiva):** Forte presença de pesquisa acadêmica aliada à rede social. Ela quebra qualquer objeção técnica dos céticos.
+| # | Papel | O que faz | Como remunera | Quem são |
+| :---: | :--- | :--- | :--- | :--- |
+| 1 | **🔬 Conselho Técnico** | Testa, critica e opina sobre as formulações. Valida dosagens e conceitos clínicos. | **Idealmente gratuito** (troca por visibilidade, nome no produto, networking). No máximo um fee simbólico por parecer. | Nutricionistas, Médicos Integrativos, Fitoterapeutas, Micologistas |
+| 2 | **🧪 Formulador P&D** | Cria a fórmula executável: sabor, textura, shelf-life, ficha técnica para fábrica e ANVISA. | **Pago por projeto** (freelancer). R$ 2k–6k por fórmula completa. NDA total. | Engenheiros/Tecnólogos de Alimentos (ex-PuraVida, Essential, Dux, Mais Mu) |
+| 3 | **📣 Influenciador / Embaixador** | Empresta o rosto, chancela publicamente, gera conteúdo e vendas orgânicas. | **Sweat Equity** (0,5%–2% vesting) ou comissão por cupom (15–20%). Sem custo fixo. | Profissionais de saúde com forte presença digital |
 
 ---
 
-## 3️⃣ Os P&Ds "Estrelinhas" (Tecnólogos de Alimentos e Formuladores)
-*Estes NÃO vão para o conselho. Eles são os engenheiros "mão na massa" que garantem sabor, textura (como mascarar terra do cogumelo) e validade.*
+## 1️⃣ CONSELHO TÉCNICO — Funil de Prospecção
 
-As indústrias grandes não expõem seus chefes de P&D (Pesquisa e Desenvolvimento). Portanto, para achar esses contatos, o seu objetivo no LinkedIn é procurar por **Ex-funcionários** ou **Consultores**.
+**Objetivo:** Montar um grupo de **3 a 5 pessoas** que avaliem nossas fórmulas com rigor clínico, sugiram ajustes de dosagem e nos deem segurança técnica antes de submeter ao MAPA/ANVISA.
 
-**O que buscar no LinkedIn Search (Copie e Cole):**
+**O tom:** Eles estão sendo **convidados a participar de algo novo e empolgante**, não contratados. A Zhy é uma marca nascente e oferece **visibilidade, associação de marca e networking** — não um contrato gordo. O ideal é que participem por interesse genuíno no projeto.
+
+### ⭐ TITULARES (6 nomes — prospectar primeiro)
+
+| # | Nome | Perfil | Por que é prioridade | Contato | Status |
+| :---: | :--- | :--- | :--- | :--- | :--- |
+| 1 | **Lúcia Endriukaite** | Nutrição + Fitoterapia + MTC. Docente, membro fundadora da Assoc. Paulista de Fitoterapia. | Perfil completo: entende MTC, fitoterapia e formulação de blends adaptogênicos. | 📧 _pendente_ / 📱 _pendente_ | ⬜ Não contatada |
+| 2 | **Suely Iglesias** | Nutrição clínica + MTC + Dietética chinesa. UFRJ, clínica desde 1994. | **Está no RJ** — facilita colaboração presencial. Experiência clínica profunda. | 📧 _pendente_ / 📱 _pendente_ | ⬜ Não contatada |
+| 3 | **Fernanda Padovani** | Nutrição funcional avançada, certificação IFM, mestrado. Dietoterapia chinesa. | Alinhada com biohacking/longevidade. Perfil moderno que casa com a Zhy. | 📧 _pendente_ / 📱 _pendente_ | ⬜ Não contatada |
+| 4 | **Nathália Mancini** | Nutrição funcional + Fitoterapia chinesa. Fundadora de clínica integrativa. | Perfil jovem, aberta a projetos de produto. Potencial para engajar de verdade. | 📧 _pendente_ / 📱 _pendente_ | ⬜ Não contatada |
+| 5 | **Maurílio Oliveira Brandão** | Médico integrativo: homeopatia, ortomolecular, MTC. Autor e educador. | Dá **autoridade médica** ao conselho (não é "só" nutri). | 📧 _pendente_ / 📱 _pendente_ | ⬜ Não contatada |
+| 6 | **Lead indicado pela Adriana** | _A confirmar perfil_ | Veio por indicação direta da advogada (Adriana). Relação de confiança. | 📧 _pendente_ / 📱 _pendente_ | ⬜ Não contatada |
+
+### 🪑 RESERVAS (prospectar se titulares não responderem)
+
+| # | Nome | Perfil | Destaque |
+| :---: | :--- | :--- | :--- |
+| R1 | Ana Paula Carvalho | Nutricionista + Acupunturista | Atende no RJ |
+| R2 | Solange Torres | Nutrição integrativa | Clínica em SP |
+| R3 | Andrea Maciel Arantes | Dietoterapia chinesa | Autora de livro sobre o tema |
+| R4 | Gisele Centenaro | Nutrição funcional + Acupuntura | Pós-graduação em acupuntura |
+| R5 | _(Vaga - Micologista)_ | Pesquisador acadêmico em micélio | Buscar na academia / SBPC |
+| R6 | _(Vaga aberta)_ | — | Espaço para indicações futuras |
+
+### 📩 Template de Mensagem — Conselho Técnico
+
+> **Para Instagram / WhatsApp (curto e direto):**
+>
+> "Olá, [Nome]! Tudo bem?
+> Acompanho o seu trabalho em [área deles] e tenho muito respeito pela sua trajetória.
+> Meu nome é Gianluca, sou fundador da Zhy — uma marca de bebidas funcionais que une cogumelos medicinais adaptógenos com superalimentos da biodiversidade brasileira.
+> Estamos montando um pequeno Conselho Técnico (3 a 5 profissionais) para nos ajudar a revisar e opinar sobre as nossas formulações antes do lançamento.
+> É um projeto que está nascendo, então neste momento o convite é para uma colaboração leve — testar, criticar e dar seu parecer técnico — com a contrapartida de ter seu nome associado à marca desde a fundação, visibilidade nos nossos canais e a possibilidade de crescermos juntos.
+> Teria interesse em conhecer o projeto? Posso mandar um resumo rápido e marcamos 15 min de papo."
+
+> **Para LinkedIn / E-mail (um pouco mais completo):**
+>
+> "Olá [Nome], tudo bem?
+> Meu nome é Gianluca e sou o fundador da Zhy, uma marca brasileira de wellness que trabalha com cogumelos medicinais (Juba de Leão, Cordyceps, Reishi) em sinergia com ingredientes da biodiversidade amazônica.
+> Estamos em fase de pré-lançamento (sucos cold press funcionais e shots concentrados) e montando um Conselho Técnico enxuto para nos auxiliar na validação das formulações — dosagens, sinergias e segurança clínica.
+> O convite é para uma colaboração consultiva pontual: receber nossas fichas de formulação, criticar livremente e nos dar parecer. A contrapartida é participar da construção de algo inédito no Brasil, com seu nome associado à marca desde o início e visibilidade nos nossos materiais e canais.
+> Sei que sua agenda é concorrida, mas bastam 15 minutos para eu apresentar o projeto e sentirmos se faz sentido. Posso enviar um breve resumo?
+> Abraço, Gianluca | Zhy"
+
+> [!TIP]
+> **Para o lead da Adriana**, abra com: *"Recebi sua indicação pela Adriana [sobrenome] e fiquei muito feliz em saber que existe interesse..."*
+
+---
+
+## 2️⃣ FORMULADOR P&D — Busca Ativa
+
+**Objetivo:** Contratar **1 profissional freelancer** (Engenheiro/Tecnólogo de Alimentos) para criar as fórmulas executáveis: sabor que engaje, shelf-life viável e ficha técnica que passe na ANVISA.
+
+**O tom:** Aqui é uma **contratação objetiva por projeto**. NDA obrigatório. Pagamento por entrega.
+
+### 🔍 Como encontrar (LinkedIn Search — copie e cole)
+
 1. `"Engenheiro de Alimentos" AND "P&D" "Puravida"`
 2. `"Desenvolvimento de Produtos" AND "Essential Nutrition"`
 3. `"Pesquisa e Inovação" AND "Mais Mu"`
 4. `"Pesquisa e Desenvolvimento" AND "Dux Nutrition"`
 5. `"Consultor" AND "Desenvolvimento de Suplementos"`
 
-**Por que essas empresas especificamente?**
-*   **A "Escola" PuraVida:** Eles introduziram L-teanina, cogumelos medicinais e adoção clean-label (stévia nobre/taumatina) em escala nacional. Um P&D deles entende o "ethos" da Zhy.
-*   **A "Escola" Essential Nutrition:** Têm as melhores avaliações do Brasil em mascarar sabor de proteína vegetal usando cacau de excelência e palatinose. Eles sabem como uma "super proteína" NÃO ter gosto de areia.
-*   **A "Escola" Mais Mu / Dux:** Revolucionaram o mercado (antes chato) deixando as coisas extremamente gostosas. Focados em indulgência. 
+### 🏫 Por que essas empresas?
+
+| Empresa | O que aprendemos com eles |
+| :--- | :--- |
+| **PuraVida** | Introduziram L-teanina, cogumelos medicinais e clean-label (stévia nobre/taumatina) em escala nacional. Um P&D deles entende o "ethos" da Zhy. |
+| **Essential Nutrition** | Melhores do Brasil em mascarar sabor de proteína vegetal (cacau de excelência + palatinose). Sabem fazer "super proteína" sem gosto de areia. |
+| **Mais Mu / Dux** | Revolucionaram o mercado fazendo suplementos gostosos. Focados em indulgência funcional. |
+
+### 📩 Template de Mensagem — P&D
+
+> **LinkedIn (direto ao ponto):**
+>
+> "Olá [Nome], tudo bem?
+> Vi que você tem experiência em P&D na [nome da empresa]. Meu nome é Gianluca e sou diretor da Zhy, uma marca de bebidas funcionais com cogumelos adaptógenos.
+> Estamos buscando um(a) consultor(a) de Engenharia/Tecnologia de Alimentos para desenvolver as fichas técnicas de 3 a 4 SKUs iniciais (shots concentrados e blends solúveis). O trabalho é por projeto, com NDA, e remuneração combinada por entrega.
+> Posso te passar o briefing para ver se faz sentido? Abraço."
+
+### 📋 Status da busca
+
+| Candidato | Origem | Status |
+| :--- | :--- | :--- |
+| _(nenhum prospectado ainda)_ | — | ⬜ Iniciar busca |
 
 ---
 
-## 💡 O Conselho: Como Combinar Essa Equipe
-**O objetivo: Uma combinação excelente, barata e eficiente.**
+## 3️⃣ INFLUENCIADORES / EMBAIXADORES — Lista de Referência
 
-1. **A Máquina e a Receita (O Food Technologist)**
-   * **Perfil:** O Engenheiro de Alimentos P&D (consultor que saiu de uma Puravida/Essential).
-   * **O papel:** É pago por projeto (freelancer, Workana ou LinkedIn direto). Não recebe porcentagem. Custa de R$ 2k a R$ 6k pela fórmula técnica completa que vai pra fábrica, incluindo as gomas para os shots e os agentes flavorizantes corretos (aromatizante idêntico ao natural de baunilha).
-   * **Contato:** Total NDA (Sigilo). Eles trabalham nos bastidores.
+**Objetivo:** Após o produto existir fisicamente, trazer **1 a 2 nomes** de alto impacto digital para chancela pública e geração de vendas orgânicas.
 
-2. **O Lastro Clínico (O Especialista MTC/Micologia)**
-   * **Perfil:** 1 a 2 talentos da Lista Original ChatGPT (Ex: Lúcia Endriukaite e um Fitoterapeuta).
-   * **O papel:** Validam a teoria. "2g de Reishi realmente reduzem cortisol". Sentam na mesa com o P&D para definir a *idéia* do produto.
-   * **Como remunerar:** Pode ser um contrato de honorário / "fee" pequeno pela consultoria isolada daquele produto, ou presença no Conselho Científico da empresa ("Medical Advisory Board").
+**Remuneração:** Sweat Equity (0,5%–2% vesting) ou comissão por cupom afiliado (15–20%). **Sem custo fixo.**
 
-3. **O Motor de Vendas Acoplado à Marca (O Influenciador / Sóci@)**
-   * **Perfil:** 1 influenciador da Lista Nova (Ex: Alessandra Luglio, Luciano Bruno).
-   * **O papel:** Empresta o rosto, validando as fórmulas da Zhy e criando publicidade orgânica.
-   * **Como remunerar:** **Sweat Equity (Vesting)**. Ofereça 0,5% a 2% do negócio condicionado a permanência ao longo dos anos, ou seja, se tornam parceiros sem você sangrar o caixa da empresa hoje. Em troca do nome e divulgação deles nas redes sociais da Zhy e em seus próprios canais. Se gerar caixa rápido, troque por um robusto programa de comissionamento via cupom afiliado (15-20% das vendas da audiência deles).
+> [!IMPORTANT]
+> Esta lista é para uma **fase posterior**. Foco atual = Conselho Técnico + Formulador P&D.
+
+| # | Nome | Perfil | Público-alvo que atinge |
+| :---: | :--- | :--- | :--- |
+| 1 | **Alessandra Luglio** | Nutrição Plant-Based, voz do veganismo/sustentabilidade | Fit perfeito com proteína de ervilha + micélio + Amazônia |
+| 2 | **Luciano Bruno** | Nutrição / Fitoterapia, mestre em compostos bioativos | Dita tendências de suplementação natural (cursos massivos) |
+| 3 | **Murilo Pereira** | Nutrição / Microbiota | "Rei do intestino" — essencial se focar Gut Health (beta-glucanas) |
+| 4 | **Dr. Guilherme Renke** | Endocrinologia Integrativa | Público de ticket alto, performance e longevidade |
+| 5 | **Livia Hasegawa** | Nutrição Esportiva Funcional | Atletas de alto rendimento — chanceladora para linha Sport |
+| 6 | **Roberta Carbonari** | Nutrição e Business Clínico | Visão comercial afiada, influência digital forte |
+| 7 | **Dra. Denise de Carvalho** | Medicina Integrativa / Intestino | Comunicadora nata, tratamentos anti-inflamatórios naturais |
+| 8 | **Valentin Lages** | Biohacking / Nutrição Funcional | Perfil jovem, nootrópicos e adaptógenos (entende Lion's Mane) |
+| 9 | **Dr. Ícaro Alves Alcântara** | Medicina Integrativa | Homeopatia/ortomolecular, defensor de hábitos naturais |
+| 10 | **Aline David** | Ciência e Nutrição Esportiva | Pesquisa acadêmica + rede social. Quebra objeções técnicas |
 
 ---
 
-**Próximo Passo Recomendado:**
-Faça aquele post discreto no seu LinkedIn procurando um "Consultor P&D para desenvolvimento B2B de Suplementos Plant-Based Clean Label" e use os filtros acima na busca orgânica. Ao mesmo tempo, dê uma olhada no Instagram da **Lista 2**, e sinta qual desses gigantes melhor vestiria a camisa da Zhy.
+## 📊 Insight Estratégico
+
+> O mercado brasileiro de cogumelos medicinais ainda é muito imaturo. As marcas fortes que vão surgir provavelmente virão de três ecossistemas combinados:
+> 1. Medicina chinesa
+> 2. Nutrição funcional
+> 3. Biohacking / nootrópicos
+>
+> **Quem juntar esses três vira referência.** A Zhy já está posicionada nos três.
+
+---
+
+*Fonte original: [Nutricionistas & Parceiros.docx](../08_recursos/Orçamentos/Nutricionistas%20%26%20Parceiros.docx)*

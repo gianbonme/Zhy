@@ -42,20 +42,21 @@ Relação nominal das parcerias e profissionais atuando na base:
 Identificação das restrições para resolução imediata visando alavancar a equipe-base:
 
 - **📈 Comercial e Vendas B2B (VAGA ABERTA - URGENTE)**:
-  - Falta de recurso/pessoa para ir à rua originar vendas B2B em supermercados e atacadistas de ponta.
+  - Textos prontos para o LinkedIn. Contato quente: Ricardo Aquino pode assumir ou indicar alguém. Falta operacionalizar os anúncios.
 - **👥 Gestão / Braço Direito (VAGA ABERTA - URGENTE)**:
-  - Profissional lado a lado (Reuniões de Status periódicas) para resolver os gargalos operacionais diários do projeto.
+  - Textos e testes práticos desenvolvidos. Necessidade imediata de postar nos portais (Catho, LinkedIn) para iniciar as entrevistas.
 - **⚙️ Maquinário e Infraestrutura (CRÍTICO)**:
-  - **Urgência 1 (Sucos/HPP)**: Alugar máquina HPP no RJ (sem isso os sucos expiram em apenas 3 dias).
+  - **Urgência 1 (Sucos/HPP)**: Gianluca puxou para si a frente do HPP (Guilherme sem solução). A Green People está reticente em assumir o processamento HPP para os sucos, logo, precisamos de uma alternativa (RJ).
   - **Urgência 2 (Fábrica Alvaro)**: Necessidade de comprar *Rotuladora* e *Freezers* para acoplar na fábrica dele.
 - **📦 Logística Física de Embalagens (Fase 1 Lançamento)**:
-  - **Sucos e Shots (PETs):** Definir forma, desenhar rótulo, orçar fornecedores e testar física/vedação. Projetos simultâneos (Prioridade design Sucos).
-  - **Cápsulas:** Procurar e orçar fornecedores alternativos de caixas para bater o preço e melhorar a qualidade da atual opção provisória do Adriel.
+  - **Sucos e Shots (PETs):** Amostra de PET testada por Gianluca rodou bem. Aguardando a lista de novos fornecedores prometidos pelo Alvaro.
+  - **Cápsulas:** A arte das caixas precisa sofrer uma alteração da abertura (abrir pela tampa principal onde há o logo ZHY, diferente da convencional lateral da MushSpresso). Mkt responsável pela entrega.
   - **Café Moído:** Resolver a embalagem do zero (definir material do pacote, orçar fábricas, criar desenho com a Rebu e testar).
-- **🏭 Fornecedores de Solúveis/RTD**: 
-  - Falta originar contato com parceiros e fábricas terceirizadas para produzir as linhas 2 e 3 (3 Solúveis e 6 Enlatados RTD).
+- **🏭 Fornecedores de Solúveis / Shots / RTD**: 
+  - **Shots:** Green People demonstrou forte interesse na produção (*co-packing*). A negociação pende de enviar certas infos solicitadas por eles, para submissão à aprovação do Conselho da GP.
+  - **RTD / Solúveis:** Segue sem parceiro originado.
 - **🧬 Conselho Científico Zhy (URGENTE)**:
-  - Não há ainda um corpo técnico formal (médico funcional, nutricionista sênior, especialista em cogumelos/fitoterapia) para validar as formulações antes da submissão ao MAPA. A ausência desse conselho é um risco direto para a linha de Solúveis e Shots. **Constituir o quanto antes.**
+  - A estruturação não andou na prospecção. Necessidade de criar os "templates" de mensagem e coletar as formas de contato da "lista infinita". Existe um lead quente indicado pela advogada (Adriana). Ação prioritária de prospecção.
 
 ---
 
