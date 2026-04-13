@@ -19,7 +19,7 @@
 | Nome | Função | Status / Escopo |
 | :--- | :--- | :--- |
 | **Julio Cesar** | Gerente de Qualidade | Controle de processos, padrões técnicos e excelência de produto. |
-| **Guilherme RJ** | Assistente | Suporte operacional e braço direito no dia a dia. |
+| **Guilherme RJ** | Operação / Encapsulado | Suporte operacional e operação das encapsuladoras. |
 | **[VAGA]** | Comercial B2B | **ABERTA**: Foco em expansão para Varejo Premium. |
 | **[VAGA]** | Braço Direito | **ABERTA**: Gestão administrativa e operacional nível 2. |
 
@@ -29,7 +29,7 @@
 
 | Nome | Área | Foco |
 | :--- | :--- | :--- |
-| **Gui Sul** | Web / Programação | Desenvolvimento da plataforma, site e ecossistema digital. |
+| **Guilherme Tech** | Web / Programação | Web, chat bot, e-commerce e ecossistema digital. |
 | **Caco** | Inovação / Visão | Prospecção da Proteina de Micélio (Subst. Whey Protein) |
 
 ---

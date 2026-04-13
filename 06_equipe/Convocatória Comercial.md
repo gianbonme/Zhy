@@ -134,3 +134,57 @@ Envie a zhysuplementos@gmail.com com o assunto "Convocatória Comercial - [Seu N
 > Precisa de alguém que construa um canal.
 
 Se você sabe fazer isso, o upside é enorme.
+
+---
+
+## 📱 Mensagens para Divulgação (Short-form)
+
+### LinkedIn
+**Escrita:**
+
+A Zhy está abrindo o canal B2B.
+
+Marca de wellness premium (cogumelos adaptogênicos + rituais funcionais), entrando no mercado com cold press, café, shots e mais.
+
+Procuro alguém para construir esse canal do zero.
+
+Não é só vender.
+É abrir mercado.
+
+Responsabilidades:
+– prospectar (mín. 5 contatos/dia)
+– fechar pontos de venda
+– construir relacionamento
+– fazer produto girar
+
+Perfil:
+• experiência real em B2B
+• energia de rua
+• não depende de inbound
+• sabe abrir mercado
+
+Momento: primeiros 10–20 pontos são críticos.
+
+Base: Rio de Janeiro
+
+Se tiver interesse, me manda:
+– histórico de vendas
+– como abriria os primeiros 10 pontos no RJ
+
+### WhatsApp / Grupos
+**Mensagem:**
+
+Estou procurando um comercial B2B forte pra Zhy.
+
+Marca premium de wellness, começando agora.
+
+Missão: abrir mercado do zero e fechar os primeiros pontos de venda.
+
+Perfil:
+– vendedor raiz (não depende de inbound)
+– sabe prospectar e fechar
+– energia de rua
+
+Base: Rio
+
+Se conhecer alguém bom, me manda 🙏

@@ -89,48 +89,44 @@
 
 ---
 
-## 🟠 CHECKLIST 30-75 DIAS (FASE 2 — SHOTS + CAFÉ MOÍDO)
+## 🟠 CHECKLIST MÊS 2 (SEMANAS 5-8) — AJUSTES E PRÉ-LANÇAMENTO DA FASE 2 (SHOTS + CAFÉ)
 
 > [!IMPORTANT]
-> Essas tarefas rodam em paralelo com as vendas da Fase 1.
+> Essas tarefas rodam em paralelo com as vendas da Fase 1 e refinamento dos testes do círculo F&F.
 
-- [ ] Contratar / definir **vendedor B2B** dedicado (VAGA URGENTE).
-- [ ] Contratar / definir **Braço Direito** para gestão operacional (VAGA URGENTE).
-- [ ] Validar viabilidade de Copaíba e Boswellia como ingredientes alimentares com assessoria MAPA.
-- [ ] Revisar os 4 shots com nutricionista (confirmar doses e claims).
-- [ ] Definir mini-garrafa PET 60ml para Shots e fechar fornecedor.
-- [ ] Criar embalagem dos 4 Shots com Rebu/Marketing. Preço alvo: **R$ 9,90/un**.
-- [ ] Criar embalagem do Café Moído (briefing Rebu, orçar material do pacote).
-- [ ] Agendar produção piloto dos Shots com Vida Líquida (Alvaro).
-- [ ] Agendar produção piloto do Café Moído com MushSpresso (Adriel).
-- [ ] Compilar feedback dos testes F&F da Fase 1 — ajustar dose, rótulo, pitch conforme necessário.
-- [ ] Disparar **Lote 1 Oficial** (Caixas de 10 Cápsulas + 3 SKUs de Suco em volume).
+- [ ] **Semana 5:** Compilar feedback dos testes F&F da Fase 1 — ajustar dose, rótulo, pitch se necessário.
+- [ ] **Semana 5:** Agendar produção piloto dos Shots (Vida Líquida) e Café Moído (MushSpresso).
+- [ ] **Semana 6:** Disparar produção do **Lote 1 Oficial** (Caixas de 10 Cápsulas + 3 SKUs de Suco em volume).
+- [ ] **Semana 6:** Criar e finalizar embalagem dos 4 Shots e do Café Moído (Definir mini-garrafa PET 60ml).
+- [ ] **Semana 7:** Contratar/definir **Vendedor B2B** e **Braço Direito** + formulação "Lista 100 Prospects" RJ.
+- [ ] **Semana 7:** Validar viabilidade de ingredientes funcionais (Copaíba e Boswellia) e revisar doses com nutricionista.
+- [ ] **Semana 8:** Treinamento de vendas (Pitch agressivo da Zhy), alinhamento logístico para suprir os pontos.
+- [ ] **Semana 8:** Validar viabilidade técnica final (vida de prateleira) e empacotamento.
 
 ---
 
-## 🔵 CHECKLIST 60-90 DIAS (VENDAS + TRAÇÃO)
+## 🔵 CHECKLIST MÊS 3 (SEMANAS 9-12) — VENDAS E PRIMEIRA TRAÇÃO
 
-- [ ] Meta: **20 pontos B2B** fechados e com produto em prateleira.
-- [ ] Lançar campanhas de tráfego pago D2C (focadas em conversão).
-- [ ] Otimizar SAC e rotina de envio (cadência de despacho).
-- [ ] Lançar 4 Shots e Café Moído no site + pontos B2B existentes.
-- [ ] Medir giro por SKU (quais sabores vendem mais? quais cortar?).
-- [ ] Preparar produção Lote 2 (escala pesada).
-- [ ] Fechar parceiro industrial de Solúveis (envase + mixer inox, orçamento ~R$120.000).
+*Colocar o bloco na rua, buscar os primeiros 10 pontos B2B e ligar os motores D2C.*
+
+- [ ] **Semana 9:** Abertura oficial do Site, início agressivo das visitas B2B corpo-a-corpo (Mín. 5/dia).
+- [ ] **Semana 9:** Lançar 4 Shots e Café Moído no site + pontos B2B existentes.
+- [ ] **Semana 10:** Meta: **5 pontos B2B fechados**. Medir giro nas prateleiras e testar logística na vera.
+- [ ] **Semana 11:** Otimizar SAC e rotinas de envio. Lançar campanhas locais de tráfego pago D2C focadas em conversão.
+- [ ] **Semana 12:** Meta: **10 pontos B2B ativos**. Identificar quais SKUs (sabores) já precisam de reposição / giraram mais.
+- [ ] **Semana 12:** Fechar parceiro industrial de Solúveis (envase + mixer inox, orçamento ~R$120.000).
 
 ---
 
-## 🟣 CHECKLIST 90-120 DIAS (FASE 3 — LINHA SOLÚVEIS)
+## 🟣 CHECKLIST MÊS 4 (SEMANAS 13-16) — ESCALA E CHECK-OUT FASE 3 (SOLÚVEIS)
 
-> [!NOTE]
-> Formulações finalizadas. Falta estrutura industrial e parceiro de produção.
+*Atingir velocidade de cruzeiro, forçar recorrência no B2B e fechar as 4.000 unidades.*
 
-- [ ] Fechar contrato com fábrica para mistura e envase dos solúveis.
-- [ ] Criar embalagens definitivas: **Zhy Golden Latte** (R$69,90), **Zhy Cacau** (R$74,90), **Zhy Matcha** (R$89,90).
-- [ ] Realizar testes P&D com parceiro: textura, dissolução, shelf life.
-- [ ] Definir estratégia de lançamento: Clean Label primeiro, Elite como upsell.
-- [ ] Integrar Solúveis ao site e ao pitch B2B.
-- [ ] Validar formulações com Conselho Científico Zhy antes de qualquer claim funcional.
+- [ ] **Semana 13:** Disparar produção do Lote 2 (escala pesada). Cortar SKUs ineficientes com sangue frio.
+- [ ] **Semana 14:** Meta: **15 pontos B2B ativos**. Focar incansavelmente na recompra (*rebuy*) baseando-se no que girou.
+- [ ] **Semana 15:** Apertar CAC D2C e escalar campanhas vencedoras. Criar embalagens definitivas (Golden Latte, Cacau, Matcha).
+- [ ] **Semana 16:** Meta: **20 pontos B2B ativos**. Bater marcador de **4.000 unidades** (3k sucos + 1k caixas cx/10).
+- [ ] **Semana 16:** Iniciar testes P&D c/ novo parceiro (textura, dissolução) e validar formulações c/ Conselho Científico.
 
 ---
 
