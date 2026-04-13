@@ -1,4 +1,4 @@
-# 🧠 ZHY — Vaga: Coordenador de Operações
+# 🧠 ZHY — Vaga: Coordenação de Operações
 
 ## Sobre a Zhy
 
@@ -104,14 +104,13 @@ Se funcionar, essa posição pode evoluir para:
 
 ## Como se candidatar
 
-Envie e-mail para zhysuplementos@gmail.com com o assunto "Vaga Coordenador(a) de Operações - [Seu Nome]":
 
-1. Acesse e responda detalhadamente o nosso Teste de Seleção:
-[LINK PARA O TESTE DE SELEÇÃO AQUI]
+1. Acesse o nosso Teste de Seleção neste link e faça o download (Arquivo > Fazer download):
+https://drive.google.com/file/d/1hLuBNUxfOnMlTNIJypbnxAbTueKYiHlu/view
 
-2. Envie suas respostas ou o link finalizado para zhysuplementos@gmail.com com o assunto "Vaga Coordenador(a) de Operações - [Seu Nome]".
+2. Responda detalhadamente o teste e envie para zhysuplementos@gmail.com com o assunto "Vaga Coordenador(a) de Operações - [Seu Nome]".
 
-👉 *Nota: Não envie seu currículo tradicional. O teste é o nosso filtro.*
+👉 *Nota: Adicione qualquer informação relevante como seu curriculum, idade, lugar onde mora, etc.*
 
 ---
 
@@ -119,60 +118,4 @@ Envie e-mail para zhysuplementos@gmail.com com o assunto "Vaga Coordenador(a) de
 
 > Se você tem a predisposição correta para construir essa trajetória com a gente, seu lugar é aqui.
 
----
 
-## 📱 Mensagens para Divulgação (Altamente Filtrada)
-
-### LinkedIn (Alta Seletividade)
-**Escrita:**
-
-Estou buscando um(a) Coordenador(a) de Operações.
-
-Estou procurando alguém que consiga operar uma empresa comigo no nível de dono.
-
-A Zhy está sendo construída agora:
-– múltiplos produtos
-– operação em estruturação
-– B2B e D2C começando ao mesmo tempo
-– dezenas de decisões por dia
-
-Isso não é um trabalho. É um ambiente de pressão, ambiguidade e construção real.
-
-Se você precisa de clareza, rotina estável ou validação constante — não é para você.
-
-O papel:
-assumir metade da operação e garantir que as coisas aconteçam com padrão alto.
-
-Sem microgestão. Sem instrução passo a passo.
-
-Perfil:
-• executor fora da curva
-• organização obsessiva
-• velocidade com critério
-• toma decisão com informação incompleta
-• não terceiriza responsabilidade
-
-Se funcionar, isso vira uma posição de liderança real (COO).
-
-Base: Rio de Janeiro
-
-Para aplicar, não mande currículo.
-
-Responda os testes no link abaixo.
-
-### WhatsApp (Filtrado)
-**Mensagem:**
-
-Estou buscando um(a) Coordenador(a) de Operações pra Zhy — mas nível dono.
-
-Ambiente:
-– empresa nascendo
-– pressão real
-– zero estrutura pronta
-
-Não serve pra quem precisa de direção constante.
-
-Preciso de alguém que execute, organize e resolva.
-
-Se conhecer alguém realmente forte, me conecta.
-(O processo tem testes — não é vaga padrão)
