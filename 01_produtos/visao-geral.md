@@ -1,127 +1,122 @@
-# 🧬 Visão Geral — Mapa de Produtos Zhy
+# 🧬 Visão Geral — A Marca e o Portfólio Zhy
 
-A Zhy não é apenas uma marca de suplementos. Nascemos da poderosa intersecção entre:
+> A Zhy não é apenas uma marca de bebidas ou suplementos. Nascemos da poderosa intersecção entre **Medicina Tradicional Chinesa (MTC)** — a sabedoria milenar de equilíbrio corporal, mental e energético — e a **Biodiversidade Brasileira**, com os mais potentes ingredientes funcionais da Amazônia e dos nossos biomas.
 
-Medicina Tradicional Chinesa (MTC): A sabedoria milenar de equilíbrio corporal, mental e energético.
-Biodiversidade Brasileira: Os mais potentes ingredientes funcionais da Amazônia e biomas locais.
-
-Todas as nossas linhas têm como espinha dorsal os cogumelos medicinais (Juba de Leão, Cordyceps, Reishi, Tremella, Cauda de Peru), trabalhando em sinergia com superalimentos para gerar Rituais de Clareza, saúde e alta performance, sem focar na aceleração vazia.
-
+Todas as linhas têm como espinha dorsal os **cogumelos medicinais**, trabalhando em sinergia com superalimentos reais para gerar *Rituais de Clareza*: saúde e alta performance sem a aceleração vazia. Nosso grande diferencial é a utilização dos cogumelos na **dosagem clínica correta** como pilar estrutural das formulações — utilizando apenas extratos do **corpo frutífero** para garantir a máxima concentração de bioativos.
 
 ---
 
-## 🍄 Os 5 Cogumelos Principais
-A base funcional de todos os nossos rituais.
+## 🍄 Os 5 Cogumelos Funcionais
 
-| Cogumelo | Propriedade Principal | Descrição |
-|---|---|---|
+A base bioativa de todos os nossos rituais.
+
+| Cogumelo | Propriedade Principal | Ação Funcional |
+| :--- | :--- | :--- |
 | **Juba de Leão** | Foco & Cognição | Estimula clareza mental, memória e suporte neurológico (NGF). |
-| **Reishi** | Equilíbrio & Serenidade | O "cogumelo da imortalidade". Atua na modulação do estresse e imunidade. |
-| **Cordyceps** | Energia & Vitalidade | Aumenta resistência física e energia sustentável sem picos. |
-| **Cauda de Peru** | Imunidade & Proteção | Fortalece o sistema imunológico com alto poder antioxidante. |
-| **Tremella** | Hidratação & Beleza | O "cogumelo da beleza". Focado em hidratação e saúde da pele. |
-
-*(Nota: Utilizamos apenas o **corpo frutífero** dos cogumelos para máxima concentração de bioativos).*
+| **Reishi** | Equilíbrio & Serenidade | O "cogumelo da imortalidade". Modulação profunda do estresse e imunidade. |
+| **Cordyceps** | Energia & Vitalidade | Aumenta resistência física, VO2max e energia celular sustentável. |
+| **Cauda de Peru** | Imunidade & Proteção | Fortalece o sistema imunológico via beta-glucanos e antioxidantes. |
+| **Tremella** | Hidratação & Beleza | Hidratação sistêmica profunda e saúde dermatológica. |
 
 ---
 
-## Linhas de Produto
+## 📦 As Linhas de Produto
 
-### ☕ Linha Café — "Ritual Despertar"
-Para iniciar o dia com vitalidade, clareza mental e presença.
+O portfólio é organizado em "Rituais" para diferentes momentos e perfis de rotina.
 
-| Produto | Formato | Status | Parceiro |
-|---|---|---|---|
-| Café Cápsulas Nespresso (Cx 10 un.) | Cápsula compatível | 🟡 Próximo ao lançamento | MushSpresso |
-| Café Moído | Pacote | 🟡 Próximo ao lançamento | MushSpresso |
-| Ice Coffee | Lata | ⚪ Fase 4 | A definir |
+### 🧃 Linha Cold Press — *"Ritual Clareza"*
+Bebidas vivas para hidratação inteligente, purificação e ação funcional aguda. A gôndola gelada premium como veículo de saúde.
 
-**Formulação base**: Café Arábica Premium (90%) + Shiitake, Juba de Leão, Cauda de Peru (10%)
+**Sucos Prensados a Frio (300ml)** — Sinergia de riqueza frutal com benefícios cognitivos e antioxidantes dos cogumelos.
 
-→ [Detalhes completos](cafe.md)
+| Sabor | Foco Funcional | Cogumelo |
+| :--- | :--- | :--- |
+| Manga | Foco e energia sustentável | Juba de Leão |
+| Açaí | Vitalidade física e cerebral | Juba de Leão |
+| Detox Verde | Purificação e *clear-mind* | Juba de Leão |
+| Cacau, Graviola e Cupuaçu | Indulgência hidratante | Tremella |
+| Super Berry | Antioxidante e beleza | Tremella |
+| Maracujá | Calma e modulação de estresse | Tremella |
 
----
+**Shots Concentrados (60ml)** — Doses terapêuticas intensivas, inspiradas na fitoterapia amazônica e asiática.
 
-### 🧃 Linha Cold Press — "Ritual Clareza"
-Para momentos de reset, purificação e integração.
+| Shot | Foco Estratégico | Perfil Bioativo |
+| :--- | :--- | :--- |
+| BLINDC | Imunidade | Cauda de Peru + Reishi + Camu-Camu |
+| INFLAMAÇÃO | Recuperação | Reishi + Shiitake + Copaíba |
+| FOCO | Cognição | Juba de Leão + Cordyceps + Guaraná natural |
+| RENDIMENTO | Performance | Cordyceps + Juba de Leão + Beterraba prensada |
 
-| Produto | Status | Parceiro |
-|---|---|---|
-| Cacau, Graviola e Cupuaçu + Tremella | 🟡 Próximo ao lançamento | Vida Líquida |
-| Super Berry + Tremella | 🟡 Próximo ao lançamento | Vida Líquida |
-| Manga + Juba de Leão | 🟡 Próximo ao lançamento | Vida Líquida |
-| Açaí + Juba de Leão | 🟡 Próximo ao lançamento | Vida Líquida |
-| Maracujá + Tremella | 🟡 Próximo ao lançamento | Vida Líquida |
-| Detox Verde + Juba de Leão | 🟡 Próximo ao lançamento | Vida Líquida |
-
-→ [Detalhes completos dos Sucos](sucos-prensados.md)
-
-#### 💉 Shots Funcionais (Cold Press concentrados 60ml)
-*Status:* **ALTA PRIORIDADE** (Formulações). Lançamento em parceria (Green People).
-
-| Produto | Foco Funcional (Cogumelos) | Status |
-|---|---|---|
-| BlindC | Imunidade (Cauda de Peru + Reishi) | 🔵 Em desenvolvimento |
-| Inflamação | Recuperação (Reishi + Shiitake) | 🔵 Em desenvolvimento |
-| Foco | Cognição (Juba de Leão + Cordyceps) | 🔵 Em desenvolvimento |
-| Rendimento | Performance Física (Cordyceps + Juba de Leão) | 🔵 Em desenvolvimento |
-
-→ [Detalhes completos dos Shots](shots-funcionais.md)
+→ [Detalhes dos Sucos](sucos-prensados.md) · [Detalhes dos Shots](shots-funcionais.md)
 
 ---
 
-### 🍵 Linha Superfood — "Zhy Rituals"
-Criados como rituais de pausa, nutrição e presença.
+### ☕ Linha Café — *"Ritual Despertar"*
+Para iniciar o dia com vitalidade cognitiva e presença ancorada.
+**Base**: Café Arábica Premium (90%) + Shiitake, Juba de Leão e Cauda de Peru (10%).
 
-| Produto | Base | Cogumelos | Status |
-| :--- | :--- | :--- | :--- |
-| Zhy Golden Latte | Cúrcuma + Gengibre | Cauda de Peru, Reishi, Shiitake | 🔵 Em desenvolvimento |
-| Zhy Cacau | Cacau 100% | Juba de Leão, Reishi, Tremella | 🔵 Em desenvolvimento |
-| Zhy Matcha | Matcha Premium | Juba de Leão, Cordyceps, Tremella | 🔵 Em desenvolvimento |
+| Produto | Formato |
+| :--- | :--- |
+| Café Zhy Cápsulas | Nespresso compatível (Caixa 10 un.) |
+| Café Zhy Moído | Pacote para coagem / preparo livre |
 
-→ [Detalhes completos](soluveis.md)
-
----
-
-### 🥤 Linha Enlatados
-Para o dia a dia, praticidade e refresco consciente.
-
-| Produto | Formato | Status |
-|---|---|---|
-| Ice Coffee | Lata | ⚪ Fase 4 |
-| Ice Matcha | Lata | ⚪ Fase 4 |
-| Ice Cacau | Lata | ⚪ Fase 4 |
-| Mate + Cogumelos | Lata ou Pet | ⚪ Fase 4 |
-| Hibisco + Cogumelos | Lata ou Pet | ⚪ Fase 4 |
-| Soda Funcional | Lata | ⚪ Fase 4 |
-
-
-→ [Detalhes completos](enlatados-rtd.md)
+→ [Detalhes do Café](cafe.md)
 
 ---
 
-### 💊 Linha Suplementos
-A linha mãe — os cogumelos em sua forma mais pura.
+### 🍵 Linha Superfood Solúveis — *"Zhy Rituals"*
+Lattes de preparo instintivo; rituais de pausa e nutrição de corpo e mente a qualquer hora.
 
-| Produto | Status |
-|---|---|
-| Cápsula Juba de Leão | ⚪ Fase 5 (ANVISA) |
-| Cápsula Reishi | ⚪ Fase 5 (ANVISA) |
-| Cápsula Cordyceps | ⚪ Fase 5 (ANVISA) |
-| Cápsula Cauda de Peru | ⚪ Fase 5 (ANVISA) |
-| Cápsula Tremella | ⚪ Fase 5 (ANVISA) |
-| Zhy Blend (todos juntos) | ⚪ Fase 5 (ANVISA) |
-| Proteína de Micélio | ⚪ Fase 5 (ANVISA) |
+| Produto | Base Alimentícia | Complexo de Cogumelos |
+| :--- | :--- | :--- |
+| Zhy Golden Latte | Cúrcuma + Gengibre | Cauda de Peru, Reishi, Shiitake |
+| Zhy Cacau | Cacau puro antioxidante | Juba de Leão, Reishi, Tremella |
+| Zhy Matcha | Matcha green premium | Juba de Leão, Cordyceps, Tremella |
 
-→ [Detalhes completos](capsulas-suplementos.md)
+→ [Detalhes dos Solúveis](soluveis.md)
 
 ---
 
-## Legenda de Status
+### 🥫 Linha RTD / Enlatados — *"Ritual Express"*
+Bebidas prontas para o dia a dia. Praticidade extrema sem abrir mão de formulações funcionais.
 
-| Ícone | Significado |
-|---|---|
-| 🟢 | À venda |
-| 🟡 | Próximo ao lançamento |
-| 🔵 | Em desenvolvimento |
-| ⚪ | Planejado (conceitual) |
+| Produto | Formato |
+| :--- | :--- |
+| Ice Coffee | Lata |
+| Ice Matcha | Lata |
+| Ice Cacau | Lata |
+| Sodas Funcionais Botânicas | Lata |
+| Mate Gelado Infusionado | Lata / PET |
+| Chá de Hibisco Infusionado | Lata / PET |
+
+→ [Detalhes dos RTDs](enlatados-rtd.md)
+
+---
+
+### 💊 Linha Suplementação Pura
+A origem dos rituais clínicos — o cogumelo na sua essência, para suplementação diária rigorosa.
+
+| Produto | Formato |
+| :--- | :--- |
+| Suplemento Juba de Leão | Cápsulas |
+| Suplemento Reishi | Cápsulas |
+| Suplemento Cordyceps | Cápsulas |
+| Suplemento Cauda de Peru | Cápsulas |
+| Suplemento Tremella | Cápsulas |
+| Zhy Blend Diário | Cápsulas (múltiplos extratos) |
+| Proteína de Micélio | Proteína plant-based esportiva |
+
+→ [Detalhes dos Suplementos](capsulas-suplementos.md)
+
+---
+
+## 🔗 Navegação Rápida
+
+| Documento | O que você encontra |
+| :--- | :--- |
+| 📊 **[Dashboard Operacional](../00_dashboard/dashboard-operacional.md)** | Visão executiva, gargalos, equipe |
+| 🎯 **[Plano de Lançamento](../00_dashboard/plano-lançamento.md)** | Cronograma, metas, checklists semanais |
+| ✅ **[Tracker de Status dos Produtos](produto-status-tracker.md)** | Status detalhado por linha: design, PET, parceiros, MAPA |
+
+---
+*Documento de referência da marca. Para o status operacional atualizado de cada linha, acesse o [Tracker de Produtos](produto-status-tracker.md).*

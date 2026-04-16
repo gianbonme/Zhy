@@ -13,6 +13,10 @@ Documento central de acompanhamento diário da **Zhy**. Este arquivo consolida o
 ## 📦 Pipeline de Produtos (Visão Tática)
 > Detalhes financeiros de margem e precificação devem ser consultados estritamente na pasta `02_financeiro`. Este quadro é dedicado ao andamento do fluxo logístico e produtivo.
 
+> [!TIP]
+> Para o status detalhado de cada linha (design, PET, parceiro produtor, MAPA, data de lançamento), acesse o painel completo:
+> ✅ **[Tracker de Status dos Produtos →](../01_produtos/produto-status-tracker.md)**
+
 | Fase | Linha de Produto | Detalhes Produtivos | Status Atual | Gargalo / Próximo Marco | Base de Apoio |
 | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Fase 1** | **🥤 Sucos Cold Press** | Foco em volume D2C local e B2B premium. | 9 Fórmulas de Suco validadas. | Fechar parceiro HPP + Definir/Orçar PET. | Vida Líquida |
