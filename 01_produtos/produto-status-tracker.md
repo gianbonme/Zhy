@@ -12,12 +12,12 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 
 | Linha | Fase | Formulação | Design / Embalagem | Fornec. Embalagem | Parceiro Prod. | Regulação | Lançamento Alvo |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [🧃 Sucos Cold Press](#-sucos-cold-press--ritual-clareza) | **1** | 🟢 Pronta | 🔴 Pendente Rebu | 🔴 PET a definir | 🟡 Vida Líquida | 🟡 MAPA c/ Priscila | **Mai/2026** |
-| [☕ Linha Café](#-linha-café--ritual-despertar) | **1** | 🟢 Pronta | 🟡 Interim c/ Caco | 🟡 Caixas a orçar | 🟢 MushSpresso | 🟢 Não exige MAPA | **Mai/2026** |
-| [💉 Shots Funcionais](#-shots-funcionais-60ml) | **2** | 🟡 Validar c/ conselho | 🔴 Pendente Rebu | 🔴 PET 60ml a definir | 🔴 Green People (pend.) | 🟡 MAPA c/ Priscila | **Jun/2026** |
-| [🍵 Solúveis / Lattes](#-solúveis--lattes--zhy-rituals) | **3** | 🟡 Validar c/ conselho | ⚪ Não iniciado | ⚪ A definir | 🔴 Parceiro a buscar | 🟡 MAPA | **Ago/2026** |
-| [🥫 RTD / Enlatados](#-rtd--enlatados--ritual-express) | **4** | ⚪ A criar | ⚪ Não iniciado | ⚪ A definir | 🔴 Parceiro a buscar | ⚪ A iniciar | **A definir** |
-| [💊 Suplementos](#-suplementos-puros) | **5** | ⚪ A criar | ⚪ Não iniciado | ⚪ A definir | 🟡 Lab RJ pronto | 🔴 ANVISA (1-2 anos) | **A definir** |
+| [🧃 Sucos Cold Press](#-sucos-cold-press--ritual-clareza) | **1** | 🟢 Pronta | 🔴 Pendente Rebu | 🔴 PET a definir | 🟡 Vida Líquida | 🟡 MAPA c/ Priscila | **Jun** |
+| [☕ Linha Café](#-linha-café--ritual-despertar) | **1** | 🟢 Pronta | 🟡 Interim c/ Caco | 🟡 Caixas a orçar | 🟢 MushSpresso | 🟢 Não exige MAPA | **Mai** |
+| [💉 Shots Funcionais](#-shots-funcionais-60ml) | **2** | 🟡 Validar c/ conselho | 🔴 Pendente Rebu | 🔴 PET 60ml a definir | 🔴 Green People (pend.) | 🟡 MAPA c/ Priscila | **JuL** |
+| [🍵 Solúveis / Lattes](#-solúveis--lattes--zhy-rituals) | **3** | 🟡 Validar c/ conselho | ⚪ Não iniciado | ⚪ A definir | 🔴 Parceiro a buscar | 🟡 MAPA | **Set** |
+| [🥫 RTD / Enlatados](#-rtd--enlatados--ritual-express) | **4** | ⚪ A criar | ⚪ Não iniciado | ⚪ A definir | 🔴 Parceiro a buscar | ⚪ A iniciar | **Nov** |
+| [💊 Suplementos](#-suplementos-puros) | **5** | ⚪ A criar | ⚪ Não iniciado | ⚪ A definir | 🟡 Lab RJ pronto | 🔴 ANVISA (1-2 anos) | **Dez** |
 
 ### Legenda
 | Ícone | Significado |
