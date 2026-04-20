@@ -1,54 +1,98 @@
-# 🗓️ Recap Semanal Zhy — 30/03/2026
+# 🗓️ Recap Semanal Zhy — 20/04/2026
 
-Estamos na **Semana 1 (25/03 → 31/03)** do Plano de Lançamento. Hoje é segunda-feira, dia de **Revisão Tática**.
+Estamos na **Semana de 20/04 → 27/04**. Hoje é segunda-feira. Faltam **~42 dias para o lançamento previsto (01/Jun)**.
 
-## 🔴 Status de Gargalos Críticos (Urgência Máxima)
-
-| Item | Responsável | Deadline | Status Histórico | Ação Imediata |
-| :--- | :--- | :--- | :--- | :--- |
-| **Parceiro HPP (Sucos)** | Gianluca | URGENTE | 🔴 Em Processo | Gianluca assumiu frente. Green People recuada sobre HPP para sucos. Busca ativa. |
-| **Parceiro Shots** | Green People | A Definir | 🟡 Aguardando | Reunião já ocorreu. GP tem interesse em produzir os shots, mas depende do conselho deles. Aguardando envio de informações pela Zhy. |
-| **Embalagem Cápsulas** | Mkt (Caco/Carol) | - | 🟡 Revisão | Arte quase pronta, mas com alteração estrutural: deve abrir pela tampa superior (logo ZHY) e não pela lateral. |
-| **Definição PET** | Gianluca/Alvaro | Concluído? | 🟢 Encaminhado | Amostra funcionou. Aguardando Alvaro enviar contatos de mais fornecedores. |
-| **Conselho Científico** | Gianluca | URGENTE | 🔴 Preparação | Criar template de mensagem e entrar em contato com a "lista infinita". Contato indicado pela Adriana (adv) no radar. |
-| **Contratações (Vagas)** | Gianluca | - | 🟡 Em Processo | Vagas prontas, falta postar (Catho/LinkedIn). Comercial B2B: Ricardo Aquino acionado (pode assumir ou indicar). |
+> [!CAUTION]
+> **D-Day em 42 dias.** O ritmo desta semana é decisivo. Muitos bloqueios técnicos ainda abertos — foco cirúrgico nos itens marcados como `🔴`.
 
 ---
 
-## 🧭 Metas e Horizonte (Fase 1)
+## 🔴 Gargalos Críticos — Urgência Máxima
 
-*   **D-Day (Lançamento):** ~01/05/2026 (Faltam 5 semanas).
-*   **A Meta 120 dias:** 4.000 Unidades (3.000 Sucos + 1.000 Caixas de Cápsulas).
-*   **O Mix Atual:** Sucos Cold Press + Cápsulas Nespresso.
-
----
-
-## 📅 Checklist desta Semana (Semana 1 - "O Destrave")
-
-*   [ ] **HPP:** Gianluca assumiu a busca. Green People hesita em processar sucos; buscar alternativas no RJ.
-*   [ ] **Parceria Green People:** Enviar informações pendentes para conselho aprovar produção dos shots.
-*   [ ] **Cápsulas:** Caco/Carol ajustando o molde da caixa para abertura pela tampa superior (com logo ZHY).
-*   [ ] **PET:** Amostra validada! Cobrar Alvaro sobre os outros fornecedores de PET.
-*   [ ] **Conselho Científico:** Rascunhar mensagem abordágem padrão, mapear contatos (insta/email) e prospectar a lista (incluir o lead da Adriana).
-*   [ ] **Contratações:** Publicar vagas de Gestão no Catho/LinkedIn e finalizar testes práticos. Avançar papo B2B com Ricardo Aquino.
-*   [ ] **MushSpresso:** Confirmar status do molde de Brasília (9.000 cápsulas).
+| Item | Responsável | Deadline | Status | Ação Imediata |
+| :--- | :--- | :--- | :---: | :--- |
+| **Amostra Extrato de Cogumelos** | Gianluca | Quarta-feira | 🟡 | Contactar fornecedor (chinês?) e solicitar amostra de extrato |
+| **Parceiro Solúveis** | Gianluca | Até fim do mes | 🔴 | GEPEA: opção possível mas lenta. Buscar alternativa mais ágil em paralelo |
+| **Embalagem PET Shots/Sucos** | Gianluca/Alvaro | - | 🟡 | Amostra validada. Considerar outras opções do Alvaro e investigar maquinário (Sucos) |
+| **Conselho Científico** | Gianluca | - | 🔴 | Prospecção parada. Retomar ativação do plano |
+| **Embalagem Capsulas MushSpresso** | Gianluca/Caco | **Quarta** | 🟡 | Definir a arte final da embalagem e encontrar nova gráfica que produza a caixa |
 
 ---
 
-## 👥 Gente & Gestão (Vagas Abertas)
+## 🟡 Em Andamento — Monitorar
 
-*   **Comercial B2B:** Urgente para originar vendas em supermercados/atacadistas.
-*   **Braço Direito (Gestão/Admin):** Necessário para aliviar o operacional do Diretor.
+| Item | Responsável | Status | Próxima Ação |
+| :--- | :--- | :---: | :--- |
+| **Seleção COO (Entrevistas)** | Gianluca | 🟡 | Testes definidos e contatos feitos. Próximo: Realizar entrevistas na C/S |
+| **Green People — HPP Sucos/Shots** | Green People | 🟡 | Follow-up realizado. Aguardando retorno sobre HPP |
+| **Testes Encapsulamento (Cogumelos)** | Guilherme RJ | 🟡 | Comprar cápsulas 00 e 0 para continuar os testes |
+| **Testes Serigrafia (Cápsulas Café)** | Mkt / Gianluca | 🟡 | Testar serigrafia com Spazzio e Dercolex |
+| **Cápsulas MushSpresso (Recebimento)** | MushSpresso | 🟡 | Aguardando recebimento do lote de cápsulas |
+| **Amostras Pouch de Café e Suplementos** | Gianluca | 🟡 | Pedir amostras: pouch stand-up, café e cápsulas suplementos |
+| **Regulação MAPA (Sucos/Shots)** | Priscila | 🟡 | Em processo — monitorar nomenclatura cogumelos |
+| **Visita Gilmar (Extintor)** | Gianluca | 🟡 | Receber Gilmar na quarta 23/04 para instalação |
+| **Encarregar Jalecos** | Gianluca | 🟡 | Orçamento Alsco (Julio) |
 
 ---
 
-## 💡 Sugestão para Hoje (Segunda-feira)
-Dado que hoje é dia de **Revisão Tática**, sugiro focar em:
-1.  **HPP & Green People:** Definir o que falta enviar para a GP aprovar a produção de *shots*. Seguir buscando parceiro ativo para HPP de sucos (Gianluca).
-2.  **Conselho Científico:** Criar a cópia (mensagem padrão) de prospecção e levantar o insta/email do topo da lista e do lead da Adriana.
-3.  **Vagas e Equipe:** Continuar a conversa com o Ricardo Aquino (Comercial) e publicar anúncio da vaga de gestor para rodar os testes.
-4.  **Embalagens:** Monitorar o ajuste da caixa das cápsulas (abertura por cima) e esperar os fornecedores do Alvaro para garrafas PET.
+## ✅ Agenda Concreta (Ajustada com base nas pendências)
+
+### 🚀 Ações Imediatas / Pendências (Hoje / Terça)
+- [ ] **Pedido de amostras**: Pouch stand-up + café em grão + cápsulas suplementos
+- [ ] Contactar fornecedor chinês para **amostra de extrato de cogumelos**
+- [ ] Comprar **cápsulas 00 e 0** para Guilherme RJ continuar testes de encapsulamento
+
+### 📅 Quarta-feira 22/04
+- [ ] **Entrevistas COO** — 3 candidatos (bloco de manhã ou tarde) + aplicação do Teste Prático
+- [ ] Receber **Gilmar** para instalação do extintor
+- [ ] Avançar conversa com **GEPEA** ou alternativa para parceiro solúveis
+
+### 📅 Quinta–Sexta 24–25/04
+- [ ] Testes de **serigrafia com Spazzio e Dercolex**
+- [ ] Receber/confirmar **cápsulas Nespresso** do lote MushSpresso
+- [ ] Avaliar candidatos COO e tomar decisão
+
+### 🎉 Concluído (Semana Atual)
+- [x] Contato e convocação dos 3 candidatos à vaga COO
+- [x] Definição do formato do Teste Prático (2h)
+- [x] Follow-up com Green People sobre HPP sucos + shots
 
 ---
+
+## 🔮 Preview da Próxima Semana (27/04 → 03/05)
+
+> Semana final antes do lançamento. Modo "fechamento cirúrgico".
+
+- **Decisão COO**: Quem contratar?
+- **HPP**: Deve ser definido 5 de Maio (Green People - Shots + Sucos)
+- **Arte caixas cápsulas**: Aprovação final do design + orçamentos em diferentes gráficas
+- **Encapsulamento**: Primeiros resultados do teste com cápsulas 00/0 com pó e extratos
+- **Extrato cogumelos**: Amostra chegando → teste e avaliação
+- **Lançamento 01/Jun**: Go / No-Go decision de produção em lote com base nos bloqueios desta semana
+
+---
+
+## 🧭 Meta Macro Ainda Ativa (120 dias)
+
+| Horizonte | Meta | Mix |
+| :--- | :--- | :--- |
+| **01/Jun/2026** | Lançamento Fase 1 | Cápsulas Nespresso + Sucos Cold Press |
+| **120 dias** | 4.000 unidades | 3.000 Sucos HPP + 1.000 Caixas Cápsulas |
+
+---
+
+## 💡 Nota sobre o Teste COO (Draft de Referência)
+
+O teste deve simular 1 dia real de operação da Zhy. Sugestão de blocos (2h):
+
+1. **Priorização** (~20 min): Dado 8 gargalos simultâneos, o candidato define a ordem de ataque com justificativa
+2. **Resolução de Problema** (~40 min): Cenário real (ex: parceiro HPP recusou, fornecedor sumiu, cápsula com defeito) — como reage e que decisões toma?
+3. **Comunicação Assíncrona** (~20 min): Escrever um update rápido para o fundador sobre o dia de trabalho
+4. **Visão de Processo** (~40 min): Dado o plano de lançamento, mapear os 3 maiores riscos e como mitigá-los
+
+---
+
 > [!TIP]
-> O plano detalhado de 16 semanas e o cronograma reverso estão em `00_dashboard/plano-lançamento.md`.
+> Documentos de referência: `produto-status-tracker.md` · `dashboard-operacional.md` · `plano-lançamento.md`
+> Vaga COO: `06_equipe/Convocatória Coordenação.md` · Teste prático: `06_equipe/Teste Convocatória Gestão.md`
+

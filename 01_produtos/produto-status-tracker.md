@@ -10,14 +10,14 @@
 
 Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalhe.
 
-| Linha | Fase | Formulação | Design / Embalagem | Fornec. Embalagem | Parceiro Prod. | Regulação | Lançamento Alvo |
+| Linha | Fase | Formulação | Design | Embalagem / Rótulo | Parceiro Prod. | Regulação | Lançamento Alvo |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [🧃 Sucos Cold Press](#-sucos-cold-press--ritual-clareza) | **1** | 🟢 Pronta | 🔴 Pendente Rebu | 🔴 PET a definir | 🟡 Vida Líquida | 🟡 MAPA c/ Priscila | **Jun** |
-| [☕ Linha Café](#-linha-café--ritual-despertar) | **1** | 🟢 Pronta | 🟡 Interim c/ Caco | 🟡 Caixas a orçar | 🟢 MushSpresso | 🟢 Não exige MAPA | **Mai** |
-| [💉 Shots Funcionais](#-shots-funcionais-60ml) | **2** | 🟡 Validar c/ conselho | 🔴 Pendente Rebu | 🔴 PET 60ml a definir | 🔴 Green People (pend.) | 🟡 MAPA c/ Priscila | **JuL** |
-| [🍵 Solúveis / Lattes](#-solúveis--lattes--zhy-rituals) | **3** | 🟡 Validar c/ conselho | ⚪ Não iniciado | ⚪ A definir | 🔴 Parceiro a buscar | 🟡 MAPA | **Set** |
-| [🥫 RTD / Enlatados](#-rtd--enlatados--ritual-express) | **4** | ⚪ A criar | ⚪ Não iniciado | ⚪ A definir | 🔴 Parceiro a buscar | ⚪ A iniciar | **Nov** |
-| [💊 Suplementos](#-suplementos-puros) | **5** | ⚪ A criar | ⚪ Não iniciado | ⚪ A definir | 🟡 Lab RJ pronto | 🔴 ANVISA (1-2 anos) | **Dez** |
+| [☕ Linha Café](#-linha-café--ritual-despertar) | **1** | 🟢 Pronta | 🟡 Interim Caco | 🟡 Caixas a orçar | 🟢 MushSpresso | 🟡 MAPA c/ Priscila | **Jun** |
+| [🧃 Sucos Cold Press](#-sucos-cold-press--ritual-clareza) | **1** | 🟢 Pronta | 🟡 Interim Caco | 🔴 PET a definir | 🟡 Vida Líquida | 🟡 MAPA c/ Priscila | **Jun** |
+| [💉 Shots Funcionais](#-shots-funcionais-60ml) | **2** | 🟡 Green People | 🟡 Interim Caco | 🔴 PET 60ml a definir | 🔴 Green People (pend.) | 🟡 MAPA c/ Green People | **Out** |
+| [🍵 Solúveis / Lattes](#-solúveis--lattes--zhy-rituals) | **3** | ⚪ Decidir | 🔴 Desenvolve Rebú | ⚪ A definir | 🔴 A definir | 🟡 MAPA c/ GEPEA | **Jan/27** |
+| [🥫 RTD / Enlatados](#-rtd--enlatados--ritual-express) | **4** | ⚪ Decidir | 🔴 Desenvolve Rebú | ⚪ A definir | 🔴 Parceiro a definir | ⚪ A iniciar | **Mar/27** |
+| [💊 Suplementos](#-suplementos-puros) | **5** | ⚪ Decidir | 🟡 Interim Caco | ⚪ A definir | 🟡 Typical Lab | 🔴 ANVISA c/ Adriana | ⚪ Longo Prazo |
 
 ### Legenda
 | Ícone | Significado |
@@ -33,9 +33,31 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 
 ## ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
+## ☕ Linha Café — *"Ritual Despertar"*
+
+> **Fase 1 · Parceiro:** MushSpresso (Adriel, Brasília) · **Alvo:** Jun/2026
+
+| Dimensão | Status | Detalhe / Próxima Ação |
+| :--- | :---: | :--- |
+| **Formulação** | 🟢 | 90% Arábica + 10% Shiitake/Juba de Leão/Cauda de Peru. Pronta. |
+| **Design Visual (Cápsulas)** | 🟡 | Arte interim desenvolvida c/ Caco/Carol. Pendente: alterar abertura da caixa (abrir pela tampa principal c/ logo Zhy, não pela lateral padrão MushSpresso). |
+| **Design Visual (Café Moído)** | 🔴 | Embalagem a resolver do zero: definir material (saco com barreira aromática), criar briefing para Rebu, orçar gráficas. |
+| **Embalagem (Caixas Cápsulas)** | 🟡 | 100 caixas em teste UX. Precisam ser cotadas com melhor preço/qualidade vs. Adriel. |
+| **Parceiro Produtor** | 🟢 | MushSpresso (Adriel). Lote de 9.000 cápsulas confirmado. |
+| **Regulação** | 🟢 | Café não exige MAPA/ANVISA neste formato. |
+| **Lançamento Previsto** | 📅 | **01/Jun/2026** (Cápsulas) · Café Moído junto se embalagem definida a tempo |
+
+**Bloqueios Prioritários:**
+- `🟡` Aprovação da arte final + ajuste abertura da caixa
+- `🔴` Resolver embalagem do Café Moído do zero
+
+→ [Arquivo completo: Linha Café](cafe.md)
+
+---
+
 ## 🧃 Sucos Cold Press — *"Ritual Clareza"*
 
-> **Fase 1 · Parceiro:** Vida Líquida (Alvaro, RJ) · **Alvo:** Mai/2026
+> **Fase 1 · Parceiro:** Vida Líquida (Alvaro, RJ) · **Alvo:** Jun/2026
 
 | Dimensão | Status | Detalhe / Próxima Ação |
 | :--- | :---: | :--- |
@@ -45,7 +67,7 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 | **Parceiro Produtor** | 🟡 | Vida Líquida (Alvaro). Aguardando maquinário: **rotuladora** + **freezers** a comprar. |
 | **Infraestrutura HPP** | 🔴 | **GARGALO CRÍTICO.** Sem máquina HPP no RJ, shelf life = 3 dias (inviável). Buscar parceiro ativo. |
 | **Regulação (MAPA)** | 🟡 | Em processo com Priscila. Atenção à nomenclatura dos cogumelos. |
-| **Lançamento Previsto** | 📅 | **01/Mai/2026** (condicionado a resolver HPP + PET + rótulo) |
+| **Lançamento Previsto** | 📅 | **01/Jun/2026** (condicionado a resolver HPP + PET + rótulo) |
 
 **Bloqueios Prioritários:**
 - `🔴` Fechar parceiro HPP no Rio de Janeiro
@@ -57,31 +79,9 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 
 ---
 
-## ☕ Linha Café — *"Ritual Despertar"*
-
-> **Fase 1 · Parceiro:** MushSpresso (Adriel, Brasília) · **Alvo:** Mai/2026
-
-| Dimensão | Status | Detalhe / Próxima Ação |
-| :--- | :---: | :--- |
-| **Formulação** | 🟢 | 90% Arábica + 10% Shiitake/Juba de Leão/Cauda de Peru. Pronta. |
-| **Design Visual (Cápsulas)** | 🟡 | Arte interim desenvolvida c/ Caco/Carol. Pendente: alterar abertura da caixa (abrir pela tampa principal c/ logo Zhy, não pela lateral padrão MushSpresso). |
-| **Design Visual (Café Moído)** | 🔴 | Embalagem a resolver do zero: definir material (saco com barreira aromática), criar briefing para Rebu, orçar gráficas. |
-| **Embalagem (Caixas Cápsulas)** | 🟡 | 100 caixas em teste UX. Precisam ser cotadas com melhor preço/qualidade vs. Adriel. |
-| **Parceiro Produtor** | 🟢 | MushSpresso (Adriel). Lote de 9.000 cápsulas confirmado. |
-| **Regulação** | 🟢 | Café não exige MAPA/ANVISA neste formato. |
-| **Lançamento Previsto** | 📅 | **01/Mai/2026** (Cápsulas) · Café Moído junto se embalagem definida a tempo |
-
-**Bloqueios Prioritários:**
-- `🟡` Aprovação da arte final + ajuste abertura da caixa
-- `🔴` Resolver embalagem do Café Moído do zero
-
-→ [Arquivo completo: Linha Café](cafe.md)
-
----
-
 ## 💉 Shots Funcionais (60ml)
 
-> **Fase 2 · Parceiro:** Green People (co-packing, pend. aprovação) · **Alvo:** Jun/2026
+> **Fase 2 · Parceiro:** Green People (co-packing, pend. aprovação) · **Alvo:** Out/2026
 
 | Dimensão | Status | Detalhe / Próxima Ação |
 | :--- | :---: | :--- |
@@ -90,7 +90,7 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 | **Embalagem (PET 60ml)** | 🔴 | Mini-garrafa PET 60ml não definida. Precisa orçar fornecedores específicos para este formato. |
 | **Parceiro Produtor** | 🔴 | Green People tem interesse forte em co-packing. **Aguardando envio de infos para aprovação do Conselho GP.** Sem isso, parceiro em risco. |
 | **Regulação (MAPA)** | 🟡 | Em processo com Priscila. Shots são alimentos inovadores — atenção especial à nomenclatura e claims. |
-| **Lançamento Previsto** | 📅 | **15/Jun/2026** (após Fase 1 estabilizada) |
+| **Lançamento Previsto** | 📅 | **15/Out/2026** (após Fase 1 estabilizada) |
 
 **Bloqueios Prioritários:**
 - `🔴` Enviar infos para aprovação do Conselho da Green People
@@ -103,7 +103,7 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 
 ## 🍵 Solúveis / Lattes — *"Zhy Rituals"*
 
-> **Fase 3 · Parceiro:** A buscar (envase + mixer inox) · **Alvo:** Ago/2026
+> **Fase 3 · Parceiro:** A buscar (envase + mixer inox) · **Alvo:** Jan/2027
 
 | Dimensão | Status | Detalhe / Próxima Ação |
 | :--- | :---: | :--- |
@@ -112,7 +112,7 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 | **Embalagem** | ⚪ | Formato não definido. Orçar stand-up pouches, potes ou sachês. |
 | **Parceiro Produtor** | 🔴 | **Nenhum parceiro originado.** Precisa de indústria com mistura inox e envase. Orçamento estimado ~R$120.000. |
 | **Regulação (MAPA)** | 🟡 | Dentro do escopo de Priscila. Rodar em paralelo. |
-| **Lançamento Previsto** | 📅 | **01/Ago/2026** (depende de fechar parceiro industrial até Jun) |
+| **Lançamento Previsto** | 📅 | **01/Jan/2027** (depende de fechar parceiro industrial até Nov) |
 
 **Bloqueios Prioritários:**
 - `🔴` Buscar e fechar parceiro industrial (misturador inox + envase)
@@ -124,7 +124,7 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 
 ## 🥫 RTD / Enlatados — *"Ritual Express"*
 
-> **Fase 4 · Parceiro:** A buscar (co-packing beverage) · **Alvo:** A definir
+> **Fase 4 · Parceiro:** A buscar (co-packing beverage) · **Alvo:** Mar/2027
 
 | Dimensão | Status | Detalhe / Próxima Ação |
 | :--- | :---: | :--- |
@@ -133,7 +133,7 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 | **Embalagem (Lata/PET)** | ⚪ | A definir (lata vs. PET sustentável por SKU). |
 | **Parceiro Produtor** | 🔴 | Nenhum parceiro de *beverage* (co-packing) identificado ainda. |
 | **Regulação** | ⚪ | A iniciar após parceiro definido. |
-| **Lançamento Previsto** | 📅 | **A definir** (pós-consolidação das Fases 1-3) |
+| **Lançamento Previsto** | 📅 | **Mar/2027** (pós-consolidação das Fases 1-3) |
 
 → [Arquivo completo: Enlatados RTD](enlatados-rtd.md)
 
