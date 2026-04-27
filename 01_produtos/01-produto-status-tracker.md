@@ -1,6 +1,6 @@
 # ✅ Tracker de Status — Portfólio Zhy
 
-> **Última atualização:** Abril/2026
+> **Última atualização:** 27/Abril/2026
 > Visão consolidada do estado operacional de cada linha de produto.
 > Para detalhes de narrativa e formulações, veja a [Visão Geral](visao-geral.md).
 
@@ -148,7 +148,7 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 | **Formulação** | ⚪ | Cogumelos isolados a formular. Proteína de Micélio também a ser formulada. |
 | **Design Visual** | ⚪ | Não iniciado. Embalagens de cápsulas/frascos a criar com Rebu. |
 | **Embalagem** | ⚪ | Frascos/blísteres de cápsulas a definir e orçar. |
-| **Parceiro Produtor** | 🟡 | Lab RJ montado. Encapsuladora recebida. Guilherme RJ operando. |
+| **Parceiro Produtor** | 🟡 | Lab RJ montado. **Encapsuladora 00 recebida — testes começam 30/Abr.** Extrato de Cordyceps + Juba de Leão a caminho para testar extrato vs. cogumelo moído (pode alterar densidade/dossier). Guilherme RJ operando. |
 | **Regulação (ANVISA)** | 🔴 | Fila regulatória muito longa (1 a 2 anos). Adriana acompanhando. Rodar em paralelo, sem urgência de lançamento. |
 | **Lançamento Previsto** | 📅 | **A longo prazo** — condicionado à aprovação na ANVISA |
 
