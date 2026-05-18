@@ -29,12 +29,12 @@
 
 | # | Gargalo | Responsável | Deadline | Status |
 |---|---------|-------------|----------|--------|
-| 1 | **Fechar parceiro HPP no RJ** (sem HPP, suco dura 3 dias) | Guilherme | **28/03** | 🔴 Em Processo |
-| 2 | **Fechar embalagem Cápsulas** (caixa final p/ venda) | Marketing (Caco/Carol) | **28/03** | 🟡 Em Processo |
-| 3 | **Definir & orçar garrafas PET** (sucos + 4 shots) | Gianluca | **03/04** | 🔴 Investigar |
-| 4 | **Maquinário** (Rotuladora do Alvaro + Freezers) | Gianluca | **10/04** | 🔴 Investigar |
-| 5 | **Criar rótulos dos sucos** | Marketing (Caco/Carol) | **10/04** | 🔴 Iniciar |
-| 6 | **Finalizar site c/ checkout** | Web/Programação | **20/04** | 🟡 Em Andamento |
+| 1 | **Fechar parceiro HPP no RJ** (sem HPP, suco dura 3 dias) | Gianluca | **28/03** | 🔴 Em Processo |
+| 2 | **Fechar embalagem Cápsulas** (caixa final p/ venda) | Marketing/Operações | **28/03** | 🟡 Em Processo |
+| 3 | **Definir & orçar garrafas PET** (sucos + 4 shots) | Operações | **03/04** | 🔴 Investigar |
+| 4 | **Maquinário** (Rotuladora + Freezers Sucos) | Gianluca | **10/04** | 🔴 Investigar |
+| 5 | **Criar rótulos dos sucos** | Rebú | **10/04** | 🔴 Iniciar |
+| 6 | **Finalizar site c/ checkout** | IT (Guilherme) | **20/04** | 🟡 Em Andamento |
 | 7 | **Constituir Conselho Científico Zhy** (médico funcional + nutricionista sênior + especialista cogumelos) — necessário para validar formulações antes da submissão ao MAPA | Gianluca | **URGENTE** | 🔴 A Iniciar |
 | 8 | **Encontrar parceiro industrial para Solúveis** (envase + mixer inox) | Gianluca | **30/04** | 🔴 A Iniciar |
 
@@ -183,15 +183,15 @@
 | ☕ Café | Cápsulas Nespresso (cx 10 un) | ✅ Pronta | 🟡 Próximo ao lançamento |
 | ☕ Café | Café Moído Premium (250 gr) | ✅ Pronta | 🟡 Embalagem a resolver |
 | 🧃 Cold Press | 6 Sucos (mix sabores) | ✅ Pronta | 🟡 Próximo ao lançamento |
-| 💉 Shots | 🛡️ BlindC (Imunidade) — R$9,90 | ✅ Validar | 🔵 Armar conselho científico |
-| 💉 Shots | 🔥 Inflamação (Anti-inflam.) — R$9,90 | ✅ Validar | 🔵 Armar conselho científico |
-| 💉 Shots | 🧠 Foco (Cognição) — R$9,90 | ✅ Validar | 🔵 Armar conselho científico |
-| 💉 Shots | ⚡ Rendimento (Performance) — R$9,90 | ✅ Validar | 🔵 Armar conselho científico |
-| 🍵 Solúveis | Zhy Golden Latte — R$69,90 | ✅ Validar | 🔵 Parceiro industrial a buscar |
-| 🍵 Solúveis | Zhy Cacau — R$74,90 | ✅ Validar | 🔵 Parceiro industrial a buscar |
-| 🍵 Solúveis | Zhy Matcha — R$89,90 | ✅ Validar | 🔵 Parceiro industrial a buscar |
-| 🥫 Enlatados | Ice Coffee, Ice Matcha, RTDs... | ⚪ Criar Formulações | ⚪ Fase 4 |
-| 💊 Suplementos | Cáps. cogumelos individuais | ⚪ Formular Proteína | ⚪ Fase 5 (ANVISA) |
+| 💉 Shots | 🛡️ BlindC (Imunidade) — R$9,90 | 🟡 Formular | 🔵 Armar conselho científico |
+| 💉 Shots | 🔥 Inflamação (Anti-inflam.) — R$9,90 | 🟡 Formular | 🔵 Armar conselho científico |
+| 💉 Shots | 🧠 Foco (Cognição) — R$9,90 | 🟡 Formular | 🔵 Armar conselho científico |
+| 💉 Shots | ⚡ Rendimento (Performance) — R$9,90 | 🟡 Formular | 🔵 Armar conselho científico |
+| 🍵 Solúveis | Zhy Golden Latte — R$69,90 | 🟡 Formular | 🔵 Parceiro industrial a buscar |
+| 🍵 Solúveis | Zhy Cacau — R$74,90 | 🟡 Formular | 🔵 Parceiro industrial a buscar |
+| 🍵 Solúveis | Zhy Matcha — R$89,90 | 🟡 Formular | 🔵 Parceiro industrial a buscar |
+| 🥫 Enlatados | Ice Coffee, Ice Matcha, RTDs... | ⚪ Esperar Lançamento | ⚪ Fase 4 |
+| 💊 Suplementos | Cáps. cogumelos individuais | ⚪ Formular Proteína c/ Typical | ⚪ Fase 5 (ANVISA) |
 
 ---
 
