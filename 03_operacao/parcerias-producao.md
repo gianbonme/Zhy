@@ -26,7 +26,7 @@ A MushSpresso produz e acondiciona o café com a formulação Zhy, que é vendid
 | **Tipo de parceria** | Produção terceirizada |
 | **O que produz** | Sucos prensados a frio com cogumelos |
 | **Futuro** | Shots (sucos concentrados menores) |
-| **Status** | 🟡 Próximo ao lançamento (sucos) / ⚪ Fase 2/3 (shots) |
+| **Status** | 🔴 **ON HOLD** — aguardando resolução do HPP. Rotuladora e freezers também on hold. |
 
 📁 [Proposta Vida Líquida](../08_recursos/Parcería_Vida_Líquida/)
 
@@ -51,7 +51,7 @@ A MushSpresso produz e acondiciona o café com a formulação Zhy, que é vendid
 | **Tipo de parceria** | Terceirização (Co-packer) ou Produção Própria |
 | **O que produz** | Blends solúveis de cogumelos adaptógenos |
 | **Equipamento** | Necessidade de Ribbon Blender (Mistura Inox) |
-| **Status** | 🟢 P&D Interno / 🟡 Prospecção de indústrias para Envase e Mistura |
+| **Status** | 🟡 Gabriel Victor (COO) investigando viabilidade in-house + maquinário. Parceiro externo como plano B. |
 
 A Zhy estuda um modelo híbrido: manter a inteligência da fórmula (P&D) internamente e utilizar um parceiro industrial para a mistura em larga escala e envase com proteção UV.
 

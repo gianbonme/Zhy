@@ -1,6 +1,6 @@
 # ✅ Tracker de Status — Portfólio Zhy
 
-> **Última atualização:** 27/Abril/2026
+> **Última atualização:** 18/Maio/2026
 > Visão consolidada do estado operacional de cada linha de produto.
 > Para detalhes de narrativa e formulações, veja a [Visão Geral](visao-geral.md).
 
@@ -12,12 +12,15 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 
 | Linha | Fase | Formulação | Design | Embalagem / Rótulo | Parceiro Prod. | Regulação | Lançamento Alvo |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [☕ Linha Café](#-linha-café--ritual-despertar) | **1** | 🟢 Pronta | 🟡 Interim Caco | 🟡 Caixas a orçar | 🟢 MushSpresso | 🟡 MAPA c/ Priscila | **Jun** |
-| [🧃 Sucos Cold Press](#-sucos-cold-press--ritual-clareza) | **1** | 🟢 Pronta | 🟡 Interim Caco | 🔴 PET a definir | 🟡 Vida Líquida | 🟡 MAPA c/ Priscila | **Jun** |
+| [☕ Linha Café](#-linha-café--ritual-despertar) | **1** | 🟢 Pronta | 🟡 Interim Caco | 🟢 Caixa aprovada | 🟢 MushSpresso | 🟡 MAPA c/ Priscila¹ | **Em revisão** |
+| [🧃 Sucos Cold Press](#-sucos-cold-press--ritual-clareza) | **1** | 🟢 Pronta | 🟡 Interim Caco | 🔴 PET a definir | 🟡 Vida Líquida | 🟡 MAPA c/ Priscila¹ | **Em revisão** |
 | [💉 Shots Funcionais](#-shots-funcionais-60ml) | **2** | 🟡 Green People | 🟡 Interim Caco | 🔴 PET 60ml a definir | 🔴 Green People (pend.) | 🟡 MAPA c/ Green People | **Out** |
-| [🍵 Solúveis / Lattes](#-solúveis--lattes--zhy-rituals) | **3** | ⚪ Decidir | 🔴 Desenvolve Rebú | ⚪ A definir | 🔴 A definir | 🟡 MAPA c/ GEPEA | **Jan/27** |
+| [🍵 Solúveis / Lattes](#-solúveis--lattes--zhy-rituals) | **3** | ⚪ Decidir | 🔴 Desenvolve Rebú | ⚪ A definir | 🔴 A definir² | 🟡 MAPA c/ GEPEA | **Jan/27** |
 | [🥫 RTD / Enlatados](#-rtd--enlatados--ritual-express) | **4** | ⚪ Decidir | 🔴 Desenvolve Rebú | ⚪ A definir | 🔴 Parceiro a definir | ⚪ A iniciar | **Mar/27** |
-| [💊 Suplementos](#-suplementos-puros) | **5** | ⚪ Decidir | 🟡 Interim Caco | ⚪ A definir | 🟡 Typical Lab | 🔴 ANVISA c/ Adriana | ⚪ Longo Prazo |
+| [💊 Suplementos](#-suplementos-puros) | **5** | ⚪ Decidir | 🟡 Interim Caco | ⚪ A definir | 🟡 Lab RJ (ativo) | 🔴 ANVISA c/ Adriana | ⚪ Longo Prazo |
+
+> ¹ MAPA on hold até aceite da formulação MushSpresso (esperada **quarta 20/05**).
+> ² Solúveis: Gabriel Victor (COO) investigando viabilidade de produção in-house + maquinário.
 
 ### Legenda
 | Ícone | Significado |
@@ -40,12 +43,12 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 | Dimensão | Status | Detalhe / Próxima Ação |
 | :--- | :---: | :--- |
 | **Formulação** | 🟢 | 90% Arábica + 10% Shiitake/Juba de Leão/Cauda de Peru. Pronta. |
-| **Design Visual (Cápsulas)** | 🟡 | Arte interim desenvolvida c/ Caco/Carol. Pendente: alterar abertura da caixa (abrir pela tampa principal c/ logo Zhy, não pela lateral padrão MushSpresso). |
+| **Design Visual (Cápsulas)** | 🟢 | Arte interim ok. **Caixa aprovada definitivamente.** |
 | **Design Visual (Café Moído)** | 🔴 | Embalagem a resolver do zero: definir material (saco com barreira aromática), criar briefing para Rebu, orçar gráficas. |
-| **Embalagem (Caixas Cápsulas)** | 🟡 | 100 caixas em teste UX. Precisam ser cotadas com melhor preço/qualidade vs. Adriel. |
+| **Embalagem (Caixas Cápsulas)** | 🟢 | **Aprovada.** Formulação MushSpresso chega quarta 20/05 — aceite destrava MAPA. |
 | **Parceiro Produtor** | 🟢 | MushSpresso (Adriel). Lote de 9.000 cápsulas confirmado. |
-| **Regulação** | 🟢 | Café não exige MAPA/ANVISA neste formato. |
-| **Lançamento Previsto** | 📅 | **01/Jun/2026** (Cápsulas) · Café Moído junto se embalagem definida a tempo |
+| **Regulação** | 🟡 | MAPA on hold até aceite da formulação MushSpresso (quarta 20/05). |
+| **Lançamento Previsto** | 📅 | **Data em revisão** — reunião estratégica esta semana com Gabriel para redefinir. |
 
 **Bloqueios Prioritários:**
 - `🟡` Aprovação da arte final + ajuste abertura da caixa
@@ -63,11 +66,11 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 | :--- | :---: | :--- |
 | **Formulação** | 🟢 | 9 fórmulas validadas e prontas. |
 | **Design Visual** | 🔴 | Identidade definitiva a cargo da Rebu (4 meses). Rótulo interim precisando ser criado por Caco/Carol para o lançamento. |
-| **Embalagem (PET Garrafa)** | 🔴 | Formato e fornecedor não definidos. Amostra de PET testada por Gianluca rodou bem. Aguardando lista de fornecedores do Alvaro. |
-| **Parceiro Produtor** | 🟡 | Vida Líquida (Alvaro). Aguardando maquinário: **rotuladora** + **freezers** a comprar. |
-| **Infraestrutura HPP** | 🔴 | **GARGALO CRÍTICO.** Sem máquina HPP no RJ, shelf life = 3 dias (inviável). Buscar parceiro ativo. |
-| **Regulação (MAPA)** | 🟡 | Em processo com Priscila. Atenção à nomenclatura dos cogumelos. |
-| **Lançamento Previsto** | 📅 | **01/Jun/2026** (condicionado a resolver HPP + PET + rótulo) |
+| **Embalagem (PET Garrafa)** | 🔴 | Formato e fornecedor não definidos. On hold até HPP resolvido + Alvaro reativado. |
+| **Parceiro Produtor** | 🔴 | Vida Líquida (Alvaro). **ON HOLD até HPP resolvido.** Rotuladora e freezers também on hold. |
+| **Infraestrutura HPP** | 🔴 | **GARGALO MESTRE.** Green People: +2 semanas de espera. SP: 2 opções contatadas, sem viabilidade. |
+| **Regulação (MAPA)** | 🟡 | Em processo com Priscila. On hold até formulação MushSpresso (quarta 20/05). |
+| **Lançamento Previsto** | 📅 | **Data em revisão** — 01/Jun inviável. Nova data a definir com Gabriel esta semana. |
 
 **Bloqueios Prioritários:**
 - `🔴` Fechar parceiro HPP no Rio de Janeiro
@@ -148,7 +151,7 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 | **Formulação** | ⚪ | Cogumelos isolados a formular. Proteína de Micélio também a ser formulada. |
 | **Design Visual** | ⚪ | Não iniciado. Embalagens de cápsulas/frascos a criar com Rebu. |
 | **Embalagem** | ⚪ | Frascos/blísteres de cápsulas a definir e orçar. |
-| **Parceiro Produtor** | 🟡 | Lab RJ montado. **Encapsuladora 00 recebida — testes começam 30/Abr.** Extrato de Cordyceps + Juba de Leão a caminho para testar extrato vs. cogumelo moído (pode alterar densidade/dossier). Guilherme RJ operando. |
+| **Parceiro Produtor** | 🟡 | Lab RJ ativo. **Encapsuladora 00 operacional com extratos.** Cordyceps: ~500mg (4 rodadas). Juba de Leão: 491mg (aceitável). Guilherme RJ operando. |
 | **Regulação (ANVISA)** | 🔴 | Fila regulatória muito longa (1 a 2 anos). Adriana acompanhando. Rodar em paralelo, sem urgência de lançamento. |
 | **Lançamento Previsto** | 📅 | **A longo prazo** — condicionado à aprovação na ANVISA |
 

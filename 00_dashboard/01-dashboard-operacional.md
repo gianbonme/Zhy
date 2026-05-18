@@ -6,7 +6,7 @@ Documento central de acompanhamento diário da **Zhy**. Este arquivo consolida o
 
 ## 📍 Visão Executiva (Estado Atual)
 > [!NOTE]
-> *Status Atual:* Construindo a linha de produção inicial, com encapsuladoras em vias de recebimento e balanças operacionais. Embalagens provisórias rodando (Mkt interno) até a entrega da marca definitiva pela Agência Rebu (4 meses). Atuando fortemente na frente legal (MAPA e ANVISA). O negócio atingiu a fase onde **é crucial estruturar o departamento Comercial (B2B)** para escoar os produtos finais e trazer um **Braço Direito**. Gargalos técnicos críticos: viabilização de máquina HPP (Rio de Janeiro), compra de maquinário de apoio (freezers/rotuladora) para a linha de sucos e prospecção de fábricas para solúveis e RTDs.
+> *Status Atual (18/05/2026):* **Gabriel Victor entrou hoje como COO (PJ)** — onboarding em curso. Encapsulamento funcional com extratos (Cordyceps ~500mg, Juba de Leão 491mg). **HPP continua sendo o gargalo mestre**: Green People +2 semanas de espera, SP sem viabilidade. Sem HPP, Alvaro, rotuladora e freezers permanecem on hold. Rebranding com Rebú em andamento — embalagens definitivas e Pouch aguardando entrega. **Data de lançamento Fase 1 reprogramada** (nova data a definir em reunião estratégica com Gabriel). Formulação MushSpresso esperada na quarta — aceitação desbloqueia MAPA com Priscila.
 
 ---
 
@@ -45,22 +45,34 @@ Relação nominal das parcerias e profissionais atuando na base:
 ## 🚧 Mapeamento de Gargalos e Bloqueios
 Identificação das restrições para resolução imediata visando alavancar a equipe-base:
 
-- **📈 Comercial e Vendas B2B (VAGA ABERTA - URGENTE)**:
-  - Textos prontos para o LinkedIn. Contato quente: Ricardo Aquino pode assumir ou indicar alguém. Falta operacionalizar os anúncios.
-- **👥 Gestão / Braço Direito (VAGA ABERTA - URGENTE)**:
-  - Textos e testes práticos desenvolvidos. Necessidade imediata de postar nos portais (Catho, LinkedIn) para iniciar as entrevistas.
-- **⚙️ Maquinário e Infraestrutura (CRÍTICO)**:
-  - **Urgência 1 (Sucos/HPP)**: Gianluca puxou para si a frente do HPP (Guilherme sem solução). A Green People está reticente em assumir o processamento HPP para os sucos, logo, precisamos de uma alternativa (RJ).
-  - **Urgência 2 (Fábrica Alvaro)**: Necessidade de comprar *Rotuladora* e *Freezers* para acoplar na fábrica dele.
-- **📦 Logística Física de Embalagens (Fase 1 Lançamento)**:
-  - **Sucos e Shots (PETs):** Amostra de PET testada por Gianluca rodou bem. Aguardando a lista de novos fornecedores prometidos pelo Alvaro.
-  - **Cápsulas:** A arte das caixas precisa sofrer uma alteração da abertura (abrir pela tampa principal onde há o logo ZHY, diferente da convencional lateral da MushSpresso). Mkt responsável pela entrega.
-  - **Café Moído:** Resolver a embalagem do zero (definir material do pacote, orçar fábricas, criar desenho com a Rebu e testar).
-- **🏭 Fornecedores de Solúveis / Shots / RTD**: 
-  - **Shots:** Green People demonstrou forte interesse na produção (*co-packing*). A negociação pende de enviar certas infos solicitadas por eles, para submissão à aprovação do Conselho da GP.
-  - **RTD / Solúveis:** Segue sem parceiro originado.
-- **🧬 Conselho Científico Zhy (URGENTE)**:
-  - A estruturação não andou na prospecção. Necessidade de criar os "templates" de mensagem e coletar as formas de contato da "lista infinita". Existe um lead quente indicado pela advogada (Adriana). Ação prioritária de prospecção.
+- **🔴 HPP — GARGALO MESTRE (BLOQUEIO TOTAL)**:
+  - Green People: +2 semanas de freezer. Sem prazo confirmado.
+  - SP: 2 máquinas HPP contactadas — nenhuma com viabilidade real.
+  - **Impacto em cascata:** Alvaro (Sucos) on hold → Rotuladora on hold → Freezers on hold → Lançamento Fase 1 sem data.
+- **🔴 Data de Lançamento Fase 1 — Reprogramada sem nova data**:
+  - 01/Jun oficialmente inviável. Reunião estratégica com Gabriel esta semana para redefinir.
+- **📈 Comercial e Vendas B2B (EM RECRUTAMENTO)**:
+  - Delegado ao Gabriel Victor (COO). Processo seletivo em andamento.
+- **👥 COO — Gabriel Victor**:
+  - ✅ Entrou em 18/05 como PJ. Onboarding em curso (já tem ~80% do contexto).
+  - Frentes delegadas: recrutamento comercial + investigação solúveis in-house.
+- **⚙️ Maquinário e Infraestrutura**:
+  - **Rotuladora + Freezers (Alvaro):** On hold até HPP resolvido.
+  - **Encapsuladora 00:** Funcional com extratos, mas trabalhosa (4 rodadas para 500mg). Guilherme operando.
+- **📦 Embalagens**:
+  - **Cápsulas (caixa):** ✅ Aprovada.
+  - **Pouch:** On hold até Rebú finalizar rebranding. Testes de serigrafia aguardados (Decorlex / Spazzio).
+  - **PET Sucos/Shots:** On hold (Alvaro) → dependente de HPP.
+- **🏭 Solúveis / Shots / RTD**:
+  - **Shots via Green People:** Aguardando retorno (mesma fila do HPP).
+  - **Solúveis in-house:** Gabriel investigando viabilidade e maquinário.
+  - **RTD:** Sem parceiro — fase futura.
+- **⚖️ MAPA (Priscila)**:
+  - On hold até aceite da formulação MushSpresso (prevista quarta 20/05).
+- **🔴 Autorização Bombeiros:**
+  - Thais cobrada hoje (18/05). Sem resposta. Operação ainda não oficialmente habilitada.
+- **🧬 Conselho Científico Zhy (PARADO — URGENTE)**:
+  - Prospecção não avançou. Lead quente da Adriana ainda não ativado. Ação prioritária.
 
 ---
 
@@ -73,10 +85,10 @@ Visão esquemática em formato de texto para rápida consulta e acompanhamento:
            │            Gianluca (Diretor Estratégico)              │
            └───────────────────────────┬────────────────────────────┘
                                        │
-                    ┌──────────────────▼───────────────────┐
-                    │  [VAGA] Braço Direito (Gestão/Admin) │
-                    │  [VAGA] Comercial (Distribuição B2B) │
-                    └──────────────────┬───────────────────┘
+                    ┌──────────────────▼──────────────────────┐
+                    │  Gabriel Victor — COO (PJ, desde 18/05) │
+                    │  [VAGA] Comercial (Distribuição B2B) ◄── delegado ao Gabriel recrutar
+                    └──────────────────┬──────────────────────┘
                                        │
      ┌───────────────────────┬─────────┴─────────────┬────────────────────────┐
      │                       │                       │                        │
@@ -89,11 +101,11 @@ Visão esquemática em formato de texto para rápida consulta e acompanhamento:
      ├─ Guilherme RJ                                 ├─ Agência Rebu          │
      │  (Encapsulado/Oper)                           │  (Marca Definitiva)    └─ Advogada ANVISA
      ├─ Vida Líquida                                 │                           (Adriana)
-     │  (Alvaro - Sucos)                             │
+     │  (Alvaro - Sucos) [ON HOLD/HPP]               │
      ├─ MushSpresso                                  │
      │  (Adriel - Café)                              │
      ├─ Parceiro Solúveis                            │
-     │  (A Definir)                                  │
+     │  (A Definir — Gabriel investigando)           │
      └─ Parceiro RTD                                 │
         (A Definir)                                  │
 ```

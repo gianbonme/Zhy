@@ -66,13 +66,15 @@ Documentos originais — brandbook, dossiers ANVISA, contratos, orçamentos e pr
 
 ---
 
-## Status de Ouro (Março 2026)
+## 📊 Status Atual (Maio 2026)
 
-| Fase de Lançamento | Linha Ativas | Ref. Produção Principal | Regulação |
-|---|---|---|---|
-| **Fase 1** | 🧃 Sucos Cold Press + ☕ Cápsulas Café | Alvaro (Sucos) / Adriel (Café) | MAPA |
-| **Fase 2** | 🧴 Shots Funcionais + ☕ Café Moído | Alvaro (Sucos) / Adriel (Café) | MAPA |
-| **Fase 2** | 🍵 Solúveis (Matcha, Cacau, Golden Latte) | *(A Buscar Fabricação)* | MAPA |
-| **Fase 3** | 🥤 Enlatados RTD (Frios Funcionais) | *(A Buscar Fabricação)* | MAPA |
-| **Fase 4** | 💊 Suplementos & Proteína de Micélio | Produção Interna / Terc. | ANVISA |
+> **Atualizado em 18/05/2026** · COO: Gabriel Victor (PJ, desde 18/05) · Entrevistas Comercial B2B: **sexta 22/05**
+
+| Fase de Lançamento | Linhas | Ref. Produção Principal | Regulação | Status |
+|---|---|---|---|---|
+| **Fase 1** | 🧃 Sucos Cold Press + ☕ Cápsulas Café | Alvaro (Sucos) / Adriel (Café) | MAPA | 🔴 HPP bloqueado — data em revisão |
+| **Fase 2** | 💉 Shots Funcionais + ☕ Café Moído | Alvaro (Sucos) / Adriel (Café) | MAPA | 🟡 Aguardando Fase 1 |
+| **Fase 3** | 🍵 Solúveis (Matcha, Cacau, Golden Latte) | Gabriel investigando in-house | MAPA | 🟡 Em investigação |
+| **Fase 4** | 🥫 Enlatados RTD (Frios Funcionais) | *(A Buscar Fabricação)* | MAPA | ⚪ Fase futura |
+| **Fase 5** | 💊 Suplementos & Proteína de Micélio | Produção Interna / Terc. | ANVISA | 🔴 Fila regulatória (1–2 anos) |
 

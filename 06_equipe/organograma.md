@@ -18,10 +18,10 @@
 
 | Nome | Função | Status / Escopo |
 | :--- | :--- | :--- |
+| **Gabriel Victor** | COO — Diretor de Operações | Entrou em **18/05/2026** (PJ). Gestão operacional, recrutamento comercial e investigação de solúveis in-house. |
 | **Julio Cesar** | Gerente de Qualidade | Controle de processos, padrões técnicos e excelência de produto. |
 | **Guilherme RJ** | Operação / Encapsulado | Suporte operacional e operação das encapsuladoras. |
-| **[VAGA]** | Comercial B2B | **ABERTA**: Foco em expansão para Varejo Premium. |
-| **[VAGA]** | Braço Direito | **ABERTA**: Gestão administrativa e operacional nível 2. |
+| **[VAGA]** | Comercial B2B | **EM RECRUTAMENTO** — Entrevistas com candidatos na **sexta-feira (22/05)**. Processo liderado por Gabriel. |
 
 ---
 

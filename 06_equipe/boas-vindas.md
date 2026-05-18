@@ -36,14 +36,21 @@ A força da Zhy vem da nossa capacidade de cuidar de todos os momentos do dia do
 
 ## ⚙️ Diretrizes Básicas de Organização
 
-Para entregarmos uma qualidade tão alta no mercado, nosso trabalho interno precisa ser extremamente organizado. Na Zhy, todos precisam compreender o papel de *duas ferramentas fundamentais*:
+Para entregarmos uma qualidade tão alta no mercado, nosso trabalho interno precisa ser extremamente organizado. Na Zhy, todos precisam compreender o papel de *três ferramentas fundamentais*:
 
-### 1. NOTION (O Nosso Escritório)
-Pense no Notion como o nosso escritório físico, um lugar por onde você precisa "passar pela porta" todos os dias. 
-É aqui que organizamos os compromissos da empresa, verificamos quais tarefas estão atrasadas, quem está responsável pelo quê, e conversamos sobre as prioridades da semana e a comunicação com os nossos clientes. **Nada se faz de memória; tudo se escreve no Notion.**
+### 1. JIRA (O Nosso Escritório Operacional)
+O **Jira** é o nosso sistema central de gestão de tarefas e sprints. É onde as prioridades da semana vivem, onde as tarefas são atribuídas e onde acompanhamos o progresso real da operação. Temos 3 projetos ativos:
+- **ZHY-OPS** — Execução operacional do dia a dia
+- **ZHY-ROAD** — Portfólio de produtos e roadmap
+- **ZHY-TECH** — Tecnologia, e-commerce e desenvolvimento digital
 
-### 2. GOOGLE DRIVE (O Cofre do Arquivo)
-Se o Notion é a conversa e a tarefa diária, o nosso **Google Drive** é a nossa estante de ferro. E para que ninguém perca tempo procurando arquivos, a estante da Zhy possui exatamente 8 prateleiras (numeradas de 00 a 07). 
+**Nada se faz de memória; tudo se registra no Jira.**
+
+### 2. REPOSITÓRIO ZHY (Documentação Técnica)
+Este repositório (que você está lendo agora) é o nosso **arquivo vivo de conhecimento**. Aqui vivem as formulações, estratégias, planos de lançamento, documentação de parceiros e todo o contexto do negócio. Organizado em 8 pastas raízes (numeradas 00 a 07).
+
+### 3. GOOGLE DRIVE (O Cofre do Arquivo)
+O nosso **Google Drive** é a nossa estante de arquivos físicos — contratos, PDFs, orçamentos, brandbooks, dossiês. E para que ninguém perca tempo procurando arquivos, a estante da Zhy possui exatamente 8 prateleiras (numeradas de 00 a 07). 
 É **proibido** criar novas pastas soltas por fora. Os nossos arquivos devem obrigatoriamente estar em uma dessas raízes:
 
 *   **`00_Dashboard`** — Planilhas centrais de controle geral.

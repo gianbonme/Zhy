@@ -1,88 +1,97 @@
-# 🗓️ Recap Semanal Zhy — 27/04/2026
+# 🗓️ Recap Semanal Zhy — 18/05/2026
 
-Estamos na **Semana de 27/04 → 03/05**. Hoje é segunda-feira. Faltam **~35 dias para o lançamento previsto (01/Jun)**.
-
+Estamos na **Semana de 18/05 → 24/05**. Hoje é segunda-feira.
+> ⚠️ **Data de Lançamento Fase 1 (01/Jun) oficialmente reprogramada** — nova data a definir na reunião estratégica com Gabriel.
 
 ---
 
-## 🔴 Gargalos Críticos — Urgência
+## 🔴 Gargalos Críticos — Urgência Máxima
 
-| Item | Responsável | Deadline | Status | Ação Imediata |
-| :--- | :--- | :--- | :---: | :--- |
-| **Parceiro Solúveis** | Gianluca | Até fim do mês | 🔴 | GEPEA: opção possível mas lenta. Buscar alternativa mais ágil em paralelo |
-| **Conselho Científico** | Gianluca | — | 🔴 | Prospecção parada. Retomar ativação do plano |
-| **Embalagem PET Shots/Sucos** | Gianluca/Alvaro | — | 🟡 | Amostra validada. Investigar lista de fornecedores do Alvaro + maquinário Sucos |
-| **Embalagem Cápsulas Café** | Gianluca/Caco | — | 🟡 | Definir arte final da embalagem + nova gráfica para produzir a caixa |
-| **Amostras Pouch** | Gianluca | ASAP | 🔴 | **Ainda não pedido.** Solicitar amostras: stand-up pouch, café em grão e cápsulas suplementos |
-| **Regulação MAPA** | Priscila/Gianluca | — | 🟡 | Em processo — avançar com questões pendentes do MAPA |
-| **Jalecos** | Gianluca | ASAP | 🔴 | **Ainda não encarregado.** Orçamento Alsco (Julio) — resolver esta semana |
+| Item | Responsável | Status | Situação Real |
+| :--- | :--- | :---: | :--- |
+| **HPP (Gargalo Mestre)** | Gianluca | 🔴 | Green People: +2 semanas de espera. SP: 2 máquinas contatadas, nenhuma viável. **Sem HPP = sem sucos = sem lançamento.** |
+| **Autorização Bombeiros** | Gianluca / Thais | 🔴 | Thais cobrada hoje. Sem resposta ainda. |
+| **Nova data de lançamento** | Gianluca + Gabriel | 🔴 | Reprogramada, mas sem data definida. Precisa de reunião estratégica. |
+| **Parceiro Solúveis** | Gabriel (delegado) | 🟡 | Em investigação. Gabriel avaliando viabilidade + maquinário in-house. |
+| **Conselho Científico** | Gianluca | 🔴 | Parado. Prospecção não avançou. |
 
 ---
 
 ## 🟡 Em Andamento — Monitorar
 
-| Item | Responsável | Status | Próxima Ação |
+| Item | Responsável | Status | Situação Real |
 | :--- | :--- | :---: | :--- |
-| **Testes Encapsulamento — Encapsuladora 00** | Guilherme RJ | 🟡 | Encapsuladora 00 recebida. Testes começam **quarta-feira** |
-| **Extrato Cordyceps + Juba de Leão** | Gianluca | 🟡 | Comprado e a caminho. Aguardando recebimento para testar com extrato (vs. cogumelo moído) — pode alterar densidade e quantidade por cápsula |
-| **Testes Encapsulamento — Cápsulas Café** | MushSpresso | 🟡 | Cápsulas de café ainda aguardadas |
-| **Green People — HPP Sucos/Shots** | Green People | 🟡 | Continuamos aguardando retorno |
-| **Autorização Bombeiros (Habilitação Operação)** | Gianluca | 🟡 | Gilmar veio. Documentação apresentada. **Aguardando autorização** — quando sair, operação oficialmente habilitada |
-| **COO — Processo Seletivo** | Gianluca | ✅→🟡 | **Decisão tomada: Gabriel Victor.** Próximo: formalizar contratação |
+| **Encapsulamento (Extratos)** | Guilherme RJ | 🟡 | Encapsuladora 00 limitada mas funcional com extratos. Cordyceps: OK (~500mg, 4 rodadas). Juba de Leão: 491mg (aceitável). Guilherme já encapsulando. |
+| **Formulação MushSpresso** | MushSpresso | 🟡 | Chega **quarta-feira (20/05)**. Aceitação desta formulação desbloqueia o MAPA com Priscila. |
+| **Serigrafia (Embalagem)** | Decorlex / Spazzio | 🟡 | Aguardando envio dos testes. Necessário para protótipos de embalagem F&F. |
+| **Rebranding Rebú** | Agência Rebú | 🟡 | Em andamento. Embalagens e Pouch on hold até entrega da Rebú. |
+| **MAPA (Priscila)** | Priscila / Gianluca | 🟡 | On hold até receber e aceitar formulação MushSpresso na quarta. |
+| **Gabriel (COO) — Onboarding** | Gabriel | 🟢→🟡 | **Entrou hoje (18/05) como PJ.** Já com 80% do contexto. Em onboarding ativo. |
 
 ---
 
-## ✅ Agenda Concreta — Semana 27/04 → 03/05
+## 📋 Agenda Concreta — Semana 18/05 → 24/05
 
-### 📅 Terça-feira 28/04
-- [ ] **Reunião Rebú** — 16hs
-- [ ] **Pedir amostras Pouch** (stand-up + café em grão + cápsulas suplementos) — pendência crítica
-- [ ] **Encarregar jalecos** — Alsco / Julio
+### 📅 Segunda-feira 18/05
+- [x] **Gabriel** entra oficialmente como COO (PJ)
+- [ ] **Gianluca + Gabriel** — Alinhar prioridades da semana e escopo de delegação
+- [ ] Cobrar **Thais** sobre autorização dos Bombeiros ✅ (feito)
 
-### 📅 Quarta-feira 30/04
-- [ ] **Início dos testes com Encapsuladora 00** (Guilherme RJ)
-- [ ] Monitorar chegada dos extratos (Cordyceps + Juba de Leão) — se chegarem, integrar nos testes
-- [ ] Avaliar necessidade de revisar dossiers conforme resultado dos testes de densidade/quantidade
+### 📅 Quarta-feira 20/05
+- [ ] **Receber formulação MushSpresso** — Analisar e decidir aceite
+- [ ] Se aceita: **destravar avanço com Priscila (MAPA)**
 
-### 📅 Quinta–Sexta 01–02/05
-- [ ] Consolidar resultados parciais dos testes de encapsulamento
-- [ ] Avançar com questões do MAPA (Priscila)
-- [ ] Follow-up Green People
+### 📅 Quinta-Sexta 22–23/05
+- [ ] **Reunião estratégica Gianluca + Gabriel** — Revisar roadmap completo, redefinir data de lançamento e redistribuir frentes operacionais
+- [ ] Consolidar lista de delegações formais para Gabriel (semana seguinte)
 
 ---
 
-## 🎉 Concluído (Semana Passada + Acumulado)
+## 🤝 Delegações Ativas para o Gabriel (COO)
 
-- [x] Chegou a encapsuladora 00, testar extratos.
-- [x] Decisão: Gabriel Victor (Coordenador de operações)
+| Frente | Descrição | Status |
+| :--- | :--- | :---: |
+| **Comercial B2B** | Liderar processo seletivo e contratação do Vendedor B2B | 🟡 Em execução |
+| **Solúveis in-house** | Investigar viabilidade técnica + maquinário para produção própria dos solúveis | 🟡 Em investigação |
+| *(Expandir após reunião estratégica)* | — | — |
+
+---
+
+## ✅ Concluído (Acumulado)
+
+- [x] Decisão: Gabriel Victor como COO → **Entrou hoje 18/05 como PJ**
+- [x] Extratos de Cordyceps + Juba de Leão recebidos e testados
+- [x] Encapsulamento funcional com extratos (Guilherme operando)
+- [x] Gianluca contatou 2 máquinas HPP em SP (resultado negativo — frente descartada por ora)
+- [x] Thais cobrada sobre autorização dos Bombeiros
+- [x] Embalagem das Cápsulas: **caixa aprovada** ✅
 - [x] Gilmar visitou — documentação entregue aos bombeiros
-- [x] Follow-up com Green People sobre HPP sucos + shots
-- [x] Encapsuladora 00 recebida
 
 ---
 
-## 🔮 Preview da Próxima Semana (04/05 → 10/05)
+## 🔮 Próximos Marcos Críticos
 
-> Semana de consolidação dos primeiros resultados técnicos.
-
-- **Encapsulamento**: Primeiros resultados com encapsuladora 00 (pó e extratos) — definir se dossiers precisam ser ajustados
-- **Extrato Cordyceps/Juba**: Avaliação com extrato vs. cogumelo moído — impacto em densidade e formulação
-- **Autorização Bombeiros**: Espera confirmação → habilitação oficial de operação
-- **Onboarding Gabriel Victor**: Integração e primeiros processos a cargo
-- **HPP**: Definição deve ocorrer ao redor de 05/Mai (Green People — Shots + Sucos)
-- **Go/No-Go**: Decisão de produção em lote com base nos bloqueios resolvidos
-
----
-
-## 🧭 Meta Macro Ainda Ativa (120 dias)
-
-| Horizonte | Meta | Mix |
+| Evento | Prazo Estimado | Dependência |
 | :--- | :--- | :--- |
-| **01/Jun/2026** | Lançamento Fase 1 | Cápsulas Nespresso + Sucos Cold Press |
-| **120 dias** | 4.000 unidades | 3.000 Sucos HPP + 1.000 Caixas Cápsulas |
+| **Formulação MushSpresso** | Quarta 20/05 | Desbloqueia MAPA |
+| **Testes de Serigrafia** | A receber (Decorlex/Spazzio) | Desbloqueia embalagens provisórias F&F |
+| **Green People (HPP)** | ~01/06 | Desbloqueia Alvaro, rotuladora, freezers |
+| **Reunião Estratégica (nova data)** | Semana 18/05 | Desbloqueia roadmap completo |
+| **Rebú (Rebranding)** | ~4 meses do início | Desbloqueia Pouch definitivo |
+
+---
+
+## 🧭 Meta Macro — Em Revisão
+
+| Horizonte | Meta Original | Status |
+| :--- | :--- | :--- |
+| **Fase 1** | Sucos Cold Press + Cápsulas Nespresso | 🟡 **Data em revisão** |
+| **120 dias** | 4.000 unidades (3k Sucos + 1k Cápsulas) | 🟡 **Meta mantida, cronograma a redefinir** |
+
+> [!IMPORTANT]
+> O "momento morto" do rebranding (Rebú) é uma janela estratégica valiosa. Usar para a reunião com Gabriel e sair com o novo roadmap definido.
 
 ---
 
 > [!TIP]
 > Documentos de referência: `produto-status-tracker.md` · `dashboard-operacional.md` · `plano-lançamento.md`
-> Equipe: `06_equipe/Convocatória Coordenação.md`

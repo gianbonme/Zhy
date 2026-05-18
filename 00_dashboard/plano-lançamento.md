@@ -135,17 +135,18 @@
 
 | Pessoa / Entidade | Responsabilidades Imediatas |
 |---|---|
-| **Gianluca** | Decisão PET (sucos + shots), compra maquinário, estratégia geral, buscar parceiro solúveis |
-| **Guilherme** | Fechar parceiro HPP no RJ (até 28/03!) |
-| **Caco / Carol** | Arte embalagem cápsulas (01/04), arte embalagem sucos (03/04), arte 4 shots, fotos, copy |
-| **Adriel (MushSpresso)** | Produção 9k cápsulas, lote café moído piloto |
-| **Alvaro (Vida Líquida)** | Produção sucos + 4 shots, setup rotuladora + freezer |
-| **Rebu** | Marca definitiva + 15 embalagens (4 meses — provisório até lá) |
-| **Priscila** | Liberações MAPA (sucos, shots, alimentos inovadores, Copaíba) |
+| **Gianluca** | Decisão estratégica geral, parceiros-chave, reunião de recalibração com Gabriel, HPP |
+| **Gabriel Victor (COO)** | Gestão operacional, recrutamento comercial (**entrevistas sexta 22/05**), investigação de solúveis in-house |
+| **Guilherme RJ** | Encapsulamento ativo no Lab RJ (extratos Cordyceps + Juba de Leão) |
+| **Caco / Carol** | Arte embalagem sucos (rótulo interim), conteúdo de marketing, embalagem provisória para F&F |
+| **Adriel (MushSpresso)** | Formulação chega quarta 20/05 — aceite destrava MAPA. Produção 9k cápsulas. |
+| **Alvaro (Vida Líquida)** | ON HOLD até HPP resolvido |
+| **Rebu** | Rebranding (marca definitiva + 15 embalagens) — foco atual |
+| **Priscila** | Liberações MAPA (on hold até aceite formulação MushSpresso) |
 | **Adriana** | Dossiês ANVISA suplementos (roda paralelo) |
-| **Web/Dev** | Finalizar e-commerce com checkout funcional |
-| **[A CONTRATAR]** | Vendedor B2B + Braço Direito gestão |
-| **[A CONSTITUIR]** | **Conselho Científico Zhy** — médico funcional, nutricionista sênior, especialista em cogumelos/fitoterapia. Validação formulações pré-MAPA. **Urgente.** |
+| **Guilherme Tech** | Web/e-commerce (checkout, digital) |
+| **[A CONTRATAR]** | **Vendedor B2B** — entrevistas sexta 22/05 (2 a 3 candidatos) |
+| **[A CONSTITUIR]** | **Conselho Científico Zhy** — parado. Médico funcional, nutricionista sênior, especialista em cogumelos/fitoterapia. **Urgente.** |
 
 ---
 
