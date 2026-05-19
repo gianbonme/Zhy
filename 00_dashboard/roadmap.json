@@ -1,0 +1,2364 @@
+[
+  {
+    "issue_type": "Epic",
+    "summary": "SEC — Segurança & Hardening Enterprise",
+    "description": "Corrigir as 12 vulnerabilidades identificadas na auditoria OWASP e implementar fundação de segurança enterprise.\nP0 bloqueante — nenhuma feature nova entra em produção enquanto SEC não estiver completo.\nDev 1 lidera SEC-1 (Bagisto/infra). Dev 2 lidera SEC-2 e SEC-3 (Next.js/BFF).",
+    "labels": [
+      "security",
+      "owasp",
+      "enterprise"
+    ],
+    "stories": [
+      {
+        "issue_type": "Story",
+        "summary": "SEC-1 — Fixes Críticos Imediatos",
+        "description": "Sprint 0. Correções de 15-30 min cada. Pré-requisito absoluto para staging funcionar.\n\nh3. Acceptance Criteria\n* Porta 8025 do Mailpit NÃO acessível externamente à rede Docker\n* {{config/sanctum.php}} com {{expiration}} não-nulo (7 dias)\n* {{config/session.php}} com {{'secure' => true}} em produção\n* {{<Image>}} do Bagisto CDN renderiza sem erros em staging após SEC-1.4",
+        "sprint": "Sprint 0",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "SEC-1.1 — Fechar Mailpit para rede pública",
+            "description": "Arquivo: {{zhy-infra/docker-compose.yml}}\nAção: alterar {{ports: \"8025:8025\"}} para {{127.0.0.1:8025:8025}} (idem porta 1025)\nResolve: V-SEC-6 (emails interceptáveis via porta pública)",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "infra",
+              "security"
+            ],
+            "estimate": "0.5 SP",
+            "sprint": "Sprint 0",
+            "subtasks": []
+          },
+          {
+            "issue_type": "Task",
+            "summary": "SEC-1.2 — Expiração Sanctum 7 dias",
+            "description": "Arquivo: {{zhy-core-api/config/sanctum.php}}\nAção: {{'expiration' => 60 * 24 * 7}} (antes: null)\nResolve: V-SEC-4 (tokens Sanctum nunca expiram — OWASP A07)",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "security"
+            ],
+            "estimate": "0.5 SP",
+            "sprint": "Sprint 0",
+            "subtasks": []
+          },
+          {
+            "issue_type": "Task",
+            "summary": "SEC-1.3 — Session cookie seguro em produção",
+            "description": "Arquivo: {{zhy-core-api/config/session.php}}\nAção: {{'secure' => env('SESSION_SECURE_COOKIE', true)}}\nResolve: V-SEC-5 (cookies transmitidos via HTTP sem flag secure — OWASP A02)",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "security"
+            ],
+            "estimate": "0.5 SP",
+            "sprint": "Sprint 0",
+            "subtasks": []
+          },
+          {
+            "issue_type": "Task",
+            "summary": "SEC-1.4 — remotePatterns no next.config.ts",
+            "description": "Arquivo: {{zhy-storefront-crm/next.config.ts}}\nAção: adicionar hostname do Bagisto e CDN em {{images.remotePatterns}}\nResolve: V-SEC-11 ({{<Image>}} quebra em produção sem remotePatterns)\n\nh3. Configuração\n{code:typescript}\nimages: {\n  remotePatterns: [\n    { protocol: 'https', hostname: 'app.seudominio.com.br', pathname: '/storage/**' },\n    { protocol: 'http', hostname: 'api', pathname: '/storage/**' }\n  ]\n}\n{code}",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend"
+            ],
+            "estimate": "0.5 SP",
+            "sprint": "Sprint 0",
+            "subtasks": []
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "SEC-2 — Iron Session: Sessão Autenticada Stateless",
+        "description": "Sprint 1. Responsável: Dev 2. Sem isso não há auth, não há /conta, não há checkout autenticado.\n\nh3. Acceptance Criteria\n* {{GET /api/auth/me}} retorna 401 sem cookie\n* Login bem-sucedido cria cookie {{zhy_session}} (httpOnly, encrypted, sameSite=strict, 7 dias)\n* {{/conta}} sem sessão → redirect {{/login?next=/conta}}\n* Logout → cookie destruído → {{/conta}} redireciona novamente\n\nh3. Arquitetura de Sessão\n* Cookie: {{zhy_session}} (iron-session, chave SESSION_SECRET >= 32 chars)\n* Endpoint chamado server-side: {{POST /api/v1/customer/login}}\n* {{laravel_session}} extraído do Set-Cookie Bagisto e armazenado na sessão iron\n* Browser recebe apenas cookie opaco — nunca vê o laravel_session",
+        "sprint": "Sprint 1",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "SEC-2.1 — Interface de sessão + helpers (src/lib/session.ts)",
+            "description": "Arquivo: {{src/lib/session.ts}}\nInterface: {{SessionData { customerId?, email?, firstName?, bagistoSessionCookie?, isLoggedIn: boolean }}}\nSESSION_OPTIONS: cookieName={{zhy_session}}, httpOnly=true, secure=(prod), sameSite=strict, maxAge=7d\nHelpers: {{getSession()}} e {{requireAuth()}} (redirect /login se não autenticado)",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "auth"
+            ],
+            "estimate": "1 SP",
+            "sprint": "Sprint 1",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Definir interface SessionData com todos os campos",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Definir SESSION_OPTIONS (cookieName, httpOnly, secure, sameSite, maxAge)",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar getSession() retornando IronSession<SessionData>",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar requireAuth() com redirect /login se !isLoggedIn",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "SEC-2.2 — Route Handler login (src/app/api/auth/login/route.ts)",
+            "description": "Flow: Zod parse body → fetch {{INTERNAL_API_URL/api/v1/customer/login}} server-side → extrair {{laravel_session}} do Set-Cookie → salvar em iron-session → retornar {{firstName}}\nLoginSchema: {{email: z.string().email(), password: z.string().min(8)}}\nErro 401 se Bagisto rejeitar credenciais. Nunca expõe o laravel_session ao browser.",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "auth"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 1",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Definir LoginSchema com Zod (email + password min 8)",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar fetch server-side para POST /api/v1/customer/login",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Extrair laravel_session do header Set-Cookie da resposta Bagisto",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Salvar customerId, email, firstName, bagistoSessionCookie, isLoggedIn=true na sessão",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "SEC-2.3 — Route Handler me (src/app/api/auth/me/route.ts)",
+            "description": "GET: retorna {{{ isLoggedIn, customerId, email, firstName }}} ou 401 com {{isLoggedIn: false}} se não autenticado",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "auth"
+            ],
+            "estimate": "0.5 SP",
+            "sprint": "Sprint 1",
+            "subtasks": []
+          },
+          {
+            "issue_type": "Task",
+            "summary": "SEC-2.4 — Route Handler logout (src/app/api/auth/logout/route.ts)",
+            "description": "POST: {{session.destroy()}} → limpar todos os campos → retornar {{{ ok: true }}}\nCookie {{zhy_session}} é automaticamente invalidado pelo iron-session.",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "auth"
+            ],
+            "estimate": "0.5 SP",
+            "sprint": "Sprint 1",
+            "subtasks": []
+          },
+          {
+            "issue_type": "Task",
+            "summary": "SEC-2.5 — Middleware de proteção de rotas (src/middleware.ts)",
+            "description": "PROTECTED_PREFIXES: {{['/conta', '/checkout', '/pedido']}} → redirect {{/login?next=<pathname>}} se !session.isLoggedIn\nPUBLIC_AUTH_PATHS: {{['/login', '/register', '/esqueci-senha']}} → redirect {{/conta}} se session.isLoggedIn\nmatcher config: excluir /api/*, _next/static, _next/image, favicon.ico\nResolve: V-SEC-8 (rotas /conta/* sem proteção — OWASP A01)",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "auth",
+              "security"
+            ],
+            "estimate": "1 SP",
+            "sprint": "Sprint 1",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Definir array PROTECTED_PREFIXES e PUBLIC_AUTH_PATHS",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar lógica de redirect para rotas protegidas com ?next=",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar redirect /conta para auth pages quando já logado",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Configurar matcher excluindo assets estáticos e rotas API",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "SEC-2.6 — Páginas de Auth UI (Login, Registro, Esqueci Senha, Redefinir Senha, UserMenu)",
+            "description": "Visual Identity ZHY: bg={{#F5EFE5}} cream, text={{#1F2430}} navy, accent={{#8B7355}} brown, glassmorphism, font-title Caslon Ionic\n\nh3. Páginas a implementar\n|| Página || Path || SP ||\n| Login | src/app/login/page.tsx | 2 SP |\n| Registro | src/app/register/page.tsx | 2 SP |\n| Esqueci Senha | src/app/esqueci-senha/page.tsx | 1 SP |\n| Redefinir Senha | src/app/redefinir-senha/page.tsx | 1 SP |\n| UserMenu (header) | src/components/UserMenu.tsx | 2 SP |",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "auth",
+              "ui"
+            ],
+            "estimate": "8 SP",
+            "sprint": "Sprint 1",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar src/app/login/page.tsx — form + POST /api/auth/login + redirect ?next=",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar src/app/register/page.tsx — form + POST /api/shop/v1/customer/register via BFF",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar src/app/esqueci-senha/page.tsx — POST /api/shop/v1/customer/forgot-password",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar src/app/redefinir-senha/page.tsx — token via query param",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar src/components/UserMenu.tsx — exibir firstName, link /conta, botão logout",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "SEC-3 — BFF Hardening: CSRF, Rate Limiting, Zod, env.ts",
+        "description": "Sprint 2. Responsável: Dev 2.\nResolve: V-SEC-1 (CSRF), V-SEC-2 (rate limit), V-SEC-3 (body injection), V-SEC-7 (CPF/CNPJ), V-SEC-10 (resposta Bagisto), V-SEC-12 (env.ts)\n\nh3. Acceptance Criteria\n* POST sem {{x-csrf-token}} retorna 403\n* 6° login attempt em 15 min retorna 429\n* Body com campo fora do Zod schema → 400 antes de chegar no Bagisto\n* App não sobe se SESSION_SECRET não definido (env.ts lança)\n* .env.example tem todas as variáveis usadas em env.ts",
+        "sprint": "Sprint 2",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "SEC-3.1 — CSRF double-submit cookie",
+            "description": "Arquivos:\n* {{src/app/api/auth/csrf/route.ts}}: GET gera {{randomBytes(32).toString('hex')}}, seta cookie {{csrf_token}} (httpOnly: *false* para leitura JS, sameSite: strict, maxAge: 1h)\n* Validação no BFF {{[...path]/route.ts}}: comparar header {{x-csrf-token}} com cookie {{csrf_token}} em POST/PUT/PATCH/DELETE → 403 se ausente ou divergente\nResolve: V-SEC-1 (CSRF — OWASP A01)",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "security"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 2",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar GET /api/auth/csrf: gerar token hex 32 bytes + setar cookie csrf_token",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Adicionar validação CSRF no BFF handler para métodos de mutação",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "SEC-3.2 — Rate Limiter em memória (src/lib/rateLimiter.ts)",
+            "description": "Arquivo: {{src/lib/rateLimiter.ts}}\nImplementação: Map em memória por processo Next.js\n\nh3. Instâncias exportadas\n* {{authRateLimiter}}: max=5, window=15 min → login/register\n* {{bffRateLimiter}}: max=100, window=1 min → BFF geral\n* {{ordersRateLimiter}}: max=5, window=1 hora → anti-fraude em pedidos\n\nResolve: V-SEC-2 (brute-force em /customer/login — OWASP A04)",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "security"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 2",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar factory createRateLimiter(max, windowMs) com Map store",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Exportar authRateLimiter (5/15min), bffRateLimiter (100/min), ordersRateLimiter (5/hr)",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "SEC-3.3 — Zod Schemas de validação (src/lib/schemas/checkout.ts)",
+            "description": "Arquivo: {{src/lib/schemas/checkout.ts}}\n\nh3. Schemas obrigatórios\n* {{AddressSchema}}: first_name (max 100), last_name (max 100), phone (regex BR \\d{10,11}), address1 (array string), city, state (2 chars UF), postcode (8 dígitos), country: literal 'BR', cpf_cnpj? (regex 11 ou 14 dígitos)\n* {{CartItemSchema}}: product_id (int.positive), quantity (int.positive max 99), super_attribute (Record opcional)\n* {{CouponSchema}}: code (string min 1 max 50)\n\nResolve: V-SEC-3 (body injection — OWASP A03), V-SEC-7 (CPF/CNPJ só client-side)",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "security",
+              "validation"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 2",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar AddressSchema com todos os campos e validação de UF/postcode/cpf_cnpj",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar CartItemSchema com product_id, quantity (max 99), super_attribute opcional",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar CouponSchema e integrar no BFF endpoint de cupom",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "SEC-3.4 — Validação de variáveis de ambiente (src/lib/env.ts)",
+            "description": "Arquivo: {{src/lib/env.ts}}\nDependência: {{@t3-oss/env-nextjs}}\n\nh3. Variáveis server-side\n* SESSION_SECRET: string.min(32) — app lança se ausente\n* INTERNAL_API_URL: string.url()\n* NODE_ENV: enum ['development', 'production', 'test']\n\nh3. Variáveis client-side (NEXT_PUBLIC_)\n* NEXT_PUBLIC_API_URL: string.url()\n* NEXT_PUBLIC_SITE_URL: string.url()\n* NEXT_PUBLIC_MP_PUBLIC_KEY: string.min(1)\n\nResolve: V-SEC-12 (app sobe com SESSION_SECRET vazio — OWASP A05)",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "security"
+            ],
+            "estimate": "1 SP",
+            "sprint": "Sprint 2",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar src/lib/env.ts com createEnv para variáveis server e client",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Integrar env.ts em session.ts, api.ts e todos os pontos de uso das env vars",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "SEC-3.5 — .env.example completo (zhy-storefront-crm/.env.example)",
+            "description": "Arquivo: {{zhy-storefront-crm/.env.example}}\n\nh3. Variáveis obrigatórias\n* SESSION_SECRET (instrução: openssl rand -hex 32)\n* INTERNAL_API_URL=http://api\n* NEXT_PUBLIC_API_URL, NEXT_PUBLIC_SITE_URL\n* NEXT_PUBLIC_MP_PUBLIC_KEY (público OK no browser)\n* MP_ACCESS_TOKEN (PRIVADO — nunca NEXT_PUBLIC_)\n* NEXT_PUBLIC_SENTRY_DSN (opcional)\n\nResolve: B14 (bloqueador — .env.example ausente)",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "devops"
+            ],
+            "estimate": "0.5 SP",
+            "sprint": "Sprint 2",
+            "subtasks": []
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "SEC-4 — LGPD Compliance",
+        "description": "Sprint 7+ (pós-launch prioritário). Dev 1 (backend) + Dev 2 (frontend).\n\nh3. Acceptance Criteria\n* Cliente consegue solicitar exclusão de conta via /conta/privacidade\n* Export CSV de dados PII disponível via link autenticado\n* Cookie consent banner aparece na 1ª visita e respeita preferência (localStorage)",
+        "sprint": "Sprint 7+",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "SEC-4.1 — Endpoint e UI de exclusão de dados do cliente",
+            "description": "Backend: endpoint custom {{DELETE /api/v1/customer/account}} com anonimização de PII (email, cpf, telefone) — NÃO deletar pedidos para integridade fiscal\nFrontend: página {{src/app/conta/privacidade/page.tsx}} com confirmação modal + chamada ao endpoint\n\nh3. Acceptance Criteria\n* Solicitar exclusão → dados PII anonimizados no banco em < 30 dias (LGPD Art. 18)",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "frontend",
+              "lgpd"
+            ],
+            "estimate": "4 SP",
+            "sprint": "Sprint 7+",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar endpoint Bagisto para anonimização de PII do cliente",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar src/app/conta/privacidade/page.tsx com modal de confirmação",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "SEC-4.2 — Export de dados pessoais (LGPD Art. 18)",
+            "description": "Backend: endpoint {{GET /api/v1/customer/export}} → gera CSV com todos os campos PII do cliente autenticado\nFrontend: botão de download em /conta/privacidade",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "lgpd"
+            ],
+            "estimate": "4 SP",
+            "sprint": "Sprint 7+",
+            "subtasks": []
+          },
+          {
+            "issue_type": "Task",
+            "summary": "SEC-4.3 — Cookie consent banner",
+            "description": "Arquivo: {{src/components/CookieConsent.tsx}}\nImplementação: localStorage (sem Google Analytics de terceiros), botão Aceitar/Recusar, reaparecimento apenas se preferência não salva\nNÃO bloquear funcionalidades essenciais da loja",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "lgpd",
+              "ui"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 7+",
+            "subtasks": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "issue_type": "Epic",
+    "summary": "OPS — Operações, CI/CD & Disaster Recovery",
+    "description": "Infraestrutura de produção enterprise — imagens Docker imutáveis via GHCR (Veto 1), deploy sem downtime, observabilidade completa e backup automatizado para S3 (Veto 4).\nDev 1 responsável por toda infra. Dev 2 colabora em CI storefront e Sentry no frontend.",
+    "labels": [
+      "infra",
+      "cicd",
+      "devops",
+      "disaster-recovery"
+    ],
+    "stories": [
+      {
+        "issue_type": "Story",
+        "summary": "OPS-1 — Infraestrutura de Produção Docker",
+        "description": "Sprint 4. Dev 1 principal.\nCria todos os artefatos Docker de produção: docker-compose.prod.yml, supervisor.conf, Dockerfile.prod (Bagisto + Storefront), nginx prod.conf com TLS.\n\nh3. Acceptance Criteria\n* {{docker compose -f docker-compose.prod.yml up -d}} sem erros\n* Queue workers processando jobs confirmado\n* Scheduler rodando CancelExpiredPixOrders a cada minuto\n* HTTPS com TLS 1.2+ em ambos os domínios\n* MySQL e Redis inacessíveis externamente (rede db_net internal)",
+        "sprint": "Sprint 4",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "OPS-1.1 — docker-compose.prod.yml",
+            "description": "Arquivo: {{zhy-infra/docker-compose.prod.yml}}\nServiços: proxy (nginx:1.27-alpine), api (ghcr.io image), storefront (ghcr.io image), mysql:8.0, redis:7-alpine\nTodas as imagens com healthcheck + restart: unless-stopped + mem_limit\nRede {{db_net}} com {{internal: true}} — MySQL e Redis não expostos\nImagens api e storefront puxadas do GHCR — ZERO build em produção (Veto 1)\nResolve: B1 (docker-compose.prod.yml inexistente)",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "infra",
+              "docker"
+            ],
+            "estimate": "4 SP",
+            "sprint": "Sprint 4",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Definir serviço proxy: nginx:1.27-alpine, portas 80+443, volumes letsencrypt",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Definir serviço api: image GHCR, env_file, healthcheck curl /api/v1/status, mem_limit 512m",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Definir serviço storefront: image GHCR, env_file, healthcheck curl /api/health, mem_limit 512m",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Definir serviços mysql:8.0 e redis:7-alpine com healthchecks e rede db_net internal",
+                "assignee_role": "Dev 1"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-1.2 — supervisor.conf (php-fpm + queue-worker + scheduler)",
+            "description": "Arquivo: {{zhy-core-api/supervisor.conf}}\nPrograms: php-fpm (nodaemon), queue-worker redis (numprocs=2, --tries=3, --max-time=3600), scheduler (loop while true; artisan schedule:run; sleep 60)\nTodos os logs para /dev/stdout\nResolve: B9 (Supervisor não configurado em produção)",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "infra"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 4",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Configurar program:php-fpm com nodaemon=true e logs stdout/stderr",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Configurar program:queue-worker com numprocs=2, redis queue, retry/timeout corretos",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Configurar program:scheduler como loop shell com artisan schedule:run a cada 60s",
+                "assignee_role": "Dev 1"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-1.3 — Dockerfile.prod para Bagisto (zhy-core-api/Dockerfile.prod)",
+            "description": "Base: {{php:8.3-fpm-alpine}}\nExtensões: pdo_mysql, gd, mbstring, intl, zip, bcmath, opcache, pcntl\nComposer: {{--no-dev --optimize-autoloader}}\nArtisan: config:cache, route:cache, view:cache, event:cache\nSupervisor como CMD\nResolve: B6 (usar artisan serve em produção)",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "docker",
+              "infra"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 4",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Instalar extensões PHP necessárias via apk + docker-php-ext-install",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Executar composer install --no-dev --optimize-autoloader no build",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Executar config:cache, route:cache, view:cache, event:cache no build",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Configurar supervisor.conf como CMD e definir permissões storage/bootstrap/cache",
+                "assignee_role": "Dev 1"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-1.4 — Dockerfile.prod para Storefront (zhy-storefront-crm/Dockerfile.prod)",
+            "description": "Multi-stage: builder (node:20-alpine, npm ci, npm run build) + runner (node:20-alpine, apenas .next/standalone)\nVariáveis de ambiente injetadas em runtime (não hardcoded no build)\nEXPOSE 3000",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "docker"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 4",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Stage builder: node:20-alpine, npm ci, npm run build com output: standalone",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Stage runner: copiar apenas .next/standalone + public + static, CMD node server.js",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-1.5 — Nginx prod.conf (HTTPS + rate limiting)",
+            "description": "Arquivo: {{zhy-infra/nginx/conf.d/prod.conf}}\nZonas: {{api_limit 60r/m}}, {{auth_limit 5r/m}}\nVhosts: HTTP→HTTPS redirect, Bagisto API (app.seudominio.com.br), Storefront (www.seudominio.com.br)\nHeaders de segurança em ambos: X-Frame-Options DENY, HSTS, X-Content-Type-Options, Referrer-Policy\nResolve: B2 (prod.conf inexistente)",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "infra",
+              "security",
+              "nginx"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 4",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Definir limit_req_zone para api_limit (60r/m) e auth_limit (5r/m)",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Configurar server HTTP→HTTPS redirect com suporte Certbot ACME challenge",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Configurar vhost Bagisto API com TLS 1.2+, rate limiting e security headers",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Configurar vhost Storefront com TLS, proxy_pass http://storefront:3000, upgrade websocket",
+                "assignee_role": "Dev 1"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-1.6 — Certbot / Let's Encrypt no VPS",
+            "description": "Setup manual no VPS: instalar certbot, emitir certificados para app.seudominio.com.br e www.seudominio.com.br\nRenovação automática: cron mensal {{certbot renew --quiet}}\nResolve: B3 (HTTPS não configurado — site em HTTP puro)",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "infra",
+              "security"
+            ],
+            "estimate": "1 SP",
+            "sprint": "Sprint 4",
+            "subtasks": []
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "OPS-2 — Observabilidade: Sentry + Pino + Health Checks",
+        "description": "Sprint 4. Dev 1 (Sentry Bagisto) + Dev 2 (Sentry Next.js + Pino + /api/health).\n\nh3. Acceptance Criteria\n* Exceções PHP capturadas automaticamente no Sentry\n* Erros Next.js reportados no Sentry com sourcemaps\n* {{GET /api/health}} retorna 200 com timestamp e versão\n* {{GET /api/v1/status}} retorna 200 (usado pelos healthchecks Docker)",
+        "sprint": "Sprint 4",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "OPS-2.1 — Sentry no Bagisto (zhy-core-api)",
+            "description": "Arquivo: {{zhy-core-api/config/sentry.php}}\nConfigurar DSN via {{SENTRY_LARAVEL_DSN}} em .env\nCaptura automática de exceções + performance monitoring\nConfigurar {{traces_sample_rate}} adequado para produção",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "observability"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 4",
+            "subtasks": []
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-2.2 — Sentry + Pino no Next.js (zhy-storefront-crm)",
+            "description": "Arquivos:\n* {{sentry.client.config.ts}} e {{sentry.server.config.ts}}: configurar DSN, release, sourcemaps\n* {{src/lib/logger.ts}}: Pino structured logging, pino-pretty em dev, JSON em prod, level configurável via LOG_LEVEL env\nDependências: {{@sentry/nextjs}}, {{pino}}, {{pino-pretty}}",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "observability"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 4",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Configurar sentry.client.config.ts e sentry.server.config.ts com DSN e sourcemaps",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar src/lib/logger.ts com Pino (pino-pretty em dev, JSON em prod)",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-2.3 — Health check endpoint Next.js (GET /api/health)",
+            "description": "Arquivo: {{src/app/api/health/route.ts}}\nRetorna: {{{ status: 'ok', timestamp: ISO string, version: string }}}\nUsado pelo healthcheck do Docker Compose e pelo deploy.sh",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "infra"
+            ],
+            "estimate": "0.5 SP",
+            "sprint": "Sprint 4",
+            "subtasks": []
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-2.4 — Health check endpoint Bagisto (GET /api/v1/status)",
+            "description": "Arquivo: {{zhy-core-api/routes/api.php}} (ou route em packages/)\nRetorna: {{{ status: 'ok', version: string, timestamp: ISO }}}\nUsado pelo healthcheck do serviço api no docker-compose.prod.yml",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "infra"
+            ],
+            "estimate": "0.5 SP",
+            "sprint": "Sprint 4",
+            "subtasks": []
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "OPS-3 — CI/CD: GitHub Actions + GHCR + deploy.sh [Veto 1]",
+        "description": "Sprint 4. DECISÃO IRREVOGÁVEL (Veto 1): GitHub Actions compila as imagens Docker e faz push para GHCR. A VPS apenas executa docker pull + rolling restart. ZERO build em produção.\nRationale: VPS tem 2 vCPUs — docker build de imagem Next.js consome 100% CPU por 5+ min, derrubando o site a cada deploy.\n\nh3. Acceptance Criteria\n* Push para main no core-api dispara build e push para GHCR\n* Imagem tagueada com :latest e :SHA do commit\n* VPS não tem Dockerfile nem npm install — apenas docker pull\n* deploy.sh faz rollback automático se health check falhar após 50s",
+        "sprint": "Sprint 4",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "OPS-3.1 — CI storefront: lint, build, test (zhy-storefront-crm/.github/workflows/ci.yml)",
+            "description": "Trigger: push e pull_request para main\nSteps: checkout, setup node:20, npm ci, npm run lint, npm run build, npm test\nCache: ~/.npm",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "cicd"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 4",
+            "subtasks": []
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-3.2 — CI core-api: PHPUnit + Pint (zhy-core-api/.github/workflows/ci.yml)",
+            "description": "Trigger: push e pull_request para main\nSteps: checkout, setup PHP 8.3, composer install, php artisan test, ./vendor/bin/pint --test\nServiços: mysql:8.0 e redis:alpine como services GitHub Actions",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "cicd"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 4",
+            "subtasks": []
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-3.3 — CD core-api → GHCR (zhy-core-api/.github/workflows/cd.yml)",
+            "description": "Trigger: push para main (após CI verde)\nSteps: docker/login-action para ghcr.io, docker/build-push-action com tags latest + SHA\nPermissions: packages: write\nImagem: {{ghcr.io/mzgui/zhy-core-api:latest}} + {{ghcr.io/mzgui/zhy-core-api:<sha>}}",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "cicd",
+              "infra"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 4",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Configurar docker/login-action para ghcr.io com GITHUB_TOKEN",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Configurar docker/build-push-action com context, file=Dockerfile.prod, tags latest+SHA",
+                "assignee_role": "Dev 1"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-3.4 — CD storefront → GHCR (zhy-storefront-crm/.github/workflows/cd.yml)",
+            "description": "Mesmo padrão que OPS-3.3 para o storefront.\nImagem: {{ghcr.io/mzgui/zhy-storefront-crm:latest}} + {{ghcr.io/mzgui/zhy-storefront-crm:<sha>}}",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "cicd",
+              "infra"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 4",
+            "subtasks": []
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-3.5 — deploy.sh no VPS (zhy-infra/scripts/deploy.sh) [Veto 1]",
+            "description": "Arquivo: {{zhy-infra/scripts/deploy.sh}}\nFluxo: login GHCR → docker pull (ZERO build) → docker compose up --no-build → health check loop (10 tentativas, 5s cada) → rollback automático se falhar\nResolve: B16 (deploy manual via SSH)\n\nh3. Acceptance Criteria\n* Script não executa docker build em nenhuma circunstância\n* Rollback automático dispara se /api/v1/status não retornar 200 após 50s",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "infra",
+              "cicd"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 4",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar docker login + docker pull para ambas as imagens GHCR",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar rolling restart com docker compose up -d --no-build --remove-orphans",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar health check loop (10 tentativas, 5s) com rollback automático em falha",
+                "assignee_role": "Dev 1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "OPS-4 — Disaster Recovery: MySQL → S3 [Veto 4]",
+        "description": "Sprint 4. Dev 1. DECISÃO IRREVOGÁVEL (Veto 4).\nRationale: VPS tem 1 disco. Falha de hardware = perda de 100% dos dados. mysqldump diário → gzip → S3 STANDARD_IA com KMS encryption e retenção por Lifecycle Policy.\n\nh3. Acceptance Criteria\n* Cron dispara às 02:00 UTC e log registra sucesso\n* Arquivo .sql.gz no S3 com storage class STANDARD_IA e SSE KMS\n* Lifecycle: daily expira em 7d, weekly em 30d, monthly em 365d\n* Restore testado: gzip -d backup.sql.gz | mysql funciona\n* IAM user tem apenas s3:PutObject, s3:GetObject, s3:ListBucket, kms:GenerateDataKey, kms:Decrypt",
+        "sprint": "Sprint 4",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "OPS-4.1 — mysql-backup.sh com classificação de retenção",
+            "description": "Arquivo: {{zhy-infra/scripts/mysql-backup.sh}}\nFluxo: mysqldump --single-transaction → gzip -9 → verificar integridade (gzip -t) → aws s3 cp --storage-class STANDARD_IA --sse aws:kms\nClassificação automática: dia 1 do mês = monthly/, domingo = weekly/, demais = daily/\nReplay attack: timestamp no manifest HMAC para integridade",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "infra",
+              "backend",
+              "disaster-recovery"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 4",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar mysqldump --single-transaction para InnoDB sem lock completo",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar classificação automática de prefixo S3 (daily/weekly/monthly)",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar verificação de integridade gzip -t antes do upload",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar aws s3 cp com --storage-class STANDARD_IA --sse aws:kms",
+                "assignee_role": "Dev 1"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-4.2 — Cron job no VPS (/etc/cron.d/zhy-mysql-backup)",
+            "description": "Arquivo: {{/etc/cron.d/zhy-mysql-backup}}\nSchedule: {{0 2 * * * root /opt/zhy/scripts/mysql-backup.sh >> /var/log/zhy-mysql-backup.log 2>&1}}\nExecução às 02:00 UTC diariamente",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "infra"
+            ],
+            "estimate": "0.5 SP",
+            "sprint": "Sprint 4",
+            "subtasks": []
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-4.3 — S3 Lifecycle Policy (zhy-infra/s3-lifecycle-policy.json)",
+            "description": "Bucket: {{zhy-backups-prod}}\nRegras:\n* daily/ → Expiration: 7 dias\n* weekly/ → Expiration: 30 dias\n* monthly/ → Expiration: 365 dias\nAplicar via {{aws s3api put-bucket-lifecycle-configuration}}",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "infra",
+              "aws"
+            ],
+            "estimate": "1 SP",
+            "sprint": "Sprint 4",
+            "subtasks": []
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-4.4 — IAM Policy mínima (zhy-infra/iam-backup-policy.json)",
+            "description": "Princípio do menor privilégio:\n* s3:PutObject, s3:GetObject em arn:aws:s3:::zhy-backups-prod/*\n* s3:ListBucket em arn:aws:s3:::zhy-backups-prod\n* kms:GenerateDataKey, kms:Decrypt na KMS key de backup\nSEM s3:DeleteObject, s3:* ou admin permissions",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "infra",
+              "aws",
+              "security"
+            ],
+            "estimate": "0.5 SP",
+            "sprint": "Sprint 4",
+            "subtasks": []
+          },
+          {
+            "issue_type": "Task",
+            "summary": "OPS-4.5 — Documentar procedimento de restore (zhy-infra/RESTORE.md)",
+            "description": "Documentar passo a passo:\n1. aws s3 cp s3://zhy-backups-prod/daily/... /tmp/restore.sql.gz\n2. gzip -d /tmp/restore.sql.gz\n3. mysql -u root -p zhy_prod < /tmp/restore.sql\n4. Verificar integridade: contagem de registros nas tabelas críticas\nIncluir: como encontrar o último backup, como testar sem sobrescrever prod",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "infra",
+              "documentation"
+            ],
+            "estimate": "1 SP",
+            "sprint": "Sprint 4",
+            "subtasks": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "issue_type": "Epic",
+    "summary": "INFRA — Infraestrutura BFF & Performance",
+    "description": "Fundação técnica do Next.js BFF: allowlist de endpoints, resiliência (retry/circuit-breaker), ISR tuning e testes E2E.\nDev 2 responsável por todas as tasks.",
+    "labels": [
+      "frontend",
+      "infra",
+      "performance"
+    ],
+    "stories": [
+      {
+        "issue_type": "Story",
+        "summary": "INFRA-1 — BFF Allowlist de Endpoints Bagisto",
+        "description": "Sprint 3. Dev 2.\nManter lista explícita de endpoints Bagisto permitidos no BFF para evitar SSRF.\n\nh3. Acceptance Criteria\n* BFF rejeita 403 qualquer endpoint não listado explicitamente no allowlist\n* Arquivo {{src/lib/allowlist.ts}} é a única fonte de verdade",
+        "sprint": "Sprint 3",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "INFRA-1.1 — Criar src/lib/allowlist.ts e integrar no shopClient",
+            "description": "Arquivo: {{src/lib/allowlist.ts}}\nImplementação: Set de paths permitidos + função {{isAllowed(path: string): boolean}}\nIntegrar no {{shopClient.ts}} para validar INTERNAL_API_URL + path antes de qualquer fetch\nResolve: V-SEC-9 (SSRF via INTERNAL_API_URL arbitrário — OWASP A10)",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "security",
+              "infra"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 3",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Definir Set ALLOWED_ENDPOINTS com todos os paths Bagisto usados pelo BFF",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar isAllowed() e integrar validação no início de shopClient.fetch()",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "INFRA-2 — shopClient retry + circuit-breaker",
+        "description": "Sprint 1. Dev 2. O cliente HTTP do BFF para o Bagisto precisa de resiliência.\n\nh3. Acceptance Criteria\n* shopClient retenta até 3x em timeout/503, com jitter exponencial\n* Após 5 falhas em 30s, circuit abre por 10s (fast-fail)\n* Logs Pino em cada retry e abertura de circuit",
+        "sprint": "Sprint 1",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "INFRA-2.1 — Implementar retry + circuit-breaker no shopClient",
+            "description": "Arquivo: {{src/lib/shopClient.ts}}\nRetry: 3 tentativas, backoff 200ms*2^n + jitter, apenas em 503/timeout\nCircuit Breaker: threshold 5 falhas em 30s, aberto por 10s\nLog Pino em cada retry e transição de estado do circuit breaker\nResolve: V-SEC-10 (shopClient sem timeout — OWASP A10)",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "infra",
+              "resilience"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 1",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Adicionar timeout de 5s a cada fetch do shopClient",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar retry com backoff exponencial + jitter em 503/timeout",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar circuit-breaker em memória: threshold, estados, log Pino",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "INFRA-3 — .env.prod.example para Bagisto",
+        "description": "Sprint 4. Dev 1. Documentar variáveis de ambiente do Bagisto necessárias em produção.\n\nh3. Acceptance Criteria\n* Arquivo {{zhy-core-api/.env.prod.example}} existe com todas as vars comentadas\n* Inclui: APP_KEY, DB_*, REDIS_*, SANCTUM_STATEFUL_DOMAINS, SENTRY_LARAVEL_DSN, MP_ACCESS_TOKEN, AWS_*",
+        "sprint": "Sprint 4",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "INFRA-3.1 — Criar zhy-core-api/.env.prod.example",
+            "description": "Variáveis obrigatórias:\n* APP_KEY (php artisan key:generate)\n* DB_HOST=mysql, DB_DATABASE, DB_USERNAME, DB_PASSWORD\n* REDIS_HOST=redis, REDIS_PASSWORD\n* SANCTUM_STATEFUL_DOMAINS=www.seudominio.com.br\n* SESSION_SECURE_COOKIE=true\n* SENTRY_LARAVEL_DSN\n* MP_ACCESS_TOKEN, MP_WEBHOOK_SECRET\n* AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, AWS_DEFAULT_REGION, AWS_BACKUP_BUCKET\nResolve: B4 (falta documentação de vars de ambiente do Bagisto para produção)",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "devops"
+            ],
+            "estimate": "1 SP",
+            "sprint": "Sprint 4",
+            "subtasks": []
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "INFRA-4 — ISR Tuning (revalidate por rota)",
+        "description": "Sprint 5. Dev 2. Ajustar valores de revalidate nas rotas de catálogo.\n\nh3. Acceptance Criteria\n* PLP e PDP: revalidate=300 (5 min)\n* Homepage e categorias: revalidate=3600 (1h)\n* Admin muda preço, visível no storefront em menos de 5 min",
+        "sprint": "Sprint 5",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "INFRA-4.1 — Configurar export const revalidate por rota",
+            "description": "Arquivos alvo:\n* {{src/app/page.tsx}} (homepage): revalidate=3600\n* {{src/app/c/[slug]/page.tsx}} (PLP): revalidate=300\n* {{src/app/p/[slug]/page.tsx}} (PDP): revalidate=300\n* {{src/app/busca/page.tsx}}: revalidate=60",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "performance"
+            ],
+            "estimate": "1 SP",
+            "sprint": "Sprint 5",
+            "subtasks": []
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "INFRA-5 — On-demand Revalidation via Webhook Bagisto",
+        "description": "Sprint 5. Dev 2. Quando admin salva produto/categoria no Bagisto, o storefront invalida o cache ISR imediatamente.\n\nh3. Acceptance Criteria\n* Bagisto dispara webhook POST para storefront após salvar produto\n* Storefront chama revalidatePath() ou revalidateTag()\n* Webhook autenticado via secret compartilhado",
+        "sprint": "Sprint 5",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "INFRA-5.1 — Route Handler webhook de revalidação",
+            "description": "Arquivo: {{src/app/api/revalidate/route.ts}}\nAutenticação: comparar header {{x-revalidate-secret}} com env REVALIDATE_SECRET\nAção: {{revalidatePath(path)}} ou {{revalidateTag(tag)}} baseado no payload\nPayload: {{ type: 'product'|'category', slug: string }}",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "infra"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 5",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Validar header x-revalidate-secret contra env REVALIDATE_SECRET",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar revalidatePath() para produtos e revalidateTag() para categorias",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "INFRA-6 — E2E Playwright (fluxo crítico completo)",
+        "description": "Sprint 8+. Dev 2. Testes E2E para o happy path completo.\n\nh3. Acceptance Criteria\n* Test suite roda em CI sem intervenção manual\n* Cobre: login, adicionar produto, checkout, confirmação do pedido\n* Roda contra staging (não produção)",
+        "sprint": "Sprint 8+",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "INFRA-6.1 — Configurar Playwright e escrever testes E2E",
+            "description": "Dependência: {{@playwright/test}}\nCenários:\n1. Login com credenciais válidas\n2. Buscar e adicionar produto ao carrinho\n3. Preencher endereço de entrega\n4. Selecionar método de frete\n5. Selecionar PIX, confirmar pedido\n6. Verificar página de sucesso\nConfigurar em CI com PLAYWRIGHT_BASE_URL apontando para staging",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "testing"
+            ],
+            "estimate": "8 SP",
+            "sprint": "Sprint 8+",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Setup Playwright config com baseURL staging e browser chromium",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Escrever teste: login, homepage, busca produto, add to cart",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Escrever teste: checkout, address, shipping, payment PIX, success page",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Adicionar step de E2E no workflow CI com PLAYWRIGHT_BASE_URL",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "issue_type": "Epic",
+    "summary": "AUTH — Autenticação & Conta do Cliente",
+    "description": "Todas as telas e flows de autenticação e área de conta do cliente: login, registro, recuperação de senha, perfil, endereços, histórico de pedidos e wishlist.\nDev 2 responsável. Pré-requisito: SEC-2 completo.",
+    "labels": [
+      "frontend",
+      "auth"
+    ],
+    "stories": [
+      {
+        "issue_type": "Story",
+        "summary": "AUTH-1 — Página de Login",
+        "description": "Sprint 1. Dev 2. Pré-requisito: SEC-2.1 e SEC-2.2.\n\nh3. Acceptance Criteria\n* Login bem-sucedido cria cookie e redireciona para ?next= ou /conta\n* Credenciais inválidas exibem mensagem genérica SEM revelar se email existe\n* Form tem honeypot field + loading state",
+        "sprint": "Sprint 1",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "AUTH-1.1 — Implementar src/app/login/page.tsx",
+            "description": "React hook form + Zod client-side (LoginSchema)\nPOST para /api/auth/login via fetch\nHandling de erros: toast genérico (sem revelar existência de email)\nRedirect para searchParams.next ?? '/conta' após sucesso\nLoading spinner durante a chamada",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "auth",
+              "ui"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 1",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar form com react-hook-form + Zod validation client-side",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar POST /api/auth/login com loading state e error handling",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Redirect para ?next= após sucesso, honeypot field anti-bot",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "AUTH-2 — Página de Registro",
+        "description": "Sprint 1. Dev 2.\n\nh3. Acceptance Criteria\n* Registro cria conta no Bagisto via BFF e faz login automático\n* Validação de força de senha (min 8, letras + números)\n* Campo de confirmação de senha",
+        "sprint": "Sprint 1",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "AUTH-2.1 — Implementar src/app/register/page.tsx",
+            "description": "BFF: POST /api/shop/v1/customer/register, em sucesso auto-login, redirect /conta\nRegistrationSchema Zod: first_name (max 50), last_name (max 50), email, password (min 8), password_confirmation (refine === password)\nEndpoint Bagisto: POST /api/v1/customer/register",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "auth",
+              "ui"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 1",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar RegistrationSchema Zod com confirmação de senha (refine)",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar BFF route handler POST /api/customer/register",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Auto-login após registro bem-sucedido + redirect /conta",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "AUTH-3 — Esqueci Senha & Redefinição de Senha",
+        "description": "Sprint 3. Dev 2. Email de recuperação enviado pelo Bagisto.\n\nh3. Acceptance Criteria\n* Submissão do email exibe resposta genérica (anti-enumeration)\n* Token de reset válido abre formulário de nova senha\n* Token inválido/expirado exibe mensagem específica",
+        "sprint": "Sprint 3",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "AUTH-3.1 — Páginas esqueci-senha e redefinir-senha",
+            "description": "src/app/esqueci-senha/page.tsx: POST /api/v1/customer/forgot-password, resposta genérica anti-enumeration\nsrc/app/redefinir-senha/page.tsx: token via searchParams, POST /api/v1/customer/reset-password, redirect /login com mensagem de sucesso\nBlocker: B21 (SMTP não configurado, usar Mailpit em dev)",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "auth"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 3",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar src/app/esqueci-senha/page.tsx com resposta anti-enumeration",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar src/app/redefinir-senha/page.tsx lendo token de searchParams",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "AUTH-4 — Logout",
+        "description": "Sprint 1. Dev 2.\n\nh3. Acceptance Criteria\n* Botão Sair faz POST /api/auth/logout\n* Após logout: cookie destruído, redirect para homepage\n* Acesso a /conta após logout redireciona para /login",
+        "sprint": "Sprint 1",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "AUTH-4.1 — Conectar UserMenu.tsx ao logout handler",
+            "description": "Arquivo: {{src/components/UserMenu.tsx}}\nAção: fetch POST /api/auth/logout, session.destroy() server-side, router.push('/') client-side\nloading state durante logout para evitar cliques duplos",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "auth"
+            ],
+            "estimate": "1 SP",
+            "sprint": "Sprint 1",
+            "subtasks": []
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "AUTH-5 — Perfil e Endereços do Cliente",
+        "description": "Sprint 3. Dev 2.\n\nh3. APIs\n* GET /api/v1/customer/get\n* POST /api/v1/customer/profile\n* GET /api/v1/customer/addresses\n* POST/PUT/DELETE /api/v1/customer/addresses/{id}\n\nh3. Acceptance Criteria\n* Editar nome e telefone sem perder senha\n* CRUD completo de endereços com validação de UF e CEP",
+        "sprint": "Sprint 3",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "AUTH-5.1 — Página /conta/perfil com edição de dados",
+            "description": "Arquivo: {{src/app/conta/perfil/page.tsx}}\nServer Component: GET /api/v1/customer/get via BFF + requireAuth()\nClient form: editar first_name, last_name, phone\nPOST /api/v1/customer/profile para salvar",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "auth",
+              "ui"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 3",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Server Component: buscar perfil via BFF com requireAuth()",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Client form: editar nome/telefone, POST BFF /api/conta/perfil",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "AUTH-5.2 — Página /conta/enderecos com CRUD",
+            "description": "Arquivo: {{src/app/conta/enderecos/page.tsx}}\nListar endereços + modal de criação/edição com AddressSchema Zod\nDeletar com confirmação modal\nCampos: first_name, last_name, address1 (array), city, state (UF), postcode, phone, default_address",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "auth",
+              "ui"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 3",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Listar endereços do cliente via BFF GET /api/conta/enderecos",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Modal de criação/edição com AddressSchema Zod + validação CEP/UF",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar DELETE com modal de confirmação",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "AUTH-6 — Histórico de Pedidos",
+        "description": "Sprint 3. Dev 2.\n\nh3. APIs\n* GET /api/v1/customer/orders (lista paginada)\n* GET /api/v1/customer/orders/{id} (detalhe)\n\nh3. Acceptance Criteria\n* Lista mostra id, data, status, total\n* Detalhe mostra itens, endereço, método de pagamento, histórico de status",
+        "sprint": "Sprint 3",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "AUTH-6.1 — Páginas /conta/pedidos e /conta/pedidos/[id]",
+            "description": "src/app/conta/pedidos/page.tsx: Server Component, GET /api/v1/customer/orders, paginação com searchParams.page\nsrc/app/conta/pedidos/[id]/page.tsx: Server Component, GET /api/v1/customer/orders/{id}, detalhe completo",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "auth"
+            ],
+            "estimate": "4 SP",
+            "sprint": "Sprint 3",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar página lista de pedidos com paginação",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar página detalhe do pedido com itens, endereço, status timeline",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "AUTH-7 — Wishlist",
+        "description": "Sprint 8+. Dev 2.\n\nh3. Acceptance Criteria\n* Botão Adicionar à Wishlist no PDP e PLP\n* /conta/wishlist lista os produtos salvos\n* Remover item com confirmação",
+        "sprint": "Sprint 8+",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "AUTH-7.1 — CRUD de Wishlist",
+            "description": "BFF endpoints: GET/POST/DELETE /api/wishlists\nBagisto: GET /api/v1/customer/wishlists, POST /api/v1/customer/wishlists, DELETE /api/v1/customer/wishlists/{id}\nComponente: botão coração no ProductCard e PDP",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "auth"
+            ],
+            "estimate": "4 SP",
+            "sprint": "Sprint 8+",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar componente WishlistButton com toggle visual",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar página /conta/wishlist com grid de produtos salvos",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar BFF handlers para GET/POST/DELETE wishlist items",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "issue_type": "Epic",
+    "summary": "PAY-BR — Pagamentos Brasileiros — Mercado Pago",
+    "description": "Integração completa de pagamentos brasileiros via Mercado Pago (DECISÃO IRREVOGÁVEL — Veto 2). Stripe e qualquer outro gateway estão VETADOS.\nBoleto, Cartão de Crédito (com parcelamento), PIX (SSE + Redis — Veto 3) e webhook HMAC-SHA256 com State Machine.",
+    "labels": [
+      "backend",
+      "payments",
+      "mercadopago"
+    ],
+    "stories": [
+      {
+        "issue_type": "Story",
+        "summary": "PAY-BR-1 — Instalação e Configuração do SDK Mercado Pago",
+        "description": "Sprint 1. Dev 1.\n\nh3. Acceptance Criteria\n* composer require mercadopago/dx-php instalado sem conflitos\n* Credenciais configuradas via env: MP_ACCESS_TOKEN, MP_PUBLIC_KEY, MP_WEBHOOK_SECRET\n* Provider de pagamento registrado no Bagisto\n* Sandbox funcionando com credenciais de teste",
+        "sprint": "Sprint 1",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "PAY-BR-1.1 — Instalar SDK e criar PaymentMethod no Bagisto",
+            "description": "Package: {{composer require mercadopago/dx-php ^3}}\nCriar em {{packages/Zhy/MercadoPago/}}:\n* MercadoPagoServiceProvider.php: registrar SDK, config, payment method\n* Config/system.php: config fields para MP_ACCESS_TOKEN, MP_PUBLIC_KEY\n* Registrar em config/concord.php do core-api\nResolve: B17 (SDK de pagamento não instalado)",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "payments"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 1",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Executar composer require mercadopago/dx-php ^3",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar estrutura de package Zhy/MercadoPago com ServiceProvider",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Registrar métodos de pagamento (boleto, cartão, PIX) no Bagisto",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Validar sandbox com credenciais de teste MP",
+                "assignee_role": "Dev 1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "PAY-BR-2 — UI de Pagamento com Boleto",
+        "description": "Sprint 2. Dev 2.\n\nh3. Acceptance Criteria\n* Boleto gerado via MP com URL de PDF exibida ao cliente\n* Data de vencimento exibida (3 dias úteis)\n* Botão Copiar código de barras funcional",
+        "sprint": "Sprint 2",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "PAY-BR-2.1 — Componente BoletoPayment + BFF handler",
+            "description": "Arquivo: {{src/components/checkout/BoletoPayment.tsx}}\nBFF: POST /api/checkout/payment chama Bagisto que cria preferência MP, retorna boleto_url, barcode, due_date\nExibir: código de barras copiável, link PDF, QR Code se disponível\nBlocker: B17 (PAY-BR-1 precisa estar completo)",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "payments"
+            ],
+            "estimate": "4 SP",
+            "sprint": "Sprint 2",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar componente BoletoPayment com código de barras + botão copiar",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar BFF route que processa pagamento boleto via Bagisto/MP",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "PAY-BR-3 — UI de Pagamento com Cartão de Crédito",
+        "description": "Sprint 2. Dev 2.\n\nh3. Acceptance Criteria\n* Dados do cartão NUNCA passam pelo servidor Next.js, tokenizados direto no browser via MP SDK\n* Token enviado para BFF, Bagisto processa\n* Flag 3DS aplicada quando necessário",
+        "sprint": "Sprint 2",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "PAY-BR-3.1 — Componente CreditCardPayment com tokenização MP",
+            "description": "Arquivo: {{src/components/checkout/CreditCardPayment.tsx}}\nCarregar script MP SDK via useEffect\nUsar mp.createCardToken() para tokenizar — NUNCA enviar PAN ao servidor\nCampos: número, titular, validade, CVV, CPF do titular, installments\nEnviar apenas: card_token_id, installments, payment_method_id para o BFF",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "payments",
+              "security"
+            ],
+            "estimate": "6 SP",
+            "sprint": "Sprint 2",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Carregar MP SDK JS via useEffect e inicializar com NEXT_PUBLIC_MP_PUBLIC_KEY",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar formulário de cartão com mp.createCardToken()",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Enviar apenas card_token + installments para BFF (ZERO PAN em trânsito)",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar BFF handler POST /api/checkout/payment/card",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "PAY-BR-4 — Parcelamento",
+        "description": "Sprint 2. Dev 2.\n\nh3. Acceptance Criteria\n* Opções de parcelamento carregadas da API MP com juros corretos\n* Valor total com juros exibido para cada opção\n* Seleção de parcelas reflete no resumo do pedido",
+        "sprint": "Sprint 2",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "PAY-BR-4.1 — Consulta e seleção de parcelas",
+            "description": "BFF: GET /api/checkout/installments?amount={value}&payment_method_id={id} chama MP /v1/payment_methods/installments\nComponente InstallmentSelector: dropdown com opções formatadas (ex: 12x de R$ 49,90 sem juros)\nAtualizar total no CartSummary ao selecionar parcelas",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "payments"
+            ],
+            "estimate": "4 SP",
+            "sprint": "Sprint 2",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar BFF GET /api/checkout/installments consultando MP",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar componente InstallmentSelector com formatação de valor total",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "PAY-BR-5 — Webhook HMAC-SHA256 + State Machine [Veto 2]",
+        "description": "Sprint 2. Dev 1. DECISÃO IRREVOGÁVEL (Veto 2).\n\nh3. Acceptance Criteria\n* Webhook sem header x-signature válido retorna 401\n* Transições inválidas (ex: completed para pending) lançam InvalidTransitionException\n* ProcessMercadoPagoPayment dispatchado via fila Redis\n* CancelExpiredPixOrders roda a cada minuto via scheduler\n\nh3. State Machine — Transições Válidas\n|| De || Para ||\n| pending | approved, rejected, in_process |\n| in_process | approved, rejected |\n| approved | refunded |\n| rejected | terminal |\n| refunded | terminal |",
+        "sprint": "Sprint 2",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "PAY-BR-5.1 — MercadoPagoWebhookController com HMAC-SHA256",
+            "description": "Arquivo: {{packages/Zhy/MercadoPago/src/Http/Controllers/MercadoPagoWebhookController.php}}\nValidação: hash_hmac('sha256', $payload, config('mp.webhook_secret')) comparado com x-signature via hash_equals()\nDispatch: ProcessMercadoPagoPayment::dispatch($data)->onQueue('high')\nRetornar 401 para assinaturas inválidas (sem log de dados sensíveis)",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "payments",
+              "security"
+            ],
+            "estimate": "4 SP",
+            "sprint": "Sprint 2",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar validação HMAC-SHA256 com hash_equals() timing-safe",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Dispatch ProcessMercadoPagoPayment para fila Redis high",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Registrar rota POST /api/v1/webhooks/mercadopago sem CSRF middleware",
+                "assignee_role": "Dev 1"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "PAY-BR-5.2 — Job ProcessMercadoPagoPayment com State Machine",
+            "description": "Arquivo: {{packages/Zhy/MercadoPago/src/Jobs/ProcessMercadoPagoPayment.php}}\nState Machine: array validTransitions[] define transições permitidas por estado\nAo receber 'approved': atualizar order status + enviar email + Redis::publish('pix_status:{orderId}', 'paid')\nCancelExpiredPixOrders: command artisan rodando via scheduler a cada minuto",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "payments"
+            ],
+            "estimate": "4 SP",
+            "sprint": "Sprint 2",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar validTransitions[] array e verificação de transição válida",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar Redis::publish('pix_status:{orderId}', 'paid') em status approved",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar CancelExpiredPixOrders command agendado no Kernel a cada minuto",
+                "assignee_role": "Dev 1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "PAY-BR-6 — PIX via SSE + Redis Pub/Sub [Veto 3]",
+        "description": "Sprint 2. Dev 1 (backend) + Dev 2 (frontend SSE). DECISÃO IRREVOGÁVEL (Veto 3).\nRationale: polling de 3s gera ~20 req/min por cliente aguardando PIX. Com 50 clientes = 1.000 req/min ao Bagisto. SSE com Redis Pub/Sub entrega o evento UMA ÚNICA VEZ.\n\nh3. Acceptance Criteria\n* QR Code PIX gerado imediatamente após confirmação do pedido\n* Cliente vê página de aguardo com SSE aberto\n* Webhook MP -> ProcessMercadoPagoPayment -> Redis::publish -> SSE client -> redirect sucesso\n* ZERO polling no browser, apenas EventSource\n* Reconexão automática do EventSource em queda de rede",
+        "sprint": "Sprint 2",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "PAY-BR-6.1 — SSE Route Handler (src/app/api/pix/sse/[orderId]/route.ts)",
+            "description": "Arquivo: {{src/app/api/pix/sse/[orderId]/route.ts}}\nFluxo: requer auth, criar ReadableStream, ioredis subscriber.subscribe('pix_status:{orderId}'), on message enqueue SSE event, controller.close()\nHeaders: Content-Type: text/event-stream, Cache-Control: no-store, X-Accel-Buffering: no\nTimeout: fechar stream após 15 min se nenhum evento recebido",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "payments",
+              "sse"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 2",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar ReadableStream com ioredis subscriber",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Setar headers SSE corretos incluindo X-Accel-Buffering: no para nginx",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar timeout de 15 min e cleanup do subscriber Redis",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "PAY-BR-6.2 — Página de aguardo PIX com EventSource (src/app/pedido/pix/[orderId]/page.tsx)",
+            "description": "Arquivo: {{src/app/pedido/pix/[orderId]/page.tsx}}\nClient Component: exibir QR Code PIX + código PIX copia-e-cola\nEventSource: new EventSource('/api/pix/sse/{orderId}'), ao receber 'paid' router.push('/pedido/{orderId}/sucesso')\nReconexão automática (EventSource nativo do browser)\nCountdown de expiração (15 min)",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "payments"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 2",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Exibir QR Code PIX + código copia-e-cola do response do pedido",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Conectar EventSource, ouvir evento 'paid', redirecionar para sucesso",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar countdown 15 min + mensagem de expiração",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "issue_type": "Epic",
+    "summary": "SHIP — Frete & Logística Brasil",
+    "description": "Integração com Melhor Envio para cotação de frete por CEP, exibição na sacola e checkout. Frete grátis configurável.\nDev 1 responsável pelo backend Bagisto. Dev 2 pela UI de seleção de frete.",
+    "labels": [
+      "backend",
+      "shipping"
+    ],
+    "stories": [
+      {
+        "issue_type": "Story",
+        "summary": "SHIP-1 — Instalação Melhor Envio no Bagisto",
+        "description": "Sprint 3. Dev 1.\n\nh3. Acceptance Criteria\n* API Melhor Envio retorna cotações para CEP de teste\n* Carrier configurado como carrier_code='melhor_envio' no Bagisto\n* Variáveis de ambiente: ME_API_TOKEN, ME_SANDBOX=true em dev\nBlockers: B19 (carrier not configured), B20 (origin address missing)",
+        "sprint": "Sprint 3",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "SHIP-1.1 — Instalar e configurar Melhor Envio carrier no Bagisto",
+            "description": "Instalar via composer ou criar package em {{packages/Zhy/MelhorEnvio/}}\nImplementar ShippingMethod que consulta API Melhor Envio com:\n* Endereço de origem (configurado no admin)\n* CEP destino, peso e dimensões dos produtos\n* ME_API_TOKEN via config\nResolve: B19 (carrier não configurado) e B20 (endereço de origem ausente)",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "shipping"
+            ],
+            "estimate": "5 SP",
+            "sprint": "Sprint 3",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar package Zhy/MelhorEnvio com ShippingMethod provider",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar consulta API Melhor Envio com autenticação Bearer",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Configurar endereço de origem no admin Bagisto (B20)",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Validar retorno de cotações em sandbox",
+                "assignee_role": "Dev 1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "SHIP-2 — Cotação de Frete por CEP",
+        "description": "Sprint 3. Dev 1.\n\nh3. Acceptance Criteria\n* POST /api/checkout/cart/estimate-shipping-methods retorna opções com nome, prazo e preço\n* CEP inválido retorna 422 com mensagem amigável\n* Cache de cotação por 30 min para evitar excesso de chamadas à API ME",
+        "sprint": "Sprint 3",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "SHIP-2.1 — Endpoint de estimativa de frete no Bagisto",
+            "description": "Endpoint: POST /api/checkout/cart/estimate-shipping-methods\nPayload: postcode (string), country_id='BR'\nResposta: array de carrier_code, method_code, carrier_title, method_title, amount\nCache Redis de 30 min pela chave ship_estimate:{postcode}:{cart_hash}",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "shipping"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 3",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Validar e normalizar CEP (8 dígitos, apenas números)",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar cache Redis 30 min para cotações",
+                "assignee_role": "Dev 1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "SHIP-3 — UI de Seleção de Frete no Checkout",
+        "description": "Sprint 3. Dev 2.\n\nh3. Acceptance Criteria\n* Opções de frete exibidas com nome do carrier, prazo em dias úteis e preço\n* Seleção persiste no estado do checkout\n* Erro amigável se nenhuma opção disponível para o CEP",
+        "sprint": "Sprint 3",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "SHIP-3.1 — Componente ShippingMethodSelector no checkout",
+            "description": "Arquivo: {{src/components/checkout/ShippingMethodSelector.tsx}}\nBFF: POST /api/checkout/frete chama /api/checkout/cart/estimate-shipping-methods\nRadio group com cards: carrier name, prazo em dias úteis, valor formatado BRL\nAo selecionar: POST /api/checkout/onepage/shipping-methods para confirmar",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "shipping"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 3",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar ShippingMethodSelector com radio group de opções de frete",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar BFF POST /api/checkout/frete chamando endpoint Bagisto",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "SHIP-4 — Frete Grátis Configurável",
+        "description": "Sprint 8+. Dev 1.\n\nh3. Acceptance Criteria\n* Admin configura valor mínimo para frete grátis no painel Bagisto\n* Carrinho exibe banner Faltam R$ X para frete grátis\n* Frete grátis aparece como opção com preço R$ 0,00",
+        "sprint": "Sprint 8+",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "SHIP-4.1 — Configurar Freeshipping carrier no Bagisto e banner no frontend",
+            "description": "Backend: habilitar carrier 'freeshipping' no Bagisto com minimum_order_amount configurável\nFrontend: componente FreeShippingBanner que calcula quanto falta para atingir o mínimo",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "frontend",
+              "shipping"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 8+",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Configurar freeshipping carrier e minimum_order_amount no admin Bagisto",
+                "assignee_role": "Dev 1"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar componente FreeShippingBanner com cálculo dinâmico",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "SHIP-5 — Configuração do Carrier Padrão",
+        "description": "Sprint 3. Dev 1.\n\nh3. Acceptance Criteria\n* Carrier 'tablerate' ou fallback configurado no admin\n* Checkout não quebra se Melhor Envio API estiver indisponível\nBlocker: B19 (carrier não configurado impede checkout completo)",
+        "sprint": "Sprint 3",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "SHIP-5.1 — Configurar carrier fallback no Bagisto",
+            "description": "Configurar no admin: Stores > Configuration > Shipping Methods > Free Shipping (como fallback de $0 para teste)\nConfigurar tablerate ou flat rate como fallback quando Melhor Envio indisponível\nResolve: B19 (carrier not configured — checkout quebrado)",
+            "assignee_role": "Dev 1",
+            "labels": [
+              "backend",
+              "shipping"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 3",
+            "subtasks": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "issue_type": "Epic",
+    "summary": "CAT — Catálogo & Navegação",
+    "description": "Menu de categorias dinâmico, PLP com filtros e paginação, busca de produtos e breadcrumbs.\nTudo server-rendered com ISR. Dev 2 responsável.\nAPIs: GET /api/v1/categories, GET /api/v1/products, GET /api/categories/tree",
+    "labels": [
+      "frontend",
+      "catalog",
+      "seo"
+    ],
+    "stories": [
+      {
+        "issue_type": "Story",
+        "summary": "CAT-1 — Menu de Categorias Dinâmico",
+        "description": "Sprint 5. Dev 2.\n\nh3. Acceptance Criteria\n* Menu carregado server-side (não client-side fetch)\n* Atualiza quando admin adiciona/remove categoria via on-demand revalidation (INFRA-5)\n* Links gerados dinamicamente: /c/{slug}",
+        "sprint": "Sprint 5",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "CAT-1.1 — Componente CategoryNav com dados de /api/categories/tree",
+            "description": "Arquivo: {{src/components/CategoryNav.tsx}} (Server Component)\nAPI: GET /api/categories/tree, árvore de categorias\nRevalidate: 3600s (1h) + on-demand via INFRA-5\nGerar hrefs como /c/{category.slug}\nSuportar mega menu de 2 níveis",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "catalog"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 5",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar Server Component CategoryNav consumindo /api/categories/tree",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Renderizar menu de 2 níveis com links /c/{slug}",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Adicionar suporte a mega menu hover/click em mobile",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "CAT-2 — PLP: Listagem de Produtos com Filtros e Paginação",
+        "description": "Sprint 5. Dev 2.\n\nh3. Acceptance Criteria\n* URL reflete filtros ativos: /c/calcas?cor=azul&tamanho=M&page=2\n* Paginação por query params (SSR sem client-side navigation para filtros)\n* Empty state amigável com sugestão de categorias\n* Breadcrumb correto: Home > Categoria > Subcategoria",
+        "sprint": "Sprint 5",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "CAT-2.1 — src/app/c/[slug]/page.tsx com filtros e paginação",
+            "description": "Server Component com revalidate=300\nAPI: GET /api/v1/products?category_id={id}&sort={sort}&page={page}&{filter_attrs}\nFiltros: extrair available_filters da resposta e renderizar FilterSidebar\nPaginação: links com searchParams (Next, Prev, páginas numéricas)\ngenerateMetadata com nome e descrição da categoria",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "catalog",
+              "seo"
+            ],
+            "estimate": "6 SP",
+            "sprint": "Sprint 5",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar src/app/c/[slug]/page.tsx como Server Component com revalidate=300",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar FilterSidebar extraindo available_filters da resposta API",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar paginação com searchParams preservando filtros ativos",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar generateMetadata com title/description da categoria",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "CAT-3 — Busca de Produtos",
+        "description": "Sprint 5. Dev 2.\n\nh3. Acceptance Criteria\n* Busca funcional para nome e SKU do produto\n* URL atualizada com ?q=termo\n* Resultados paginados\n* Sem resultados exibe mensagem amigável com sugestões",
+        "sprint": "Sprint 5",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "CAT-3.1 — SearchBar e página src/app/busca/page.tsx",
+            "description": "SearchBar: form GET com action=/busca\nBusca page: Server Component, revalidate=60\nAPI: GET /api/v1/products?name={q}&sort=name_asc&page={page}\nExibir: ProductGrid com resultados + paginação",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "catalog"
+            ],
+            "estimate": "4 SP",
+            "sprint": "Sprint 5",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar componente SearchBar como form GET com redirect para /busca?q=",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar página /busca com Server Component consumindo API de produtos",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar empty state com sugestões de categorias populares",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "CAT-4 — Breadcrumbs Dinâmicos",
+        "description": "Sprint 5. Dev 2.\n\nh3. Acceptance Criteria\n* Home > Categoria > Subcategoria > Produto em todas as páginas de produto\n* JSON-LD BreadcrumbList para SEO\n* Gerado server-side (não client-side)",
+        "sprint": "Sprint 5",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "CAT-4.1 — Componente Breadcrumbs com JSON-LD",
+            "description": "Arquivo: {{src/components/Breadcrumbs.tsx}} (Server Component)\nProps: items: Array de label (string) e href (string)\nRenderizar: links separados por > + JSON-LD BreadcrumbList inlined no head\nUsar em: PLP, PDP, páginas de conta",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "seo"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 5",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar Breadcrumbs component com estilização ZHY",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Adicionar JSON-LD BreadcrumbList em generateMetadata ou script tag",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "issue_type": "Epic",
+    "summary": "PROD — Produto Detalhe & Avaliações",
+    "description": "Páginas de detalhe do produto (PDP) simples e configurável, seletor de variantes, avaliações e produtos relacionados.\nDev 2 responsável. API: GET /api/v1/products/{id}/configurable-config, GET /api/v1/products/{id}/reviews",
+    "labels": [
+      "frontend",
+      "product"
+    ],
+    "stories": [
+      {
+        "issue_type": "Story",
+        "summary": "PROD-1 — PDP Simples com Galeria",
+        "description": "Sprint 5. Dev 2.\n\nh3. Acceptance Criteria\n* Galeria de imagens com thumbnail navigation e zoom\n* Preço, estoque e SKU exibidos\n* Botão Adicionar ao Carrinho funcional\n* Metadados SEO: title, description, og:image, JSON-LD Product",
+        "sprint": "Sprint 5",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "PROD-1.1 — src/app/p/[slug]/page.tsx para produtos simples",
+            "description": "Server Component, revalidate=300\nAPI: GET /api/v1/products/{slug} (by URL key)\nComponentes:\n* ProductGallery: imagens com thumbnail strip e zoom no hover\n* AddToCartButton: POST /api/cart com product_id e quantity\n* ProductInfo: nome, preço BRL formatado, SKU, disponibilidade\ngenerateMetadata: title='{Nome} — ZHY', og:image, description=meta_description",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "product",
+              "seo"
+            ],
+            "estimate": "4 SP",
+            "sprint": "Sprint 5",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar página PDP como Server Component com revalidate=300",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar componente ProductGallery com thumbnails e zoom",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar componente AddToCartButton com POST ao BFF",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar generateMetadata com og:image e JSON-LD Product",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "PROD-2 — PDP Produto Configurável com VariantSelector",
+        "description": "Sprint 5. Dev 2. Produto com variantes (ex: camiseta com Cor + Tamanho).\n\nh3. Acceptance Criteria\n* Seleção de atributo atualiza imagem e preço sem page reload\n* Combinação inválida (esgotada) fica desabilitada\n* SKU e disponibilidade atualizam com a variante selecionada\n* Compartilhar URL com variante selecionada via searchParams",
+        "sprint": "Sprint 5",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "PROD-2.1 — Componente VariantSelector com lógica configurable-config",
+            "description": "Arquivo: {{src/components/product/VariantSelector.tsx}} (Client Component)\nAPI: GET /api/v1/products/{id}/configurable-config retorna superAttributes[], variants[], chosenVariant?\nLógica: validTransitions para quais opções ficam disponíveis baseadas na seleção atual\nCallback: onVariantChange(attrs: Record) atualiza imagem, preço, estoque no PDP pai",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "product"
+            ],
+            "estimate": "6 SP",
+            "sprint": "Sprint 5",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Buscar configurable-config server-side e passar como props ao VariantSelector",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar lógica validTransitions para desabilitar combinações esgotadas",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar callback onVariantChange para atualizar imagem/preço no PDP",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Persistir seleção de variante em searchParams para URL compartilhável",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "PROD-3 — Avaliações de Produto",
+        "description": "Sprint 8+. Dev 2.\n\nh3. Acceptance Criteria\n* Avaliações carregadas via Server Component\n* Formulário de nova avaliação apenas para clientes autenticados\n* Média de estrelas exibida na PDP e PLP como badge",
+        "sprint": "Sprint 8+",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "PROD-3.1 — Seção de avaliações no PDP",
+            "description": "API: GET /api/v1/products/{product_id}/reviews\nServer Component: lista de avaliações com nome, estrelas, comentário, data\nFormulário: apenas se isLoggedIn, POST /api/v1/reviews\nComponente StarRating reutilizável",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "product"
+            ],
+            "estimate": "5 SP",
+            "sprint": "Sprint 8+",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar componente ReviewsList consumindo GET /api/v1/products/{id}/reviews",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar componente StarRating reutilizável (read-only e interativo)",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar formulário de avaliação visível apenas para usuários autenticados",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "PROD-4 — Produtos Relacionados",
+        "description": "Sprint 8+. Dev 2.\n\nh3. Acceptance Criteria\n* 4-6 produtos da mesma categoria exibidos como cards\n* Carregados via Server Component\n* Não bloqueia render principal da PDP (Suspense boundary)",
+        "sprint": "Sprint 8+",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "PROD-4.1 — Componente RelatedProducts com Suspense",
+            "description": "Arquivo: {{src/components/product/RelatedProducts.tsx}} (Server Component async)\nAPI: GET /api/v1/products?category_id={id}&limit=6 (excluindo o produto atual)\nWrapped em Suspense com ProductGridSkeleton como fallback\nRevalidate: 3600s (1h)",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "product"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 8+",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar componente async RelatedProducts com fetch de produtos da categoria",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Envolver em Suspense com skeleton de ProductGrid como fallback",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "issue_type": "Epic",
+    "summary": "CART — Carrinho & Checkout",
+    "description": "Carrinho de compras com persistência via Bagisto session, checkout multi-step (Endereço > Frete > Pagamento > Revisão) e página de sucesso.\nDev 2 responsável. Bloqueadores: B17 (PAY-BR-1), B18 (PAY-BR-5), B19 (SHIP-1), B20 (SHIP-1), B21 (OPS-1.6).",
+    "labels": [
+      "frontend",
+      "checkout",
+      "payments"
+    ],
+    "stories": [
+      {
+        "issue_type": "Story",
+        "summary": "CART-1 — Carrinho UI com Persistência",
+        "description": "Sprint 6. Dev 2.\n\nh3. Acceptance Criteria\n* Carrinho persiste entre page refreshes via sessão Bagisto\n* Adicionar, remover, atualizar quantidade funcionam\n* Mini-cart no header mostra quantidade de itens\n* Carrinho vazio exibe CTA para ver catálogo",
+        "sprint": "Sprint 6",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "CART-1.1 — Drawer de carrinho + BFF endpoints CRUD",
+            "description": "BFF endpoints:\n* GET /api/cart -> GET /api/checkout/cart (com bagistoSessionCookie)\n* POST /api/cart -> POST /api/checkout/cart (add item)\n* PUT /api/cart/{item_id} -> PUT /api/checkout/cart/items/{id} (update qty)\n* DELETE /api/cart/{item_id} -> DELETE /api/checkout/cart/items/{id}\nComponente: drawer lateral animado com lista de items + subtotal + CTA checkout\nBagisto API: POST /api/checkout/cart com product_id, quantity, super_attribute (opcional)",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "checkout"
+            ],
+            "estimate": "4 SP",
+            "sprint": "Sprint 6",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar BFF handlers GET/POST/PUT/DELETE para carrinho",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar CartDrawer component com animação slide-in",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar CartItem component com atualização de quantidade inline",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar mini-cart no header com badge de quantidade",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "CART-2 — Cupom de Desconto",
+        "description": "Sprint 8+. Dev 2.\n\nh3. Acceptance Criteria\n* Campo para digitar cupom no carrinho e no checkout\n* Desconto exibido no resumo do pedido\n* Mensagem de erro se cupom inválido/expirado/já usado",
+        "sprint": "Sprint 8+",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "CART-2.1 — Componente CouponInput + BFF handler",
+            "description": "Arquivo: {{src/components/checkout/CouponInput.tsx}}\nBFF: POST /api/cart/coupon -> POST /api/checkout/cart/coupon (apply)\nBFF: DELETE /api/cart/coupon -> DELETE /api/checkout/cart/coupon (remove)\nValidação com CouponSchema Zod (code: string min 1 max 50)\nExibir desconto aplicado no CartSummary",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "checkout"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 8+",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar CouponInput com field + submit e loading state",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar BFF POST/DELETE /api/cart/coupon com CouponSchema Zod",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "CART-3 — Checkout Multi-Step",
+        "description": "Sprint 6. Dev 2. Checkout em 4 steps: Endereço -> Frete -> Pagamento -> Revisão.\n\nh3. Acceptance Criteria\n* Não é possível avançar sem completar o step atual\n* Estado do checkout persiste em caso de navegação (useCheckoutStore)\n* Cada step valida com Zod antes de enviar\n\nh3. APIs Bagisto por Step\n|| Step || Endpoint ||\n| Endereço | POST /api/checkout/onepage/addresses |\n| Frete | POST /api/checkout/onepage/shipping-methods |\n| Pagamento | POST /api/checkout/onepage/payment-methods |\n| Confirmação | POST /api/checkout/onepage/orders |",
+        "sprint": "Sprint 6",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "CART-3.1 — Arquitetura do checkout multi-step (src/app/checkout/page.tsx)",
+            "description": "Arquivo: {{src/app/checkout/page.tsx}} — requireAuth() server-side\nEstado: useCheckoutStore (zustand): step atual, dados de cada step\nSteps renderizados condicionalmente: AddressStep, ShippingStep, PaymentStep, ReviewStep",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "checkout"
+            ],
+            "estimate": "2 SP",
+            "sprint": "Sprint 6",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar useCheckoutStore com zustand para estado do checkout",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar src/app/checkout/page.tsx com requireAuth() e step navigation",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "CART-3.2 — AddressStep com seleção de endereço salvo ou novo",
+            "description": "Listar endereços salvos do cliente via GET /api/v1/customer/addresses\nOu formulário de novo endereço com AddressSchema Zod\nPOST /api/checkout/onepage/addresses para avançar para ShippingStep",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "checkout"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 6",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Listar endereços salvos como opções de seleção rápida",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Formulário de novo endereço com AddressSchema + integração Bagisto",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          },
+          {
+            "issue_type": "Task",
+            "summary": "CART-3.3 — ShippingStep + PaymentStep + ReviewStep",
+            "description": "ShippingStep: ShippingMethodSelector (SHIP-3) + POST /api/checkout/onepage/shipping-methods\nPaymentStep: tabs PIX / Boleto / Cartão com componentes PAY-BR-2/3/6 + POST /api/checkout/onepage/payment-methods\nReviewStep: resumo completo (itens, endereço, frete, forma de pagamento, total) + botão Confirmar Pedido + POST /api/checkout/onepage/orders",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "checkout",
+              "payments"
+            ],
+            "estimate": "5 SP",
+            "sprint": "Sprint 6",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar ShippingStep integrando ShippingMethodSelector",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar PaymentStep com tabs PIX/Boleto/Cartão e componentes PAY-BR",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar ReviewStep com resumo completo e POST orders",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "issue_type": "Story",
+        "summary": "CART-4 — Página de Sucesso do Pedido",
+        "description": "Sprint 6. Dev 2.\n\nh3. Acceptance Criteria\n* Exibir: número do pedido, itens, endereço de entrega, método de pagamento, total\n* Para PIX: redirecionar para /pedido/pix/{orderId} (PAY-BR-6)\n* Email de confirmação enviado pelo Bagisto\n* Limpar carrinho e estado do checkout após sucesso",
+        "sprint": "Sprint 6",
+        "tasks": [
+          {
+            "issue_type": "Task",
+            "summary": "CART-4.1 — src/app/pedido/[orderId]/sucesso/page.tsx",
+            "description": "Arquivo: {{src/app/pedido/[orderId]/sucesso/page.tsx}}\nServer Component com requireAuth()\nAPI: GET /api/v1/customer/orders/{id} para buscar detalhes do pedido\nSe método = PIX e status = pending -> redirect /pedido/pix/{orderId} (PAY-BR-6.2)\nSenão: renderizar resumo completo do pedido\nLimpar carrinho: POST /api/cart/clear ou DELETE all items",
+            "assignee_role": "Dev 2",
+            "labels": [
+              "frontend",
+              "checkout"
+            ],
+            "estimate": "3 SP",
+            "sprint": "Sprint 6",
+            "subtasks": [
+              {
+                "issue_type": "Subtask",
+                "summary": "Criar página sucesso com Server Component e busca de detalhes do pedido",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Implementar redirect condicional para /pedido/pix/{orderId} se PIX pending",
+                "assignee_role": "Dev 2"
+              },
+              {
+                "issue_type": "Subtask",
+                "summary": "Limpar carrinho e useCheckoutStore após renderização da página de sucesso",
+                "assignee_role": "Dev 2"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
