@@ -2,11 +2,9 @@
 
 Documento central de acompanhamento diário da **Zhy**. Este arquivo consolida o panorama atualizado das frentes de trabalho, próximos passos estratégicos, mapeamento de gargalos e a estrutura organizacional da empresa.
 
----
-
-## 📍 Visão Executiva (Estado Atual)
+--## 📍 Visão Executiva (Estado Atual)
 > [!NOTE]
-> *Status Atual (26/05/2026):* **Alinhamento estratégico consolidado com Gabriel (COO)**. A data de lançamento da Fase 1 foi formalmente fixada para **01/08/2026** (horizonte fixo). **HPP/Sucos**: Green People em ~2 semanas (confirmar data concreta na semana); Fornecedor B em SP em estudo preliminar para a Fase 2 (não bloqueia agosto). **Café**: Estudo de custos e logística em andamento para validar P&L e viabilidade do fornecedor Lambarí. Embalagem (caixa + faca) no caminho crítico. **Recrutamento**: Processo seletivo de Lucas ativo (deadline 01/Jul). Regulatório: Conselho Científico em estruturação (ativar lead da Adriana) e Bombeiros sob cobrança (follow Thais).
+> *Status Atual (26/05/2026):* **Alinhamento estratégico consolidado com Gabriel (COO)**. A data de lançamento da Fase 1 foi formalmente fixada para **01/08/2026** (horizonte fixo). **HPP/Sucos**: Alerta crítico! A Green People informou que a resposta sobre HPP demorará **6 semanas** (retorno previsto para meados de julho). Devido a isso, o **Fornecedor B em SP** foi promovido a backup estratégico crítico imediato. **Café**: Gabriel viaja no sábado (30/05) para testes práticos presenciais em Lambarí; o **Portal do Cogumelo** precisa enviar adaptógenos com urgência para que cheguem até sexta (29/05). Embalagem (faca/caixa de cápsulas + pouch de café moído) no caminho crítico. **Recrutamento**: Processo seletivo de Lucas ativo (deadline 01/Jul). **Regulatório**: Adriana focada na ANVISA (Dossiês de suplementos) e constituição do Conselho Científico à parte para chancela técnica e marketing.
 
 ---
 
@@ -15,17 +13,17 @@ Documento central de acompanhamento diário da **Zhy**. Este arquivo consolida o
 
 > [!TIP]
 > Para o status detalhado de cada linha (design, PET, parceiro produtor, MAPA, data de lançamento), acesse o painel completo:
-> ✅ **[Tracker de Status dos Produtos →](../01_produtos/produto-status-tracker.md)**
+> ✅ **[Tracker de Status dos Produtos →](../01_produtos/01-produto-status-tracker.md)**
 
 | Fase | Linha de Produto | Detalhes Produtivos | Status Atual | Gargalo / Próximo Marco | Base de Apoio |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Fase 1** | **🥤 Sucos Cold Press** | Foco em volume D2C local e B2B premium. | 9 Fórmulas de Suco validadas. | Confirmar data GP (HPP) + Estudo preliminar SP. | Vida Líquida / Green People |
-| **Fase 1** | **☕ Cápsulas (Nespresso)** | Caixa com 10 uni. para rituais semanais. | 100 embalagens sob teste UX. | Estudo de custos + Embalagem (faca/produção). | MushSpresso / Lambarí |
-| **Fase 2** | **💉 Shots Funcionais** | Imunidade, Energia, Foco. | Receitas conceituais rascunhadas. | Validar fórmulas com Conselho Científico. | Vida Líquida / Green People |
-| **Fase 2** | **🫘 Café Moído Premium** | Sub-produto que aproveita insumo das cápsulas. | Rascunho inicial do pacote. | Estudo logístico e custos + Embalagem final. | MushSpresso |
-| **Fase 3** | **🍵 Solúveis (Blends)** | Cacau, Matcha, Golden Latte (Sem stevia). | Em testes de P&D de receitas. | Gabriel + Gui prospectando 2 fornecedores. | P&D Zhy |
+| **Fase 1** | **🥤 Sucos Cold Press** | Foco em volume D2C local e B2B premium. | 9 Fórmulas de Suco validadas. | **GP HPP atrasada para Julho (6 semanas)**. Acelerar cotação com Fornecedor B (SP) como backup. | Vida Líquida / Green People / Fornecedor B |
+| **Fase 1** | **☕ Cápsulas (Nespresso)** | Caixa com 10 uni. para rituais semanais. | 100 embalagens sob teste UX. | Estudo de custos + Embalagem (faca de corte/caixa). | MushSpresso / Lambarí |
+| **Fase 2** | **💉 Shots Funcionais** | Imunidade, Energia, Foco. | Receitas conceituais rascunhadas. | Validar fórmulas com Conselho Científico (em estruturação). | Vida Líquida / Green People |
+| **Fase 2** | **🫘 Café Moído Premium** | Sub-produto que aproveita insumo das cápsulas. | Rascunho inicial do pacote. | Definir material (barreira de aroma), cotação e design do pouch. | MushSpresso / Lambarí |
+| **Fase 3** | **🍵 Solúveis (Blends)** | Cacau, Matcha, Golden Latte (Sem stevia). | Em testes de P&D de receitas. | Gabriel + Gui prospectando 2 fornecedores industriais. | P&D Zhy |
 | **Fase 4** | **🥫 Enlatados (RTD)** | Bebidas gaseificadas e chás funcionais prontos. | Blueprint futuro. | Encontrar indústrias *Beverage* (Co-packing). | P&D Zhy |
-| **Fase 5** | **💊 Suplementos** | Cogumelos isolados no talo e em micélio. | Lab RJ montado (Equipamentos OK).| Fila regulatória brutal na ANVISA (1 a 2 anos). | Dir. Regulatório |
+| **Fase 5** | **💊 Suplementos** | Cogumelos isolados no talo e em micélio. | Lab RJ montado (Equipamentos OK). | Fila regulatória brutal na ANVISA (1 a 2 anos, Adriana). | Dir. Regulatório |
 
 ---
 
@@ -36,7 +34,7 @@ Relação nominal das parcerias e profissionais atuando na base:
 - **Agência Rebu**: Redesign total da marca e 15 embalagens definitivas (prazo 4 meses).
 - **Marketing (Caco/Carol)**: Desenvolvimento e força-tarefa das embalagens e comunicação visual.
 - **Advogada MAPA (Priscila)**: Assessoramento jurídico/regulatório (Sucos / Alimentos inovadores).
-- **Advogada ANVISA (Adriana)**: Assessoramento técnico e dossiês (Suplementos).
+- **Advogada ANVISA (Adriana)**: Assessoramento técnico e dossiês de suplementação (ANVISA).
 - **Parceiro Solúveis (A Definir)**: Fábrica parceira para absorção produtiva da linha 2.
 - **Parceiro RTD (A Definir)**: Fábrica parceira para absorção produtiva de enlatados da linha 3.
 
@@ -45,34 +43,34 @@ Relação nominal das parcerias e profissionais atuando na base:
 ## 🚧 Mapeamento de Gargalos e Bloqueios
 Identificação das restrições para resolução imediata visando alavancar a equipe-base:
 
+- **🔴 Portal do Cogumelo (Envio Adaptógenos):**
+  - **Urgência Máxima:** Os adaptógenos precisam ser postados expressamente para chegar no Rio de Janeiro até **sexta-feira (29/05)**. Caso contrário, Gabriel viaja no sábado sem insumos de testes para Lambarí. (Gian + Gabriel).
+- **🔴 HPP Green People (Atraso de 6 semanas):**
+  - A GP informou que a resposta sobre viabilidade/data de HPP demorará **6 semanas** (retorno no meio de Julho). Isso põe em risco altíssimo o lançamento em 01/08 se dependermos apenas dela. (Gian).
+- **🔴 HPP SP - Fornecedor B (Backup Crítico):**
+  - **Promovido a crítico:** Devido ao atraso da Green People, precisamos acelerar cotações e visitas a fornecedores de HPP em SP para atuar como alternativa. (Gabriel + Gian).
+- **🔴 Caixa Café e Pouch (Embalagens):**
+  - Caixa de cápsulas (faca de corte e produção gráfica) e pouch de café moído (material barreira, cotação e design) estão no caminho crítico. (Caco + Gabriel).
 - **🔴 Estudo de Custos e P&L (Cafés):**
   - Sem P&L validado, não há como confirmar o lançamento de agosto. Estudo de custos iniciado por Gabriel + Gian.
 - **🔴 Estudo Logístico (Cafés):**
   - Definição de fulfillment, prazo de entrega e viabilidade de Lambarí como fornecedor. Gabriel + Gian.
-- **🔴 Fornecedor Café (Lambarí):**
-  - Contrato, amostras e testes — caminho crítico. Contato prioritário liderado por Gabriel.
-- **🔴 Caixa Café (Fornecedores + Faca):**
-  - Embalagem no caminho crítico com prazos de produção gráfica e faca. Caco + Gabriel.
 - **🔴 Recrutamento Lucas (Comercial B2B):**
   - Deadline de contratação em 01/Jul para garantir que esteja operacional no lançamento de agosto. Liderado por Gabriel.
 - **🟠 Serigrafia Frascos (A e B):**
   - Protótipos para F&F (fit and finish). Obter amostras físicas antes de fechar pedido. Gian + Caco.
 - **🟠 Autorização Bombeiros:**
   - Operação irregular. Risco regulatório. Gian realizando follow com Thais.
-- **🟠 Conselho Científico:**
-  - Ativar lead da Adriana esta semana (mínimo de 2 meses para estruturar). Gian.
+- **🟠 Conselho Científico (À Parte):**
+  - Novo órgão de validação pública e auxílio em formulações a ser constituído. Gian estruturando contatos (à parte de Adriana/ANVISA).
 - **🟠 Impostos Cafés:**
   - Sem clareza fiscal não dá para fechar preço final de venda. Jacinto.
 - **🟠 Solúveis (2 Fornecedores):**
   - Prospecção de parceiros industriais. Gabriel + Gui iniciando contato.
-- **🟡 HPP (Green People):**
-  - HPP: ~2 semanas. Confirmar data concreta na semana. Gian.
-- **🟡 Fornecedor B (SP/Sucos):**
-  - Estudo preliminar (não bloqueia agosto, define set 2). Gabriel + Gian.
 - **🟡 Maquinário Solúveis:**
   - Cotação por Julio para alimentar decisão de "make vs. buy".
 - **🟡 ANVISA (Adriana):**
-  - Processo de longo prazo. Manter ritmo e acompanhamento ativo por Gian.
+  - Processo de dossiês regulatórios de longo prazo. Manter ritmo e acompanhamento ativo por Gian.
 - **🟡 Rebú (Rebranding):**
   - Em andamento. Sem ação urgente na semana. Gian + Flora.
 - **🟡 Marketing Pré-Lançamento:**
@@ -142,8 +140,8 @@ Acesse a nossa base viva de estudos de mercado para alimentar a Rebu e as teses 
 - **O Mix:** 3.000 Sucos HPP + 1.000 Caixas de Cápsulas (Atenção: cada caixa contém 10 cápsulas).
 
 #### 🛡️ Os 2 Pilares do "Destrave"
-1. **A Questão de Vida ou Morte (O HPP do Suco):** Confirmar data com a Green People (~2 semanas) e avaliar Fornecedor B (SP) como secundário.
-2. **O Check-Out Operacional (Cápsulas):** Estudo de custos com Lambarí + finalização da caixa (produção e faca).
+1. **A Questão de Vida ou Morte (O HPP do Suco):** Resposta da Green People demorará **6 semanas** (retorno em Julho). Foco emergencial na viabilização do **Fornecedor B em SP** como backup real de lançamento.
+2. **O Check-Out Operacional (Cafés):** Viagem de Gabriel a Lambarí em 30/05 (checar chegada dos adaptógenos do Portal do Cogumelo na sexta, 29/05). Fechamento do P&L e solução das embalagens (faca/caixa de cápsulas e pouch de café moído).
 
 ---
 

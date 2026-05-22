@@ -12,8 +12,8 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 
 | Linha | Fase | Formulação | Design | Embalagem / Rótulo | Parceiro Prod. | Regulação | Lançamento Alvo |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
-| [☕ Linha Café](#-linha-café--ritual-despertar) | **1** | 🟢 Pronta | 🟡 Interim Caco | 🟢 Caixa aprovada | 🟢 MushSpresso / Lambarí | 🟡 MAPA c/ Priscila | **01/08/2026** |
-| [🧃 Sucos Cold Press](#-sucos-cold-press--ritual-clareza) | **1** | 🟢 Pronta | 🟡 Interim Caco | 🔴 PET a definir | 🟡 GP (HPP) / Vida Líquida | 🟡 MAPA c/ Priscila | **01/08/2026** |
+| [☕ Linha Café](#-linha-café--ritual-despertar) | **1** | 🟢 Pronta | 🟡 Interim Caco | 🔴 Caixa/Pouch em aberto | 🟡 MushSpresso / Lambarí | 🟡 MAPA c/ Priscila | **01/08/2026** |
+| [🧃 Sucos Cold Press](#-sucos-cold-press--ritual-clareza) | **1** | 🟢 Pronta | 🟡 Interim Caco | 🔴 PET a definir | 🔴 GP (HPP 6s) / SP B / VL | 🟡 MAPA c/ Priscila | **01/08/2026** |
 | [💉 Shots Funcionais](#-shots-funcionais-60ml) | **2** | 🟡 Green People | 🟡 Interim Caco | 🔴 PET 60ml a definir | 🔴 Green People (pend.) | 🟡 MAPA c/ Green People | **Nov/26** |
 | [🍵 Solúveis / Lattes](#-solúveis--lattes--zhy-rituals) | **3** | ⚪ Decidir | 🔴 Desenvolve Rebú | ⚪ A definir | 🔴 A definir² | 🟡 MAPA c/ GEPEA | **Fev/27** |
 | [🥫 RTD / Enlatados](#-rtd--enlatados--ritual-express) | **4** | ⚪ Decidir | 🔴 Desenvolve Rebú | ⚪ A definir | 🔴 Parceiro a definir | ⚪ A iniciar | **Abr/27** |
@@ -38,23 +38,23 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 
 ## ☕ Linha Café — *"Ritual Despertar"*
 
-> **Fase 1 · Parceiro:** MushSpresso (Adriel - envase) / Lambarí (grãos) · **Alvo:** 01/08/2026 (Horizonte Fixo)
+> **Fase 1 · Parceiro:** MushSpresso (Adriel - envase) / Lambarí (grãos) / Portal do Cogumelo (cogumelos) · **Alvo:** 01/08/2026 (Horizonte Fixo)
 
 | Dimensão | Status | Detalhe / Próxima Ação |
 | :--- | :---: | :--- |
 | **Formulação** | 🟢 | 90% Arábica + 10% Shiitake/Juba de Leão/Cauda de Peru. Pronta. |
 | **Design Visual (Cápsulas)** | 🟢 | Arte interim ok. **Caixa aprovada definitivamente.** |
-| **Design Visual (Café Moído)** | 🔴 | Embalagem a resolver do zero: definir material (saco com barreira aromática), criar briefing para Rebu, orçar gráficas. |
-| **Embalagem (Caixas Cápsulas)** | 🟢 | **Aprovada.** Produção gráfica + faca no caminho crítico. |
-| **Parceiro Fornecedor** | 🟡 | MushSpresso (Adriel) e Lambarí (em estudo de custos/viabilidade). |
+| **Design Visual (Café Moído)** | 🔴 | Embalagem a resolver do zero: definir material do pouch (com barreira de aroma/luz), criar briefing Rebu, orçar gráficas. |
+| **Embalagem (Caixas Cápsulas)** | 🔴 | Produção gráfica + faca de corte no caminho crítico. |
+| **Parceiro Fornecedor** | 🟡 | MushSpresso, Lambarí (grãos/viabilidade) e Portal do Cogumelo (adaptógenos em envio express). |
 | **Regulação** | 🟡 | MAPA em processo com Priscila. |
 | **Lançamento Previsto** | 📅 | **01/08/2026** — Horizonte Fixo. |
 
 **Bloqueios Prioritários:**
-- `🔴` Estudo de custos e validação do P&L (Gabriel + Gian)
-- `🔴` Estudo logístico e viabilidade de Lambarí (Gabriel + Gian)
-- `🔴` Caixa café — fornecedores e faca (Caco + Gabriel)
-- `🔴` Resolver embalagem do Café Moído do zero
+- `🔴` Portal do Cogumelo: Garantir entrega expressa dos adaptógenos até sexta (29/05) para viagem de testes.
+- `🔴` Viagem a Lambarí (sábado, 30/05) por Gabriel para testes práticos e fechamento comercial.
+- `🔴` Caixa de café (faca/gráfica) + Pouch de café moído (material/cotação/design).
+- `🔴` Estudo de custos e validação do P&L (Gabriel + Gian).
 
 → [Arquivo completo: Linha Café](cafe.md)
 
@@ -62,7 +62,7 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 
 ## 🧃 Sucos Cold Press — *"Ritual Clareza"*
 
-> **Fase 1 · Parceiro:** Vida Líquida (Alvaro, RJ) / GP (HPP) · **Alvo:** 01/08/2026 (Horizonte Fixo)
+> **Fase 1 · Parceiro:** Vida Líquida (Alvaro, RJ) / GP (HPP) / SP B (Backup HPP) · **Alvo:** 01/08/2026 (Horizonte Fixo)
 
 | Dimensão | Status | Detalhe / Próxima Ação |
 | :--- | :---: | :--- |
@@ -70,13 +70,13 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 | **Design Visual** | 🟠 | Identidade a cargo da Rebu. Rótulo interim/serigrafia frasco A e B em prototipagem (Gian + Caco). |
 | **Embalagem (PET Garrafa)** | 🔴 | Formato e fornecedor não definidos. Dependente de testes de serigrafia. |
 | **Parceiro Produtor** | 🟡 | Vida Líquida (Alvaro). Rotuladora/freezers on hold até HPP resolvido. |
-| **Infraestrutura HPP** | 🟡 | **GP HPP:** ~2 semanas para data concreta (Gian). **Fornecedor B SP:** estudo preliminar para Fase 2 (Gabriel + Gian). |
+| **Infraestrutura HPP** | 🔴 | **GP HPP:** Resposta demorará **6 semanas** (meados de Julho). **Fornecedor B SP:** Promovido a backup crítico imediato para garantir agosto. |
 | **Regulação (MAPA)** | 🟡 | Em processo com Priscila. |
 | **Lançamento Previsto** | 📅 | **01/08/2026** — Horizonte Fixo. |
 
 **Bloqueios Prioritários:**
-- `🟡` Confirmar data de HPP com Green People (~2 semanas)
-- `🟡` Estudo preliminar de HPP em SP (Fornecedor B)
+- `🔴` Acelerar estudo de viabilidade, custos e cotação de HPP com Fornecedor B em SP (Gabriel + Gian)
+- `🟡` Monitorar retorno de HPP da Green People (prazo de 6 semanas de espera)
 - `🟠` Serigrafia frasco A e B — obter amostras físicas (Gian + Caco)
 - `🟠` Autorização dos Bombeiros (Gian follow Thais)
 
@@ -90,7 +90,7 @@ Visão executiva de uma tacada. Clique no nome da linha para ir direto ao detalh
 
 | Dimensão | Status | Detalhe / Próxima Ação |
 | :--- | :---: | :--- |
-| **Formulação** | 🟡 | 4 fórmulas rascunhadas (BlindC, Inflamação, Foco, Rendimento). **Validar com Conselho Científico** (lead Adriana) antes de submeter ao MAPA. |
+| **Formulação** | 🟡 | 4 fórmulas rascunhadas (BlindC, Inflamação, Foco, Rendimento). **Validar com Conselho Científico** (a ser constituído para chancelamento e apoio técnico) antes de submeter ao MAPA. |
 | **Design Visual** | 🔴 | Embalagem definitiva a cargo da Rebu. |
 | **Embalagem (PET 60ml)** | 🔴 | Mini-garrafa PET 60ml não definida. Orçar fornecedores específicos. |
 | **Parceiro Produtor** | 🔴 | Green People. Aguardando envio de infos para aprovação do Conselho GP. |

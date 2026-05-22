@@ -36,10 +36,10 @@
 | 5 | **Recrutamento Lucas (Comercial B2B)** | Gabriel | **01/Jul** | 🔴 Processo ativo |
 | 6 | **Serigrafia frascos A e B (Protótipos F&F)** | Gian + Caco | **Imediato** | 🟠 Obter amostras |
 | 7 | **Autorização Bombeiros** | Gian | **Urgente** | 🟠 Cobrar Thais |
-| 8 | **Constituir Conselho Científico Zhy** | Gian | **Urgente** | 🟠 Ativar lead Adriana |
+| 8 | **Constituir Conselho Científico Zhy** | Gian | **Urgente** | 🟠 Estruturar membros para chancela pública |
 | 9 | **Impostos Cafés** | Jacinto | **Urgente** | 🟠 Obter clareza fiscal |
 | 10| **Solúveis (Prospecção 2 fornecedores)** | Gabriel + Gui | **Urgente** | 🟠 Iniciar contatos |
-| 11| **Green People HPP (Data concreta)** | Gian | **Esta semana** | 🟡 Confirmar HPP |
+| 11| **HPP SP Fornecedor B (Backup Crítico)** | Gabriel + Gian | **Esta semana** | 🔴 Iniciar cotação emergencial |
 
 ---
 
@@ -138,20 +138,20 @@
 
 | Pessoa / Entidade | Responsabilidades Imediatas |
 |---|---|
-| **Gianluca** | Decisão estratégica, estudo de custos e logística cafés, serigrafia frascos, bombeiros, conselho científico, Green People HPP |
-| **Gabriel Victor (COO)** | Gestão operacional, estudo de custos/logística cafés, contato Lambarí, recrutamento Lucas, prospecção de solúveis |
+| **Gianluca** | Decisão estratégica, estudo de custos e logística cafés, serigrafia frascos, bombeiros, conselho científico, HPP GP/SP B, follow ANVISA |
+| **Gabriel Victor (COO)** | Gestão operacional, estudo de custos/logística cafés, contato Lambarí (viagem 30/05), recrutamento Lucas, prospecção de solúveis |
 | **Guilherme RJ** | Encapsulamento ativo no Lab RJ (extratos Cordyceps + Juba de Leão) |
-| **Caco / Carol** | Marketing & Criação, arte/serigrafia frascos, caixas café |
+| **Caco / Carol** | Marketing & Criação, arte/serigrafia frascos, embalagens de café (caixa/faca e pouch café moído) |
 | **Adriel (MushSpresso)** | Produção das 9k cápsulas de café, refino de formulações |
-| **Alvaro (Vida Líquida)** | Sucos cold press e shots (ON HOLD até HPP/Green People definido) |
+| **Alvaro (Vida Líquida)** | Sucos cold press e shots (ON HOLD até HPP resolvido - GP ou SP B) |
 | **Rebu** | Rebranding (marca definitiva + 15 embalagens) — em andamento |
 | **Priscila** | Assessoria jurídica e liberações MAPA |
-| **Adriana** | Assessoria ANVISA e ativação do lead para Conselho Científico |
+| **Adriana** | Assessoria ANVISA (dossiês regulatórios suplementos) |
 | **Guilherme Tech (Gui)** | Web, e-commerce, checkout, prospecção de solúveis com Gabriel |
 | **Jacinto** | Clareza fiscal e impostos sobre cafés |
 | **Julio** | Gerente de qualidade, cotação de maquinário para solúveis (make vs. buy) |
 | **[A CONTRATAR / Lucas]** | **Vendedor B2B** — recrutamento ativo por Gabriel (deadline 01/Jul) |
-| **[A CONSTITUIR]** | **Conselho Científico Zhy** — Gian activating lead da Adriana para início rápido |
+| **[A CONSTITUIR]** | **Conselho Científico Zhy** — Liderado por Gian para chancela pública (redes sociais) e auxílio de P&D |
 
 ---
 

@@ -16,10 +16,10 @@
 | **☕ Cápsulas Nespresso (Cx 10)** | MushSpresso | Lote 9000 cápsulas definido. Embalagem interim (Caco/Carol). |
 
 🔥 **Prioridades de Ataque (Imediatas)**:
-- Confirmar data do parceiro HPP (Green People ~2 semanas) e avaliar Fornecedor B em SP.
-- Estudo de custos e logística de Cafés (validar P&L e viabilidade de Lambarí).
-- Produção da caixa de café (faca + gráfica) e recrutamento Lucas (deadline 01/Jul).
-- Ativar Conselho Científico (lead da Adriana) e regularização dos Bombeiros (follow Thais).
+- HPP: Resposta da Green People em 6 semanas (retorno em Julho). Acelerar estudo técnico/comercial do Fornecedor B em SP como backup imediato.
+- Viagem de Gabriel a Lambarí (sábado, 30/05) e follow para postagem rápida de adaptógenos do Portal do Cogumelo (chegada na sexta, 29/05).
+- Produção da caixa de café (faca + gráfica), definição de pouch para café moído e recrutamento Lucas (deadline 01/Jul).
+- Ativar Conselho Científico (validação pública e redes sociais), regularização dos Bombeiros (follow Thais) e follow com Adriana nos dossiês ANVISA.
 
 ---
 
