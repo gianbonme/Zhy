@@ -1,49 +1,62 @@
-# 🗓️ Recap Semanal Zhy — 18/05/2026
+# 🗓️ Recap Semanal Zhy — 26/05/2026
 
-Estamos na **Semana de 18/05 → 24/05**. Hoje é segunda-feira.
-> ⚠️ **Data de Lançamento Fase 1 (01/Jun) oficialmente reprogramada** — nova data a definir na reunião estratégica com Gabriel.
+Estamos na **Semana de 26/05 → 30/05**. Hoje é terça-feira.
+> ⚠️ **Data de Lançamento da Fase 1 fixada em 01/08/2026** (horizonte fixo).
+> **Regra da Semana:** Gabriel precisa sair com 3 entregas concretas — contato com Lambarí feito, estudo de custos iniciado, e processo do Lucas ativo. O resto você sustenta em paralelo.
 
 ---
 
-## 🔴 Gargalos Críticos — Urgência Máxima
+## 🔴 Gargalos Críticos — Urgência Máxima (Sem isso o lançamento não acontece)
 
 | Item | Responsável | Status | Situação Real |
 | :--- | :--- | :---: | :--- |
-| **HPP (Gargalo Mestre)** | Gianluca | 🔴 | Green People: +2 semanas de espera. SP: 2 máquinas contatadas, nenhuma viável. **Sem HPP = sem sucos = sem lançamento.** |
-| **Autorização Bombeiros** | Gianluca / Thais | 🔴 | Thais cobrada hoje. Sem resposta ainda. |
-| **Nova data de lançamento** | Gianluca + Gabriel | 🔴 | Reprogramada, mas sem data definida. Precisa de reunião estratégica. |
-| **Parceiro Solúveis** | Gabriel (delegado) | 🟡 | Em investigação. Gabriel avaliando viabilidade + maquinário in-house. |
-| **Conselho Científico** | Gianluca | 🔴 | Parado. Prospecção não avançou. |
+| **Estudo de Custos Cafés** | Gabriel + Gian | 🔴 | Sem P&L (lucro e perdas) validado não dá para confirmar o lançamento de agosto. Estudo iniciado. |
+| **Estudo Logístico Cafés** | Gabriel + Gian | 🔴 | Define fulfillment, prazo de entrega e se Lambarí é viável como fornecedor. |
+| **Fornecedor café (Lambarí)** | Gabriel | 🔴 | Precisam de tempo para contrato, amostras e testes — quanto antes o contato, melhor. |
+| **Caixa café (fornec. + faca)** | Caco + Gabriel | 🔴 | Embalagem é caminho crítico — tem prazo de produção gráfica + faca. |
+| **Recrutamento Lucas** | Gabriel | 🔴 | Deadline 01/Jul — se não entra em julho, não estará operacional em agosto. |
 
 ---
 
-## 🟡 Em Andamento — Monitorar
+## 🟠 Importante — Paralelo, não pode atrasar mais
 
 | Item | Responsável | Status | Situação Real |
 | :--- | :--- | :---: | :--- |
-| **Encapsulamento (Extratos)** | Guilherme RJ | 🟡 | Encapsuladora 00 limitada mas funcional com extratos. Cordyceps: OK (~500mg, 4 rodadas). Juba de Leão: 491mg (aceitável). Guilherme já encapsulando. |
-| **Formulação MushSpresso** | MushSpresso | 🟡 | Chega **quarta-feira (20/05)**. Aceitação desta formulação desbloqueia o MAPA com Priscila. |
-| **Serigrafia (Embalagem)** | Decorlex / Spazzio | 🟡 | Aguardando envio dos testes. Necessário para protótipos de embalagem F&F. |
-| **Rebranding Rebú** | Agência Rebú | 🟡 | Em andamento. Embalagens e Pouch on hold até entrega da Rebú. |
-| **MAPA (Priscila)** | Priscila / Gianluca | 🟡 | On hold até receber e aceitar formulação MushSpresso na quarta. |
-| **Gabriel (COO) — Onboarding** | Gabriel | 🟢→🟡 | **Entrou hoje (18/05) como PJ.** Já com 80% do contexto. Em onboarding ativo. |
+| **Serigrafia frasco (A e B)** | Gian + Caco | 🟠 | Protótipos para F&F (fit and finish) — amostras físicas antes de fechar pedido. |
+| **Bombeiros** | Gian | 🟠 | Operação irregular enquanto não fechado. Follow com Thais. Risco regulatório. |
+| **Conselho Científico** | Gian | 🟠 | Ativar lead da Adriana esta semana — mínimo 2 meses para estruturar. |
+| **Impostos Cafés** | Jacinto | 🟠 | Sem clareza fiscal não dá para fechar preço final. |
+| **Solúveis — 2 fornecedores** | Gabriel + Gui | 🟠 | Processo de prospecção leva semanas; iniciar contato já. |
 
 ---
 
-## 📋 Agenda Concreta — Semana 18/05 → 24/05
+## 🟡 Monitorar — Em Andamento, não travar
 
-### 📅 Segunda-feira 18/05
-- [x] **Gabriel** entra oficialmente como COO (PJ)
-- [ ] **Gianluca + Gabriel** — Alinhar prioridades da semana e escopo de delegação
-- [ ] Cobrar **Thais** sobre autorização dos Bombeiros ✅ (feito)
+| Item | Responsável | Status | Situação Real |
+| :--- | :--- | :---: | :--- |
+| **Green People (sucos)** | Gian | 🟡 | HPP: ~2 semanas. Confirmar data concreta na semana. |
+| **Fornecedor B (SP/sucos)** | Gabriel + Gian | 🟡 | Estudo preliminar — não bloqueia agosto mas define set 2. |
+| **Maquinária solúveis** | Julio | 🟡 | Cotação — resultado alimenta decisão de make vs. buy. |
+| **ANVISA (Adriana)** | Gian | 🟡 | Processo longo — manter ritmo, não deixar esfriar. |
+| **Rebú (rebranding)** | Gian + Flora | 🟡 | Em andamento — sem ação urgente esta semana. |
+| **Marketing pré-lançamento** | Caco | 🟡 | Começa a ganhar tração perto de julho. |
+| **Web + CRM + Ecommerce** | Guilherme Tech | 🟡 | Sprints definidas no ROADMAP.md — acompanhar Sprint 0. |
 
-### 📅 Quarta-feira 20/05
-- [ ] **Receber formulação MushSpresso** — Analisar e decidir aceite
-- [ ] Se aceita: **destravar avanço com Priscila (MAPA)**
+---
 
-### 📅 Quinta-Sexta 22–23/05
-- [ ] **Reunião estratégica Gianluca + Gabriel** — Revisar roadmap completo, redefinir data de lançamento e redistribuir frentes operacionais
-- [ ] Consolidar lista de delegações formais para Gabriel (semana seguinte)
+## 📋 Agenda Concreta — Semana 26/05 → 30/05
+
+### 📅 Entregas do Gabriel (Foco de Entrada)
+- [ ] **Contato com Lambarí** estabelecido (contrato + amostras solicitadas)
+- [ ] **Estudo de custos** do café iniciado (dados consolidados para P&L)
+- [ ] **Processo de recrutamento do Lucas** ativo (entrevistas/contatos)
+
+### 📅 Ações Estratégicas Gianluca e Outros
+- [ ] **Conselho Científico:** Ativar lead da Adriana (Gian)
+- [ ] **Bombeiros:** Cobrar Thais sobre documentação e alvará (Gian)
+- [ ] **Serigrafia:** Acompanhar protótipos de frascos com Caco (Gian)
+- [ ] **Impostos:** Cobrar Jacinto sobre clareza fiscal dos cafés (Jacinto/Gian)
+- [ ] **HPP:** Confirmar data concreta de HPP com Green People (Gian)
 
 ---
 
@@ -51,21 +64,20 @@ Estamos na **Semana de 18/05 → 24/05**. Hoje é segunda-feira.
 
 | Frente | Descrição | Status |
 | :--- | :--- | :---: |
-| **Comercial B2B** | Liderar processo seletivo e contratação do Vendedor B2B | 🟡 Em execução |
-| **Solúveis in-house** | Investigar viabilidade técnica + maquinário para produção própria dos solúveis | 🟡 Em investigação |
-| *(Expandir após reunião estratégica)* | — | — |
+| **Fornecedor Lambarí** | Contato para contrato, amostras e testes de café | 🔴 Crítico |
+| **Estudos de Custos e Logística** | Validação de P&L de Cafés e definição de fulfillment | 🔴 Crítico |
+| **Recrutamento Lucas** | Garantir contratação do comercial B2B até 01/Jul | 🔴 Crítico |
+| **Solúveis (Blends)** | Iniciar contato com os 2 fornecedores mapeados | 🟠 Importante |
 
 ---
 
 ## ✅ Concluído (Acumulado)
 
-- [x] Decisão: Gabriel Victor como COO → **Entrou hoje 18/05 como PJ**
-- [x] Extratos de Cordyceps + Juba de Leão recebidos e testados
-- [x] Encapsulamento funcional com extratos (Guilherme operando)
-- [x] Gianluca contatou 2 máquinas HPP em SP (resultado negativo — frente descartada por ora)
-- [x] Thais cobrada sobre autorização dos Bombeiros
-- [x] Embalagem das Cápsulas: **caixa aprovada** ✅
-- [x] Gilmar visitou — documentação entregue aos bombeiros
+- [x] Gabriel Victor integrado como COO (PJ) desde 18/05
+- [x] Extratos de Cordyceps + Juba de Leão testados e encapsulamento operacional no Lab RJ
+- [x] Embalagem de cápsulas (caixa) aprovada
+- [x] Formulação MushSpresso recebida (20/05)
+- [x] Processo seletivo comercial B2B iniciado (entrevistas realizadas em 22/05)
 
 ---
 
@@ -73,25 +85,22 @@ Estamos na **Semana de 18/05 → 24/05**. Hoje é segunda-feira.
 
 | Evento | Prazo Estimado | Dependência |
 | :--- | :--- | :--- |
-| **Formulação MushSpresso** | Quarta 20/05 | Desbloqueia MAPA |
-| **Testes de Serigrafia** | A receber (Decorlex/Spazzio) | Desbloqueia embalagens provisórias F&F |
-| **Green People (HPP)** | ~01/06 | Desbloqueia Alvaro, rotuladora, freezers |
-| **Reunião Estratégica (nova data)** | Semana 18/05 | Desbloqueia roadmap completo |
-| **Rebú (Rebranding)** | ~4 meses do início | Desbloqueia Pouch definitivo |
+| **Recrutamento Lucas** | 01/Jul | Operacional em Agosto |
+| **Green People (HPP)** | ~01/06 | Desbloqueia Vida Líquida |
+| **Fechamento P&L Cafés** | Junho | Decisão de margem final e preços |
+| **Conselho Científico** | Julho | 2 meses de estruturação necessária |
+| **🚀 Lançamento Fase 1** | **01/08/2026** | Todos os gargalos críticos resolvidos |
 
 ---
 
-## 🧭 Meta Macro — Em Revisão
+## 🧭 Meta Macro — Fase 1 (Fixada em 01/08)
 
-| Horizonte | Meta Original | Status |
+| Horizonte | Meta | Status |
 | :--- | :--- | :--- |
-| **Fase 1** | Sucos Cold Press + Cápsulas Nespresso | 🟡 **Data em revisão** |
-| **120 dias** | 4.000 unidades (3k Sucos + 1k Cápsulas) | 🟡 **Meta mantida, cronograma a redefinir** |
-
-> [!IMPORTANT]
-> O "momento morto" do rebranding (Rebú) é uma janela estratégica valiosa. Usar para a reunião com Gabriel e sair com o novo roadmap definido.
+| **Fase 1 (Sucos + Cápsulas)** | Lançamento em 01/08/2026 | 🟢 **Data fixada em reunião estratégica** |
+| **120 dias (Vendas)** | 4.000 unidades (3k sucos + 1k cx cápsulas) | 🟢 Meta mantida com novo horizonte |
 
 ---
 
 > [!TIP]
-> Documentos de referência: `produto-status-tracker.md` · `dashboard-operacional.md` · `plano-lançamento.md`
+> Documentos de referência: [produto-status-tracker.md](../01_produtos/01-produto-status-tracker.md) · [dashboard-operacional.md](./01-dashboard-operacional.md) · [plano-lançamento.md](./plano-lan%C3%A7amento.md)

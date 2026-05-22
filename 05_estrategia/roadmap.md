@@ -16,10 +16,10 @@
 | **☕ Cápsulas Nespresso (Cx 10)** | MushSpresso | Lote 9000 cápsulas definido. Embalagem interim (Caco/Carol). |
 
 🔥 **Prioridades de Ataque (Imediatas)**:
-- Fechar Parceiro HPP no Rio de Janeiro (Gargalo Mestre).
-- Orçar e rodar embalagens PETs definitivas para os sucos.
-- Fechar comercial de caixas (custo/benefício B2C) focando em bater o preço do protótipo.
-- Iniciar fechamento intenso de pontos Varejo Premium.
+- Confirmar data do parceiro HPP (Green People ~2 semanas) e avaliar Fornecedor B em SP.
+- Estudo de custos e logística de Cafés (validar P&L e viabilidade de Lambarí).
+- Produção da caixa de café (faca + gráfica) e recrutamento Lucas (deadline 01/Jul).
+- Ativar Conselho Científico (lead da Adriana) e regularização dos Bombeiros (follow Thais).
 
 ---
 
@@ -50,7 +50,8 @@
 | **🍵 Blends: Cacau, Matcha, Golden Latte** | P&D Zhy / Co-Packer | Testes de receita P&D |
 
 🔥 **Prioridades de Ataque**:
-- Encontrar as indústrias certeiras para envase e mistura inox.
+- Prospectar parceiros industriais para envase e mistura (Gabriel + Gui em contato com 2 fornecedores).
+- Obter cotação de maquinário para avaliar "make vs. buy" (Julio).
 - Fechar as formulações (zerar stevia, adotar outro veículo orgânico).
 - Definir os potes premium/latas que farão esse produto um item estético "de bancada".
 

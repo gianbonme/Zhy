@@ -68,13 +68,13 @@ Documentos originais — brandbook, dossiers ANVISA, contratos, orçamentos e pr
 
 ## 📊 Status Atual (Maio 2026)
 
-> **Atualizado em 18/05/2026** · COO: Gabriel Victor (PJ, desde 18/05) · Entrevistas Comercial B2B: **sexta 22/05**
+> **Atualizado em 26/05/2026** · COO: Gabriel Victor (PJ, desde 18/05) · Comercial B2B: Recrutamento Lucas (deadline 01/Jul)
 
 | Fase de Lançamento | Linhas | Ref. Produção Principal | Regulação | Status |
 |---|---|---|---|---|
-| **Fase 1** | 🧃 Sucos Cold Press + ☕ Cápsulas Café | Alvaro (Sucos) / Adriel (Café) | MAPA | 🔴 HPP bloqueado — data em revisão |
-| **Fase 2** | 💉 Shots Funcionais + ☕ Café Moído | Alvaro (Sucos) / Adriel (Café) | MAPA | 🟡 Aguardando Fase 1 |
-| **Fase 3** | 🍵 Solúveis (Matcha, Cacau, Golden Latte) | Gabriel investigando in-house | MAPA | 🟡 Em investigação |
+| **Fase 1** | 🧃 Sucos Cold Press + ☕ Cápsulas Café | GP (HPP) / Lambarí (Grão) / Adriel (Envase) | MAPA | 🟡 Lançamento fixado para 01/08/2026 |
+| **Fase 2** | 💉 Shots Funcionais + ☕ Café Moído | Vida Líquida / MushSpresso | MAPA | 🟡 Aguardando Fase 1 |
+| **Fase 3** | 🍵 Solúveis (Matcha, Cacau, Golden Latte) | Gabriel + Gui (prospecção de 2 fornecedores) | MAPA | 🟡 Em investigação |
 | **Fase 4** | 🥫 Enlatados RTD (Frios Funcionais) | *(A Buscar Fabricação)* | MAPA | ⚪ Fase futura |
 | **Fase 5** | 💊 Suplementos & Proteína de Micélio | Produção Interna / Terc. | ANVISA | 🔴 Fila regulatória (1–2 anos) |
 

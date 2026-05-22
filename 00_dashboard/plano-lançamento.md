@@ -1,10 +1,10 @@
 # 🚀 PLANO DE LANÇAMENTO ZHY — 30 / 60 / 90 DIAS
 
-> **Data-base:** 20/04/2026 • **Meta D-Day Fase 1:** ~01/06/2026 (~6 semanas)
+> **Data-base:** 26/05/2026 • **Meta D-Day Fase 1:** 01/08/2026 (Horizonte Fixo)
 > **Produtos Fase 1:** Sucos Cold Press + Cápsulas Nespresso
-> **Produtos Fase 2 (Out/2026):** 4 Shots Cold Press + Café Moído
-> **Produtos Fase 3 (Jan/2027):** Linha Solúveis (Golden Latte, Cacau, Matcha)
-> **Produtos Fase 4 (Mar/2027):** Enlatados RTD
+> **Produtos Fase 2 (Nov/2026):** 4 Shots Cold Press + Café Moído
+> **Produtos Fase 3 (Fev/2027):** Linha Solúveis (Golden Latte, Cacau, Matcha)
+> **Produtos Fase 4 (Abr/2027):** Enlatados RTD
 
 ---
 
@@ -12,13 +12,13 @@
 
 | # | Meta | Prazo | KPI |
 |---|------|-------|-----|
-| 1 | Lançar **Sucos Cold Press** e **Cápsulas Nespresso** no mercado | 42 dias | Produto à venda (D2C + B2B) |
-| 2 | E-commerce D2C operacional (site c/ checkout) | 30 dias | Site live com carrinho |
-| 3 | Ativar **primeiros 10 pontos B2B** premium no RJ | 60 dias | PDVs ativos |
-| 4 | Lançar **4 Shots Cold Press** e **Café Moído** | Out/2026 | Produto à venda |
-| 5 | Atingir **4.000 unidades vendidas** (3k sucos + 1k cx cápsulas) | 120 dias | Unidades vendidas |
-| 6 | **20 pontos B2B** ativos | 120 dias | PDVs ativos |
-| 7 | Lançar a **Linha Solúveis** (Golden Latte, Cacau, Matcha) | Jan/2027 | P&D concluído, produto à venda |
+| 1 | Lançar **Sucos Cold Press** e **Cápsulas Nespresso** no mercado | 01/08/2026 | Produto à venda (D2C + B2B) |
+| 2 | E-commerce D2C operacional (site c/ checkout) | 01/08/2026 | Site live com carrinho |
+| 3 | Ativar **primeiros 10 pontos B2B** premium no RJ | Set/2026 | PDVs ativos |
+| 4 | Lançar **4 Shots Cold Press** e **Café Moído** | Nov/2026 | Produto à venda |
+| 5 | Atingir **4.000 unidades vendidas** (3k sucos + 1k cx cápsulas) | 120 dias pós-lançamento | Unidades vendidas |
+| 6 | **20 pontos B2B** ativos | 120 dias pós-lançamento | PDVs ativos |
+| 7 | Lançar a **Linha Solúveis** (Golden Latte, Cacau, Matcha) | Fev/2027 | P&D concluído, produto à venda |
 
 ---
 
@@ -29,14 +29,17 @@
 
 | # | Gargalo | Responsável | Deadline | Status |
 |---|---------|-------------|----------|--------|
-| 1 | **Fechar parceiro HPP no RJ** (sem HPP, suco dura 3 dias) | Gianluca | **28/03** | 🔴 Em Processo |
-| 2 | **Fechar embalagem Cápsulas** (caixa final p/ venda) | Marketing/Operações | **28/03** | 🟡 Em Processo |
-| 3 | **Definir & orçar garrafas PET** (sucos + 4 shots) | Operações | **03/04** | 🔴 Investigar |
-| 4 | **Maquinário** (Rotuladora + Freezers Sucos) | Gianluca | **10/04** | 🔴 Investigar |
-| 5 | **Criar rótulos dos sucos** | Rebú | **10/04** | 🔴 Iniciar |
-| 6 | **Finalizar site c/ checkout** | IT (Guilherme) | **20/04** | 🟡 Em Andamento |
-| 7 | **Constituir Conselho Científico Zhy** (médico funcional + nutricionista sênior + especialista cogumelos) — necessário para validar formulações antes da submissão ao MAPA | Gianluca | **URGENTE** | 🔴 A Iniciar |
-| 8 | **Encontrar parceiro industrial para Solúveis** (envase + mixer inox) | Gianluca | **30/04** | 🔴 A Iniciar |
+| 1 | **Estudo de Custos e P&L (Cafés)** | Gabriel + Gian | **Imediato** | 🔴 Em andamento |
+| 2 | **Estudo Logístico (Cafés/Lambarí)** | Gabriel + Gian | **Imediato** | 🔴 Em andamento |
+| 3 | **Fornecedor café Lambarí (Contrato/Testes)** | Gabriel | **Imediato** | 🔴 Contato inicial |
+| 4 | **Caixa Café (Fornecedores + Faca)** | Caco + Gabriel | **Imediato** | 🔴 Em produção gráfica |
+| 5 | **Recrutamento Lucas (Comercial B2B)** | Gabriel | **01/Jul** | 🔴 Processo ativo |
+| 6 | **Serigrafia frascos A e B (Protótipos F&F)** | Gian + Caco | **Imediato** | 🟠 Obter amostras |
+| 7 | **Autorização Bombeiros** | Gian | **Urgente** | 🟠 Cobrar Thais |
+| 8 | **Constituir Conselho Científico Zhy** | Gian | **Urgente** | 🟠 Ativar lead Adriana |
+| 9 | **Impostos Cafés** | Jacinto | **Urgente** | 🟠 Obter clareza fiscal |
+| 10| **Solúveis (Prospecção 2 fornecedores)** | Gabriel + Gui | **Urgente** | 🟠 Iniciar contatos |
+| 11| **Green People HPP (Data concreta)** | Gian | **Esta semana** | 🟡 Confirmar HPP |
 
 ---
 
@@ -135,18 +138,20 @@
 
 | Pessoa / Entidade | Responsabilidades Imediatas |
 |---|---|
-| **Gianluca** | Decisão estratégica geral, parceiros-chave, reunião de recalibração com Gabriel, HPP |
-| **Gabriel Victor (COO)** | Gestão operacional, recrutamento comercial (**entrevistas sexta 22/05**), investigação de solúveis in-house |
+| **Gianluca** | Decisão estratégica, estudo de custos e logística cafés, serigrafia frascos, bombeiros, conselho científico, Green People HPP |
+| **Gabriel Victor (COO)** | Gestão operacional, estudo de custos/logística cafés, contato Lambarí, recrutamento Lucas, prospecção de solúveis |
 | **Guilherme RJ** | Encapsulamento ativo no Lab RJ (extratos Cordyceps + Juba de Leão) |
-| **Caco / Carol** | Arte embalagem sucos (rótulo interim), conteúdo de marketing, embalagem provisória para F&F |
-| **Adriel (MushSpresso)** | Formulação chega quarta 20/05 — aceite destrava MAPA. Produção 9k cápsulas. |
-| **Alvaro (Vida Líquida)** | ON HOLD até HPP resolvido |
-| **Rebu** | Rebranding (marca definitiva + 15 embalagens) — foco atual |
-| **Priscila** | Liberações MAPA (on hold até aceite formulação MushSpresso) |
-| **Adriana** | Dossiês ANVISA suplementos (roda paralelo) |
-| **Guilherme Tech** | Web/e-commerce (checkout, digital) |
-| **[A CONTRATAR]** | **Vendedor B2B** — entrevistas sexta 22/05 (2 a 3 candidatos) |
-| **[A CONSTITUIR]** | **Conselho Científico Zhy** — parado. Médico funcional, nutricionista sênior, especialista em cogumelos/fitoterapia. **Urgente.** |
+| **Caco / Carol** | Marketing & Criação, arte/serigrafia frascos, caixas café |
+| **Adriel (MushSpresso)** | Produção das 9k cápsulas de café, refino de formulações |
+| **Alvaro (Vida Líquida)** | Sucos cold press e shots (ON HOLD até HPP/Green People definido) |
+| **Rebu** | Rebranding (marca definitiva + 15 embalagens) — em andamento |
+| **Priscila** | Assessoria jurídica e liberações MAPA |
+| **Adriana** | Assessoria ANVISA e ativação do lead para Conselho Científico |
+| **Guilherme Tech (Gui)** | Web, e-commerce, checkout, prospecção de solúveis com Gabriel |
+| **Jacinto** | Clareza fiscal e impostos sobre cafés |
+| **Julio** | Gerente de qualidade, cotação de maquinário para solúveis (make vs. buy) |
+| **[A CONTRATAR / Lucas]** | **Vendedor B2B** — recrutamento ativo por Gabriel (deadline 01/Jul) |
+| **[A CONSTITUIR]** | **Conselho Científico Zhy** — Gian activating lead da Adriana para início rápido |
 
 ---
 
@@ -167,12 +172,12 @@
 
 | Data / Período | Marco |
 |------|-------|
-| **20/04** | Retomada: Ajustes finais de operações, testes práticos equipe e reavaliação de infra |
-| **01/06** | 🚀 **FASE 1 — Lançamento** (Sucos + Cápsulas) |
-| **Jul/2026** | Meta: 10 PDVs B2B ativos · Tração provada |
-| **Out/2026** | 🚀 **FASE 2 — Lançamento** (4 Shots + Café Moído) |
-| **Jan/2027** | 🚀 **FASE 3 — Lançamento** (Linha Solúveis) · 20 PDVs B2B globais |
-| **Mar/2027** | 🚀 **FASE 4 — Lançamento** (Enlatados RTD) |
+| **26/05/2026** | Alinhamento e início das sprints de urgência com Gabriel Victor como COO |
+| **01/08/2026** | 🚀 **FASE 1 — Lançamento** (Sucos + Cápsulas) - Horizonte Fixo |
+| **Set/2026** | Meta: 10 PDVs B2B ativos · Tração provada |
+| **Nov/2026** | 🚀 **FASE 2 — Lançamento** (4 Shots + Café Moído) |
+| **Fev/2027** | 🚀 **FASE 3 — Lançamento** (Linha Solúveis) · 20 PDVs B2B globais |
+| **Abr/2027** | 🚀 **FASE 4 — Lançamento** (Enlatados RTD) |
 
 ---
 
